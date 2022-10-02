@@ -1,0 +1,129 @@
+section#modulo2 {
+
+	height: 570px;
+	overflow: hidden;
+	position: relative;
+
+	.background {
+		width: 100%;
+		height: 570px;
+		background: linear-gradient(225deg, #19171C 0%, #383838 100%);
+		overflow: hidden;
+		position: absolute;
+
+		.textos {
+
+			padding-top: 100px;
+
+			.icone-2 {
+				display: block;
+				margin: auto;
+			}
+
+			.tx1 {
+				font-family: 'Roboto', sans-serif;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 25px;
+				line-height: 24px;
+				letter-spacing: 13px;
+				color: #FFFFFF;
+				margin-top: 46px;
+				text-align: center;
+
+				@media (max-width: 767px) {
+			        font-size: 18px;
+					line-height: 24px;
+					max-width: 275px;
+					margin: auto;
+					margin-top: 25px;
+			    }
+
+			    @media (min-width: 768px) and (max-width: 1100px) {
+					font-size: 20px;
+					max-width: 500px;
+					line-height: 25px;
+					margin: auto;
+					margin-top: 46px;
+				}
+			}
+
+			.tx2 {
+				font-family: 'Saira', sans-serif;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 63.3454px;
+				line-height: 70px;
+				margin-top: 12px;
+				text-align: center;
+				background: -webkit-linear-gradient(225deg, #ED145B 0%, #DC14ED 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+
+			  	@media (max-width: 767px) {
+			        font-size: 30px;
+					line-height: 33px;
+					max-width: 238px;
+					margin: auto;
+					margin-top: 15px;
+			    }
+
+			    @media (min-width: 768px) and (max-width: 1100px) {
+					font-size: 40.3454px;
+				}
+			}
+
+			.asset-2 {
+				display: block;
+				margin: auto;
+				margin-top: 40px;
+
+				@media (min-width: 768px) and (max-width: 1100px) {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+
+	$particleSize: 30vmin;
+	$animationDuration: 6s;
+	$amount: 20;
+	.background span {
+		width: $particleSize;
+		height: $particleSize;
+		border-radius: $particleSize;
+		backface-visibility: hidden;
+		position: absolute;
+		animation-name: move;
+		animation-duration: $animationDuration;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		opacity: 0.3;
+		$colors: (
+			#E20049,
+			#DC14ED,
+			#E20049
+			);
+		@for $i from 1 through $amount {
+			&:nth-child(#{$i}) {
+				color: nth($colors, random(length($colors)));
+				top: random(100) * 1%;
+				left: random(100) * 1%;
+				animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
+				animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
+				transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+				$blurRadius: (random() + 0.5) * $particleSize * 0.5;
+				$x: if(random() > 0.5, -1, 1);
+				box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+			}
+		}
+	}
+
+	@keyframes move {
+		100% {
+			transform: translate3d(0, 0, 1px) rotate(360deg);
+		}
+	}
+
+
+}

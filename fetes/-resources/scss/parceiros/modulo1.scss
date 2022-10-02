@@ -1,0 +1,34 @@
+body {
+	background: url(../../img/parceiros/bg-left.png), url(../../img/parceiros/bg-right.png);
+	background-size: initial;
+	background-repeat: no-repeat;
+	background-position: left center, right center;
+	background-color: #070707;
+
+	@media (max-width: 767px) {
+		background: #070707;
+	}
+}
+
+section#modulo1 {
+	
+	.banner-desk {
+		display: block;
+		width: 100%;
+
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+
+	.banner-mob {
+		display: none;
+
+		@media (max-width: 767px) {
+			display: block;
+			width: 100%;
+		}
+	}
+
+
+}

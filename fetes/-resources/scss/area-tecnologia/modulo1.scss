@@ -1,0 +1,206 @@
+section#modulo1 {
+
+    .grupo {
+    	
+    	width: 100%;
+	    height: 700px;
+	    background: url('../../img/tecnologia/banner-desk.png');
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    display: flex;
+	    align-items: center;
+
+	    @media (max-width: 767px) {
+	        height: auto;
+	        background: url('../../img/tecnologia/banner-mob.png');
+		    background-size: cover;
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    padding: 40px 16px;
+		    box-sizing: border-box;
+	    }
+
+    	.box {
+    		width: 1214px;
+    		margin: auto;
+
+    		@media (max-width: 767px) {
+		        width: 100%;
+		    }
+
+    		.tx1 {
+	    		font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 63.3454px;
+				line-height: 70px;
+				color: #ED145B;
+
+				@media (max-width: 767px) {
+			        font-size: 30.3454px;
+					line-height: 34px;
+			    }
+	    	}
+
+	    	.tx2 {
+	    		font-family: 'Roboto', sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 17px;
+				color: #FFFFFF;
+				margin-top: 40px; 
+
+				@media (max-width: 767px) {
+			        font-size: 20px;
+					line-height: 20px;
+			    }
+	    	}
+
+	    	.tx3 {
+	    		font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 24px;
+				color: #FFFFFF;
+	    		margin-top: 40px;
+	    		max-width: 649px;
+
+	    		@media (max-width: 767px) {
+			        font-size: 16px;
+					line-height: 20px;
+					max-width: 100%;
+			    }
+	    	}
+    	}
+    }
+
+    .grupo-02 {
+    	background-color: #161616;
+
+    	@media (max-width: 767px) {
+	        padding: 25px;
+	        box-sizing: border-box;
+	        position: relative;
+	    }
+
+	    @media (min-width: 768px) and (max-width: 1100px) {
+			position: relative;
+			height: 100px;
+		}
+
+    	.div-flex {
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+
+    		@media (max-width: 767px) {
+		        display: block;
+		    }
+
+		    @media (min-width: 768px) and (max-width: 1100px) {
+				height: 100px;
+			}
+
+    		.tx1 {
+    			font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 14px;
+				line-height: 16px;
+				letter-spacing: 10px;
+				color: #ED145B;
+
+				@media (max-width: 767px) {
+			        letter-spacing: 6px;
+			        text-align: center;
+			        max-width: 320px;
+			        margin: auto;
+			    }
+
+			    @media (min-width: 768px) and (max-width: 1100px) {
+					width: 190px;
+					text-align: center;
+				}
+    		}
+
+    		.wave {
+    			display: block;
+    			margin-left: -275px;
+
+    			@media (max-width: 767px) {
+			        position: absolute;
+			        bottom: 0;
+			        left: -270px;
+			        margin: 0;
+			    }
+
+			    @media (min-width: 768px) and (max-width: 1100px) {
+					position: absolute;
+			        bottom: 0;
+			        left: -270px;
+			        margin: 0;
+				}
+    		}
+
+    		.tx2 {
+    			font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 14px;
+				line-height: 16px;
+				letter-spacing: 6px;
+				color: #FFFFFF;
+				margin-right: 43px;
+
+				@media (max-width: 767px) {
+			        margin: auto;
+			        text-align: center;
+			        margin-top: 14px;
+			        max-width: 320px;
+			    }
+
+			    @media (min-width: 768px) and (max-width: 1100px) {
+					margin: 0px 10px;
+					max-width: 280px;
+					text-align: center;
+				}
+    		}
+
+    		.click-matricula {
+    			display: block;
+    			box-sizing: border-box;
+    			border: 2px solid #ED145B;
+			    width: 139px;
+			    height: 32px;
+			    border-radius: 4px;
+			    line-height: 29px;
+			    text-align: center;
+			    font-weight: bold;
+			    text-decoration: none;
+			    font-family: 'Montserrat', sans-serif;
+			    font-size: 14px;
+			    color: #ED145B;
+			    cursor: pointer;
+			    transition: all .2s ease-in-out;
+			    -webkit-transition: all .2s ease-in-out;
+			    -o-transition: all .2s ease-in-out;
+
+			    &:hover {
+			    	background-color: #ED145B;
+			    	color: #fff;
+			    }
+
+			    @media (max-width: 767px) {
+			        width: 100%;
+			        max-width: 320px;
+			        margin: auto;
+			        margin-top: 14px;
+			    }
+    		}
+    	}
+    }
+
+}

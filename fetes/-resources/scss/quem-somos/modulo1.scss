@@ -1,0 +1,175 @@
+section#modulo1 {
+
+	background: #070707;
+	padding-bottom: 50px;
+
+	@media (max-width: 767px) {
+		padding: 0;
+	}
+
+	.grupo-01 {
+		width: 100%;
+		height: 290px;
+		background: url('../../img/quem-somos/banner-principal.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		.tx1 {
+			font-family: 'Montserrat', sans-serif;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 36px;
+			line-height: 48px;
+			color: #FFFFFF;
+			padding-top: 83px;
+			text-align: center;
+		}
+	}
+
+	.grupo-02 {
+		
+		margin-top: -76px;
+
+		@media (max-width: 767px) {
+			overflow-x: scroll;
+
+			&::-webkit-scrollbar {
+				width: 0px;
+				background: none;
+			}
+			
+			/* Track */
+			&::-webkit-scrollbar-track {
+				border-radius: 0px;
+			}
+			 
+			/* Handle */
+			&::-webkit-scrollbar-thumb {
+				background: none;
+				border-radius: 0;
+			}
+		}
+
+		.div-scroll {
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			@media (max-width: 767px) {
+				width: 950px;
+			}
+
+			.box {
+
+				background: #0C0E14;
+				border: 1px solid #46484C;
+				border-radius: 8px;
+				box-sizing: border-box;
+				padding: 28px;
+				width: 370px;
+				height: 376px;
+				margin: 0px 15px;
+				position: relative;
+	
+				.titulo-step {
+					font-family: 'Roboto', sans-serif;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 24px;
+					color: #FFFFFF;
+				}
+	
+				.linha {
+					width: 100%;
+					background: #46484C;
+					height: 1px;
+					margin: 24px 0px;
+				}
+	
+				.caixa_contact {
+					margin-bottom: 24px;
+					display: flex;
+					align-items: flex-start;
+	
+					&:last-child {
+						margin-bottom: 0;
+					}
+	
+					.icone {
+						display: block;
+						margin-right: 14px;
+					}
+	
+					.box-contact {
+						.titulo-contact {
+							font-family: 'Roboto', sans-serif;
+							font-style: normal;
+							font-weight: 600;
+							font-size: 14px;
+							line-height: 20px;
+							color: #FFFFFF;
+						}
+	
+						.text-contact {
+							font-family: 'Roboto', sans-serif;
+							font-style: normal;
+							font-weight: 400;
+							font-size: 14px;
+							line-height: 20px;
+							color: #9E9FA1;
+							margin-top: 4px;
+						}
+					}
+				}
+	
+				.text-hour-01 {
+	
+					font-family: 'Roboto', sans-serif;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 24px;
+					color: #9E9FA1;
+	
+				}
+	
+				.text-hour-02 {
+	
+					font-family: 'Roboto';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 20px;
+					color: #9E9FA1;
+					margin-top: 14px;
+	
+				}
+	
+				.box-redes-sociais {
+					background: #1F2127;
+					border-radius: 8px;
+					box-sizing: border-box;
+					padding: 24px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					height: 72px;
+					margin-top: 94px;
+	
+					.link-social {
+						text-decoration: none;
+						display: block;
+						width: 24px;
+						margin: 0px 12px;
+					}
+				}
+	
+			}
+		}
+	}
+
+}

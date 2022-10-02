@@ -1,0 +1,121 @@
+section#modulo2 {
+
+  height: 800px; 
+  width: 100%;
+  background-image: url("../../img/bg-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @media (max-width: 767px) {
+    height: auto;
+    background-image: url("../../img/bg-03-mobile.png");
+  }
+
+  .conteudo {
+    padding: 120px 0px;
+    width: 1040px;
+    margin: auto;
+    display: flex;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      display: block;
+      padding: 0;
+      text-align: center;
+    }
+
+    .texto {
+
+      margin-left: auto;
+      margin-right: 50px;
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 767px) {
+        margin-right: 0;
+        display: block;
+        padding-top: 48px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      h2 {
+        font-family: neo-sans, sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 46px;
+        color: #FFFBE0;
+        max-width: 260px;
+        @media (max-width: 767px) {
+          text-align: center;
+          width: 90%;
+          margin: auto;
+        }
+      }
+
+      p {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        color: #FFFFFF;
+        max-width: 201px;
+        margin-top: 38px;
+        @media (max-width: 767px) {
+          margin: auto;
+          margin-top: 25px;
+        }
+      }
+
+      .divCta {
+        margin-top: 38px;
+        .btn {
+          margin-left: 0;
+          @media (max-width: 767px) {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+
+    .drinks {
+      margin-right: auto;
+      @media (max-width: 767px) {
+        margin-top: 20px;
+        margin-bottom: 25px;
+      }
+      img {
+        @media (max-width: 767px) {
+          width: 80%; 
+        }
+      }
+    }
+
+    .divCta {
+      &.mobile {
+        @media (max-width: 767px) {
+          padding-bottom: 33px;
+        }
+      }
+    }
+
+  }
+}
+
+.setaUp {
+  position: fixed;
+  bottom: 72px;
+  z-index: 1;
+  right: 5px;
+  display: none;
+  cursor: pointer;
+}
+
+.visible {
+  display: block;
+}

@@ -1,0 +1,122 @@
+section#modulo2 {
+
+	background: #111111;
+
+	@media (max-width: 767px) {
+		overflow: hidden;
+		overflow-x: scroll;
+
+		&::-webkit-scrollbar {
+		  display: none;
+		}
+    }
+
+    @media (min-width: 768px) and (max-width: 1100px) {
+		overflow: hidden;
+		overflow-x: scroll;
+
+		&::-webkit-scrollbar {
+		  display: none;
+		}
+	}
+
+    .grupo {
+    	display: flex;
+    	max-width: 1200px;
+    	margin: auto;
+    	padding: 62px 0px;
+
+    	@media (min-width: 767px) {
+			flex-wrap: wrap;
+	    }
+
+	    @media (max-width: 767px) {
+			padding: 20px;
+			width: max-content;
+			max-width: none;
+	    }
+
+	    @media (min-width: 768px) and (max-width: 1100px) {
+			padding: 20px;
+			width: max-content;
+			max-width: none;
+		}
+
+    	.quadro {
+    		background: radial-gradient(106.97% 465.57% at 50% 36.07%, #0B0B0B 0%, rgba(11, 11, 11, 0.2) 100%);
+			border: 1px solid #4A3F43;
+			box-sizing: border-box;
+			box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.23), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.165337), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.137105), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.115), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0928953), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0646635);
+			border-radius: 16px;
+			margin: 0px 15px;
+			padding: 40px 25px;
+			width: 370px;
+			overflow: hidden;
+			transform: translate(0%, 0%);
+
+			&.info, &.mec, &.faculdade {
+				margin-top: 30px;
+			}
+
+			@media (min-width: 767px) {
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: -420px;
+					width: 100%;
+					height: 100%;
+					background: rgba(237, 20, 91, 0.3);
+					transform: skewX(-30deg);
+					transition: 0.8s;
+				}
+
+				&:hover:before {
+					left: 420px;
+	  				background: rgba(237, 20, 91, 0.2);
+				}
+		    }
+
+			@media (max-width: 767px) {
+				margin: 0 !important;
+				margin-right: 10px !important;
+				width: 220px;
+				height: 209px;
+		    }
+
+		    @media (min-width: 768px) and (max-width: 1100px) {
+				margin: 0 !important;
+				margin-right: 10px !important;
+				width: 220px;
+				height: 209px;
+			}
+
+			.icon {
+				display: block;
+				margin-left: -9px;
+			}
+
+			.tx1 {
+				margin-top: 16px;
+				font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 17px;
+				text-transform: uppercase;
+				color: #D1D1D1;
+			}
+
+			.tx2 {
+				font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 22px;
+				color: #FFFFFF;
+				margin-top: 10px;
+			}
+    	}
+    }
+
+}

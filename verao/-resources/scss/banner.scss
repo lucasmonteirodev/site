@@ -1,0 +1,549 @@
+section#banner-header {
+    height: 700px;
+    width: 100%;
+    background: rgba(246, 169, 54, 1);
+    background: -moz-linear-gradient(top, rgba(246, 169, 54, 1) 0%, rgba(239, 136, 45, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(246, 169, 54, 1) 0%, rgba(239, 136, 45, 1) 100%);
+    background: -o-linear-gradient(top, rgba(246, 169, 54, 1) 0%, rgba(239, 136, 45, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(246, 169, 54, 1) 0%, rgba(239, 136, 45, 1) 100%);
+    background: linear-gradient(to bottom, rgba(246, 169, 54, 1) 0%, rgba(239, 136, 45, 1) 100%);
+    overflow: hidden;
+    position: relative;
+
+    @media (max-width: 767px) {
+        height: auto;
+    }
+
+    .menu-suspenso {
+        height: 100px;
+        max-width: 1200px;
+        margin: auto;
+        position: relative;
+        display: none;
+
+        @media (max-width: 767px) {
+            order: 2;
+            background: #fff;
+            width: 100%;
+            height: 68px;
+            position: fixed;
+            bottom: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .opcoes {
+            display: flex;
+            margin-left: auto;
+            position: absolute;
+            right: 0;
+            z-index: 1;
+
+            @media (max-width: 767px) {
+                position: initial;
+                margin-right: auto;
+            }
+
+            a {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                color: #000000;
+                text-decoration: none;
+                font-family: 'Lato', sans-serif;
+            }
+
+            .home,
+            .vinhos,
+            .drinks {
+                margin-right: 42px;
+            }
+
+            .home {
+                width: 52px;
+                text-align: center;
+            }
+
+            .vinhos {
+                width: 59px;
+                text-align: center;
+            }
+
+            .drinks {
+                width: 57px;
+                text-align: center;
+
+                @media (max-width: 767px) {
+                    margin-right: 0;
+                }
+            }
+
+            .home:hover,
+            .vinhos:hover,
+            .drinks:hover {
+                a {
+                    font-weight: bold;
+                }
+            }
+
+            .ativo {
+                a {
+                    color: #C81A78;
+                    font-weight: bold;
+                    text-decoration: none;
+                    border-bottom: solid 2px #C81A78;
+                }
+            }
+        }
+    }
+
+    .conteudo {
+        display: flex;
+
+        @media (max-width: 767px) {
+            display: block;
+        }
+
+        .nuvem01 {
+            margin-top: 60px;
+            margin-left: auto;
+
+            @media (max-width: 767px) {
+                display: flex;
+                margin-top: 0;
+            }
+
+            @media (min-width: 992px) and (max-width: 1447px) {
+                display: none;
+            }
+
+            .divnuvem {
+                @media (max-width: 767px) {
+                    margin-left: auto;
+                }
+            }
+
+            .nuvens01 {
+                width: 100%;
+                animation: animationFrames linear 4s;
+                animation-iteration-count: infinite;
+                transform-origin: 50% 50%;
+                -webkit-animation: animationFrames linear 4s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-transform-origin: 50% 50%;
+                -moz-animation: animationFrames linear 4s;
+                -moz-animation-iteration-count: infinite;
+                -moz-transform-origin: 50% 50%;
+                -o-animation: animationFrames linear 4s;
+                -o-animation-iteration-count: infinite;
+                -o-transform-origin: 50% 50%;
+                -ms-animation: animationFrames linear 4s;
+                -ms-animation-iteration-count: infinite;
+                -ms-transform-origin: 50% 50%;
+
+                @media (max-width: 767px) {
+                    width: 141px;
+                }
+            }
+
+            .divsol {
+                margin-top: -70px;
+                margin-right: auto;
+
+                .sol {
+                    &.mobile {
+                        width: 165px;
+                        -webkit-animation: rotating 100s linear infinite;
+                        -moz-animation: rotating 100s linear infinite;
+                        -ms-animation: rotating 100s linear infinite;
+                        -o-animation: rotating 100s linear infinite;
+                        animation: rotating 100s linear infinite;
+                    }
+                }
+            }
+
+
+        }
+
+        .texto {
+            margin-top: 78px;
+            position: relative;
+            margin-left: 30px;
+            min-width: 490px;
+
+            @media (max-width: 767px) {
+                margin-top: 0;
+                margin-left: 0;
+                min-width: auto;
+            }
+
+            @media (min-width: 768px) and (max-width: 1100px) {
+                min-width: auto;
+            }
+
+            .divLogo {
+
+                position: relative;
+                max-width: 472px;
+                margin-bottom: 35px;
+
+                @media (max-width: 767px) {
+                    max-width: 244px;
+                    margin: auto;
+                    margin-bottom: 25px;
+                }
+
+                .laranja {
+                    position: absolute;
+                    top: 87px;
+                    left: -50px;
+
+                    @media (max-width: 767px) {
+                        top: 51px;
+                        left: -45px;
+                        width: 100px;
+                    }
+                }
+
+                .taca {
+                    position: absolute;
+                    right: 0;
+                    bottom: -22px;
+
+                    @media (max-width: 767px) {
+                        right: -54px;
+                        bottom: -22px;
+                        width: 75px;
+                    }
+
+                    @media (min-width: 768px) and (max-width: 1100px) {
+                        right: -66px;
+                    }
+                }
+
+                h1 {
+                    .verao {
+                        font-family: neo-sans, sans-serif;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 88.8326px;
+                        color: #FFDE9E;
+
+                        @media (max-width: 767px) {
+                            font-size: 52.2976px;
+                        }
+
+                        small {
+                            font-size: 45.8814px;
+                            margin-left: -10px;
+
+                            @media (max-width: 767px) {
+                                font-size: 30.2976px;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+
+                    .vinhos {
+                        font-family: neo-sans, sans-serif;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 88.8326px;
+                        color: #FFFFFF;
+                        line-height: 70px;
+                        padding-left: 73px;
+
+                        @media (max-width: 767px) {
+                            font-size: 52.2976px;
+                            line-height: 44px;
+                            padding-left: 48px;
+                        }
+                    }
+
+                    .drinks {
+                        font-family: neo-sans, sans-serif;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 88.8326px;
+                        color: #B6FFA2;
+                        padding-left: 23px;
+                        line-height: 87px;
+
+                        @media (max-width: 767px) {
+                            font-size: 52.2976px;
+                            padding-left: 21px;
+                            line-height: 50px;
+                        }
+
+                        small {
+                            font-size: 35.4713px;
+
+                            @media (max-width: 767px) {
+                                font-size: 20.8827px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            p {
+                font-family: 'Lato', sans-serif;
+                max-width: 514px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 24px;
+                color: #FFFFFF;
+
+                @media (max-width: 767px) {
+                    width: 80%;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin: auto;
+                }
+            }
+
+            .divCta {
+                margin-top: 25px;
+            }
+
+            .seta {
+                text-align: center;
+                margin-top: 25px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                z-index: 1;
+
+                img {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .pessoas {
+            margin-top: 25px;
+
+            @media (max-width: 767px) {
+                margin-top: 10px;
+                text-align: center;
+                margin-bottom: 100px;
+            }
+
+            .fotopessoas {
+                @media (max-width: 767px) {
+                    width: 100%;
+                    margin-left: 7px;
+                }
+
+                @media (min-width: 768px) and (max-width: 1100px) {
+                    width: 400px;
+                    margin-top: 78px;
+                }
+            }
+        }
+
+        .solenuvem {
+            margin-top: -80px;
+            margin-right: auto;
+            max-width: 250px;
+
+            .sol {
+                -webkit-animation: rotating 100s linear infinite;
+                -moz-animation: rotating 100s linear infinite;
+                -ms-animation: rotating 100s linear infinite;
+                -o-animation: rotating 100s linear infinite;
+                animation: rotating 100s linear infinite;
+            }
+
+            .nuvem02 {
+                animation: animationFrames linear 4s;
+                animation-iteration-count: infinite;
+                transform-origin: 50% 50%;
+                -webkit-animation: animationFrames linear 4s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-transform-origin: 50% 50%;
+                -moz-animation: animationFrames linear 4s;
+                -moz-animation-iteration-count: infinite;
+                -moz-transform-origin: 50% 50%;
+                -o-animation: animationFrames linear 4s;
+                -o-animation-iteration-count: infinite;
+                -o-transform-origin: 50% 50%;
+                -ms-animation: animationFrames linear 4s;
+                -ms-animation-iteration-count: infinite;
+                -ms-transform-origin: 50% 50%;
+            }
+        }
+
+    }
+
+
+    /* ONDAS */
+
+    .ocean {
+        height: 5%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #015871;
+
+        @media (max-width: 767px) {
+            height: 0px;
+        }
+    }
+
+    .wave {
+        background: url(../../img/wave.svg) repeat-x;
+        position: absolute;
+        top: -198px;
+        width: 6400px;
+        height: 198px;
+        animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .wave:nth-of-type(2) {
+        top: -175px;
+        animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+        opacity: 1;
+    }
+
+    @keyframes wave {
+        0% {
+            margin-left: 0;
+        }
+
+        100% {
+            margin-left: -1600px;
+        }
+    }
+
+    @keyframes swell {
+
+        0%,
+        100% {
+            transform: translate3d(0, -25px, 0);
+        }
+
+        50% {
+            transform: translate3d(0, 5px, 0);
+        }
+    }
+}
+
+
+
+
+@keyframes animationFrames {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(0px, 15px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@-moz-keyframes animationFrames {
+    0% {
+        -moz-transform: translate(0px, 0px);
+    }
+
+    50% {
+        -moz-transform: translate(0px, 15px);
+    }
+
+    100% {
+        -moz-transform: translate(0px, 0px);
+    }
+}
+
+@-webkit-keyframes animationFrames {
+    0% {
+        -webkit-transform: translate(0px, 0px);
+    }
+
+    50% {
+        -webkit-transform: translate(0px, 15px);
+    }
+
+    100% {
+        -webkit-transform: translate(0px, 0px);
+    }
+}
+
+@-o-keyframes animationFrames {
+    0% {
+        -o-transform: translate(0px, 0px);
+    }
+
+    50% {
+        -o-transform: translate(0px, 15px);
+    }
+
+    100% {
+        -o-transform: translate(0px, 0px);
+    }
+}
+
+@-ms-keyframes animationFrames {
+    0% {
+        -ms-transform: translate(0px, 0px);
+    }
+
+    50% {
+        -ms-transform: translate(0px, 15px);
+    }
+
+    100% {
+        -ms-transform: translate(0px, 0px);
+    }
+}
+
+
+
+
+@-webkit-keyframes rotating
+
+/* Safari and Chrome */
+    {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,65 @@
+section#modulo4 {
+
+	background: #070707;
+	padding-bottom: 50px;
+
+	.grupo {
+
+		max-width: 1172px;
+		margin: auto;
+
+		@media (max-width: 767px) {
+			max-width: 100%;
+			padding: 0px 16px;
+			box-sizing: border-box;
+		}
+
+		.tx1 {
+			font-family: 'Montserrat', sans-serif;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 24px;
+			line-height: 32px;
+			color: #FFFFFF;
+		}
+
+		.tx2 {
+			font-family: 'Roboto', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			color: #9E9FA1;
+			margin-top: 24px;
+
+			@media (max-width: 767px) {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+
+		.img-destaque {
+			display: block;
+			margin: auto;
+			width: 100%;
+			margin-top: 48px;
+
+			@media (max-width: 767px) {
+				display: none;
+			}
+		}
+
+		.img-destaque-mob {
+			display: none;
+
+			@media (max-width: 767px) {
+				display: block;
+				margin: auto;
+				margin-top: 48px;
+				width: 100%;
+				max-width: 343px;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,1 @@
+"use strict";$("#menu-mobile .click-search").click(function(){$("#menu-mobile .box-search").toggleClass("visible"),$("#toggle").prop("checked",!0)}),$(".click-cart").on("click",function(){$(".shopping-cart").fadeToggle("fast")});

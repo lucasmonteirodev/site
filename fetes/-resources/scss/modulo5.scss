@@ -1,0 +1,112 @@
+section#modulo5 {
+
+	background: #1A1A1A;
+	padding-bottom: 100px;
+
+	.grupo {
+
+		@media (min-width: 768px) and (max-width: 1100px) {
+			padding-top: 40px;
+		}
+
+		.icone-1 {
+			display: block;
+			margin: auto;
+		}
+
+		.tx1 {
+			font-family: 'Montserrat', sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 55px;
+			line-height: 71px;
+			letter-spacing: 0.5em;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			text-align: center;
+			margin-top: 30px;
+
+			@media (max-width: 767px) {
+		        font-size: 36px;
+				line-height: 47px;
+		    }
+
+		    @media (min-width: 768px) and (max-width: 1100px) {
+				font-size: 40px;
+				line-height: 47px;
+			}
+		}
+
+		.box-destaque {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 55px;
+
+			@media (max-width: 767px) {
+		        display: block;
+		        margin-top: 0;
+		    }
+
+			.boxes {
+				width: 182px;
+				margin: 0px 55px;
+
+				@media (max-width: 767px) {
+			        margin: 50px auto;
+			    }
+
+			    @media (min-width: 768px) and (max-width: 1100px) {
+					margin: 0px 30px;
+					text-align: center;
+				}
+
+				.texto-destaque {
+					font-family: 'Montserrat', sans-serif;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 96px;
+					line-height: 106px;
+					color: #ED145B;
+
+					@media (min-width: 768px) and (max-width: 1100px) {
+						font-size: 70px;
+					}
+				}
+
+				.descript {
+					text-decoration: none;
+					font-family: 'Saira', sans-serif;
+					font-style: normal;
+					font-weight: 300;
+					font-size: 18px;
+					line-height: 25px;
+					color: #FFFFFF;
+					display: flex;
+					align-items: center;
+					margin-top: 5px;
+
+					img {
+						display: block;
+						margin-left: 23px;
+					}
+
+					@media (min-width: 768px) and (max-width: 1100px) {
+						font-size: 16px;
+						height: 50px; 
+
+						span {
+							margin-left: auto;
+							display: block;
+						}
+
+						img {
+							margin-right: auto;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}

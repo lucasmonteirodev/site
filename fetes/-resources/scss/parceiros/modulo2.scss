@@ -1,0 +1,144 @@
+section#modulo2 {
+
+	padding: 50px 0px;
+
+	.grupo {
+
+		max-width: 1170px;
+		margin: auto;
+
+		@media (max-width: 767px) {
+			max-width: 100%;
+			padding: 0px 16px;
+			box-sizing: border-box;
+		}
+
+		.tx1 {
+			font-family: 'Montserrat', sans-serif;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 36px;
+			line-height: 48px;
+			color: #FFFFFF;
+		}
+
+		.tx2 {
+			font-family: 'Roboto', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			color: #9E9FA1;
+			line-height: 24px;
+			margin-top: 24px;
+
+			@media (max-width: 767px) {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+
+		.slideParceiros {
+
+			margin-top: 18px;
+
+			@media (max-width: 767px) {
+					
+				overflow-x: scroll;
+
+				&::-webkit-scrollbar {
+					width: 0px;
+					height: 0;
+					background: none;
+				}
+				
+				/* Track */
+				&::-webkit-scrollbar-track {
+					border-radius: 0px;
+					width: 0px;
+					height: 0;
+				}
+				 
+				/* Handle */
+				&::-webkit-scrollbar-thumb {
+					background: none;
+					border-radius: 0;
+					width: 0px;
+					height: 0;
+				}
+			}
+
+			.scrollX {
+
+				display: flex;
+				flex-wrap: wrap;
+
+				@media (max-width: 767px) {
+
+					flex-wrap: initial;
+					width: max-content;
+					
+				}
+
+				.parceiro {
+					width: 370px;
+					height: 244px;
+					background: #0C0E14;
+					border-radius: 8px;
+					padding: 24px;
+					box-sizing: border-box;
+					margin: 30px 15px 0px 15px;
+	
+					&:nth-child(3n + 1) {
+						margin-left: 0;
+					}
+	
+					&:nth-child(3n + 3) {
+						margin-right: 0;
+					}
+
+					@media (max-width: 767px) {
+
+						width: 285px;
+						height: 285px;
+						
+					}
+	
+					.nomeParceiro {
+						font-family: 'Roboto', sans-serif;
+						font-style: normal;
+						font-weight: 600;
+						font-size: 16px;
+						line-height: 24px;
+						color: #FFFFFF;	
+					}
+	
+					.linha {
+						width: 100%;
+						height: 1px;
+						background: #9E9FA1;
+						margin: 14px 0px;
+					}
+	
+					.sobreParceiro {
+						font-family: 'Roboto', sans-serif;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 14px;
+						color: #9E9FA1;
+						line-height: 20px;
+					}
+	
+					.tempoFranquia {
+						font-family: 'Roboto', sans-serif;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 12px;
+						color: #9E9FA1;
+						line-height: 20px;
+					}
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,278 @@
+section#modulo1 {
+	background: #FEF9D9;
+	padding: 30px 0px;
+
+	.conteudo {
+		width: 1171px;
+		margin: 0 auto;
+
+		.texto {
+			width: 450px;
+			margin: 0 auto;
+			text-align: center;
+
+			h2 {
+				font-family: 'Neo-sans', sans-serif;
+				text-align: center;
+				font-size: 28px;
+				margin-bottom: 20px;
+				line-height: 1.3;
+				font-weight: bold;
+				color: #B6116E;
+			}
+
+			p {
+				font-family: 'Lato', sans-serif;
+				font-size: 18px;
+				line-height: 1.4;
+				color: #000;
+				font-weight: 300;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		.conteudo {
+			width: 100%;
+
+			.texto {
+				width: 100%;
+				padding: 0px 20px;
+				box-sizing: border-box;
+
+				h2 {
+					font-size: 21px;
+				}
+
+				p {
+					font-size: 18px;
+					width: 80%;
+					margin: auto;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1024px) {
+		.conteudo {
+			width: 800px;
+			overflow: hidden;
+
+			.texto {
+				width: 650px;
+			}
+		}
+	}
+}
+
+/*Estilizando lista de produto*/
+
+#SliderProducts {
+	margin-top: 30px;
+
+	@media (min-width: 768px) and (max-width: 1024px) {
+		overflow-x: scroll;
+	}
+
+	@media (max-width: 767px) {
+		overflow-x: scroll;
+		padding: 0px 20px;
+	}
+
+}
+
+.listProducts {
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	@media (min-width: 768px) and (max-width: 1024px) {
+		width: 1171px;
+	}
+
+	@media (max-width: 767px) {
+		width: 1171px;
+	}
+
+	li {
+		width: 222px;
+	}
+
+	li .btnAddProduct {
+		text-align: center;
+		width: 100%;
+		box-sizing: border-box;
+		height: 40px;
+		margin-top: 1.25em;
+		background: #7EBC43;
+		font-family: 'lato', sans-serif;
+		font-weight: 700;
+		color: #ffffff;
+		border-radius: 0.25em;
+		transition: .5s;
+		cursor: pointer;
+		border: none;
+	}
+
+	li .btnAddProduct:hover {
+		background: #699d38;
+	}
+}
+
+/*Estilizando card de produto*/
+
+.cardItem {
+	position: relative;
+	border-radius: .25em;
+	background-color: #ffffff;
+	box-shadow: 0 .1em .15em 0 hsla(0, 0%, 0%, 0.2);
+	padding: 0.75em 0.75em;
+	width: 100%;
+	box-sizing: border-box;
+
+	/*Botão de favoritar*/
+	.btnFavorite {
+		position: absolute;
+		top: -20px;
+    	right: 3px;
+		cursor: pointer;
+		border: none;
+		background: none;
+		width: 24px;
+		height: 24px;
+	}
+
+	.btnFavorite .imgFavorite {
+		width: 1.5em;
+		display: block;
+	}
+
+	/*Divisão de Flags*/
+
+	.infoProduct {
+		position: absolute;
+		bottom: .75em;
+		left: 0;
+
+	}
+
+	.flag {
+		width: 1.15em;
+	}
+
+	.infoFlag {
+		background-color: #EE3E80;
+		width: 1.15em;
+		height: 1.15em;
+		border-radius: 100%;
+		margin-bottom: .5em;
+	}
+
+	/*Divisão da imagem de produto*/
+	div.img {
+		position: relative;
+	}
+
+	div.img .figureImgProduct {
+		display: flex;
+		justify-content: center;
+	}
+
+	div.img .imgProduct {
+		width: 110px;
+	}
+
+	/*Divisão de descrição do produto*/
+
+	.description {
+		margin-top: 1em;
+
+		h3 {
+			font-family: 'lato', sans-serif;
+			font-weight: 700;
+			font-size: 1em;
+			line-height: 1.15em;
+			text-align: center;
+			margin-bottom: 1.5em;
+			height: 54px;
+		}
+
+		.prices {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 1.25em;
+		}
+
+		.prices div:not(:first-child) {
+			margin-left: 1em;
+		}
+
+		/* Preço com desconto */
+		.prices .priceDiscount {
+			font-family: 'lato', sans-serif;
+			font-weight: 600;
+			font-size: .85em;
+			color: #555555;
+			text-decoration: line-through;
+		}
+
+		.prices .Discount {
+			font-family: 'lato', sans-serif;
+			font-size: .75em;
+			font-weight: 400;
+			background-color: #EE3E80;
+			padding: .15em .5em;
+			border-radius: .15em;
+			color: #ffffff;
+		}
+
+		.priceMember {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.priceMember div:first-child {
+			font-family: 'lato', sans-serif;
+			font-weight: 300;
+			color: #555555;
+			font-size: .75em;
+			line-height: 1em;
+			width: 20%;
+			text-align: end;
+			margin-right: .5em;
+		}
+
+		.priceMember div:nth-child(2) {
+			font-family: 'neo-sans', sans-serif;
+			color: #EE3E80;
+			font-weight: 700;
+			display: flex;
+			align-items: center;
+
+			span.coin {
+				font-size: 1em;
+				align-self: flex-end;
+			}
+
+			div {
+				display: flex;
+				padding-left: 0.15em;
+			}
+
+			div span:first-child {
+				font-size: 1.25em;
+			}
+
+		}
+
+		p {
+			font-family: 'lato', sans-serif;
+			font-size: 0.75em;
+			color: #888888;
+			text-align: center;
+			margin: 1em 0;
+		}
+	}
+}

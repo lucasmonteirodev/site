@@ -1,0 +1,381 @@
+:root {
+	--background: #1A1A1A;
+	--primary: #1A1A1A;
+	--secondary: #1A1A1A;
+	--third: #1A1A1A;
+}
+
+section#modulo3 {
+	
+	background: #1A1A1A;
+	padding-bottom: 150px;
+	padding-top: 50px;
+
+	@media (max-width: 767px) {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1100px) {
+		padding-bottom: 70px;
+	}
+
+	.grupo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@media (max-width: 767px) {
+	        display: block;
+	    }
+
+	    @media (min-width: 768px) and (max-width: 1100px) {
+			display: block;
+		}
+
+		.div-left {
+			margin-right: 120px;
+
+			@media (max-width: 767px) {
+		        margin: auto;
+		    }
+
+		    @media (min-width: 768px) and (max-width: 1100px) {
+				margin: auto;
+				padding-top: 40px;
+			}
+
+			.diferenciais {
+				display: block;
+				margin: auto;
+
+				@media (max-width: 767px) {
+			        width: 80%;
+			    }
+			}
+
+			.div-flex {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+				width: 450px;
+				margin: auto;
+				margin-top: 30px;
+
+				@media (max-width: 767px) {
+			        width: 100%;
+			    }
+
+				.line {
+					width: 210px;
+					display: flex;
+					align-items: center;
+					margin-top: 40px;
+
+					@media (max-width: 767px) {
+				        margin-top: 30px;
+				    }
+
+					&:nth-child(1), &:nth-child(3), &:nth-child(5) {
+						margin-right: 30px;
+
+						@media (max-width: 767px) {
+					        margin: auto;
+					        margin-top: 30px;
+					    }
+					}
+
+					img {
+						display: block;
+						margin-right: 10px;
+					}
+
+					span {
+						font-family: 'Montserrat', sans-serif;
+						font-style: normal;
+						font-weight: 500;
+						font-size: 16px;
+						line-height: 20px;
+						color: #DBD9D9;
+					}
+				}
+			}
+		}
+
+		.div-right {
+			position: relative;
+			overflow: hidden;
+			margin-left: -110px;
+
+			@media (max-width: 767px) {
+		        margin: auto;
+		    }
+
+		    @media (min-width: 768px) and (max-width: 1100px) {
+				display: none;
+			}
+
+			.f-fetes {
+				position: absolute;
+				z-index: 3;
+				left: 330px;
+    			top: 323px;
+
+    			@media (max-width: 767px) {
+			        left: 0;
+			        right: 0;
+			        margin: auto;
+			        width: 125px;
+			        top: 100px;
+			    }
+			}
+
+			.petals {
+				display: block;
+				width: 100%;
+				@media (max-width: 767px) {
+			        display: none;
+			    }
+			}
+
+			.petals-mob {
+				display: none;
+				@media (max-width: 767px) {
+			        display: block;
+			        margin: auto;
+			    }
+			}
+
+		}
+	}
+
+	.traco {
+		width: 290.53px;
+		height: 1.5px;
+		background: linear-gradient(270deg, #E20049 2.4%, rgba(226, 0, 73, 0) 100%);
+		margin-top: 22px;
+		margin: auto;
+		border-radius: 5px;
+
+		@media (max-width: 767px) {
+	        width: 60%;
+	    }
+
+	    @media (min-width: 768px) and (max-width: 1100px) {
+			margin-top: 32px;
+		}
+	}
+
+	.grupo-02 {
+
+		@media (max-width: 767px) {
+	        padding: 0px 16px;
+	    }
+
+		.tx1 {
+			font-family: 'Montserrat', sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 37px;
+			text-align: center;
+			color: #A0A0A0;
+			max-width: 870px;
+			margin: auto;
+			margin-top: 32px;
+
+			@media (max-width: 767px) {
+		        font-size: 24px;
+				line-height: 29px;
+				text-align: left;
+		    }
+
+		    @media (min-width: 768px) and (max-width: 1100px) {
+				font-size: 20px;
+				max-width: 570px;
+			}
+
+			span {
+				font-weight: bold;
+				color: #ED145B;
+			}
+		}
+
+		.box-destaque {
+			width: 1030px;
+			height: 264px;
+			background: radial-gradient(106.97% 465.57% at 50% 36.07%, #0B0B0B 0%, rgba(11, 11, 11, 0.2) 100%);
+			border: 1px solid #4A3F43;
+			box-sizing: border-box;
+			box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.23), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.165337), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.137105), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.115), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0928953), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0646635);
+			border-radius: 16px;
+			margin: auto;
+			margin-top: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			@media (max-width: 767px) {
+		        width: 100%;
+		        display: block;
+		        height: auto;
+		        background: none;
+		        border: none;
+		        box-shadow: none;
+		    }
+
+		    @media (min-width: 768px) and (max-width: 1100px) {
+				width: auto;
+				margin: 0px auto;
+				margin-top: 50px;
+				max-width: 850px;
+			}
+
+			.box-01 {
+
+				@media (max-width: 767px) {
+			        background: radial-gradient(106.97% 465.57% at 50% 36.07%, #0B0B0B 0%, rgba(11, 11, 11, 0.2) 100%);
+			        border: 1px solid #4A3F43;
+			        box-sizing: border-box;
+			        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.23), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.165337), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.137105), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.115), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0928953), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0646635);
+					border-radius: 16px;
+					text-align: center;
+					padding: 10px 0px;
+			    }
+
+				.number {
+					width: 178px;
+
+					@media (max-width: 767px) {
+				        margin: auto;
+				        text-align: center;
+				        width: 250px;
+				    }
+				}
+			}
+			.box-02 {
+
+				@media (max-width: 767px) {
+			        background: radial-gradient(106.97% 465.57% at 50% 36.07%, #0B0B0B 0%, rgba(11, 11, 11, 0.2) 100%);
+			        border: 1px solid #4A3F43;
+			        box-sizing: border-box;
+			        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.23), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.165337), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.137105), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.115), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0928953), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0646635);
+					border-radius: 16px;
+					text-align: center;
+					padding: 10px 0px;
+					margin-top: 20px;
+			    }
+
+				.number {
+					width: 255px;
+
+					@media (max-width: 767px) {
+				        margin: auto;
+				        text-align: center;
+				        width: 250px;
+				    }
+				}
+			}
+			.box-03 {
+
+				@media (max-width: 767px) {
+			        background: radial-gradient(106.97% 465.57% at 50% 36.07%, #0B0B0B 0%, rgba(11, 11, 11, 0.2) 100%);
+			        border: 1px solid #4A3F43;
+			        box-sizing: border-box;
+			        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.23), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.165337), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.137105), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.115), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0928953), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0646635);
+					border-radius: 16px;
+					text-align: center;
+					padding: 10px 0px;
+					margin-top: 20px;
+			    }
+
+				.number {
+					width: 312px;
+
+					@media (max-width: 767px) {
+				        margin: auto;
+				        text-align: center;
+				        width: 250px;
+				    }
+				}
+			}
+
+			.box-01, .box-02, .box-03 {
+
+				@media (min-width: 768px) and (max-width: 1100px) {
+					text-align: center;
+				}
+
+				.number {
+					font-family: 'Montserrat', sans-serif;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 96px;
+					line-height: 106px;
+					color: #ED145B;
+
+					@media (max-width: 767px) {
+				        font-size: 75px;
+				    }
+
+				    @media (min-width: 768px) and (max-width: 1100px) {
+						font-size: 75px;
+					}
+
+					@media (min-width: 768px) and (max-width: 1100px) {
+						width: 250px;
+					}
+				}
+
+				.descript {
+					font-family: 'Saira', sans-serif;
+					font-style: normal;
+					font-weight: 300;
+					font-size: 18px;
+					line-height: 25px;
+					color: #FFFFFF;
+					margin-top: 10px;
+
+					@media (max-width: 767px) {
+				        margin-top: 0px;
+				    }
+
+				    @media (min-width: 768px) and (max-width: 1100px) {
+						margin-top: 0;
+					}
+				}
+			}
+
+			.traco01 {
+				height: 177.8px;
+				width: 1.5px;
+				background: linear-gradient(0deg, #E20049 2.4%, rgba(226, 0, 73, 0) 100%);
+				margin: 0px 45px;
+
+				@media (max-width: 767px) {
+			        display: none;
+			    }
+
+			    @media (min-width: 768px) and (max-width: 1100px) {
+					display: none;
+				}
+			}
+
+			.traco02 {
+				height: 177.8px;
+				width: 1.5px;
+				background: linear-gradient(0deg, #E20049 2.4%, rgba(226, 0, 73, 0) 100%);
+				margin: 0px 45px;
+
+				@media (max-width: 767px) {
+			        display: none;
+			    }
+
+			    @media (min-width: 768px) and (max-width: 1100px) {
+					display: none;
+				}
+			}
+		}	
+	}
+}

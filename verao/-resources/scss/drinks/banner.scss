@@ -1,0 +1,254 @@
+section#banner-header {
+	height: 400px;
+	background: #FEF9D9;
+
+	@media (max-width: 767px) {
+    	height: auto;
+    	display: flex;
+    	flex-direction: column;
+    	background: url("../../img/drinks/bg-mobile.png");
+    	background-size: cover;
+    	background-repeat: no-repeat;
+	}
+
+	.menu-suspenso {
+		height: 100px;
+		display: flex;
+		align-items: center;
+		max-width: 1200px;
+    	margin: auto;
+    	position: relative;
+
+    	@media (max-width: 767px) {
+	    	order: 2;
+	    	background: #fff;
+	    	width: 100%;
+	    	height: 68px;
+	    	position: fixed;
+		    bottom: 0;
+		    z-index: 1;
+		}
+
+		.opcoes {
+			display: flex;
+			margin-left: auto;
+			position: absolute;
+			right: 0;
+			z-index: 1;
+
+			@media (max-width: 767px) {
+		    	position: initial;
+		    	margin-right: auto;
+			}
+
+			a {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 22px;
+				text-align: center;
+				color: #000000;
+				text-decoration: none;
+				font-family: 'Lato', sans-serif;
+			}
+
+			.home, .vinhos, .drinks {
+				margin-right: 42px;
+			}
+
+			.home {
+				width: 52px;
+    			text-align: center;
+			}
+			.vinhos {
+				width: 59px;
+				text-align: center;
+			}
+			.drinks {
+				width: 57px;
+    			text-align: center;
+    			@media (max-width: 767px) {
+			    	margin-right: 0;
+				}
+			}
+
+			.home:hover, .vinhos:hover, .drinks:hover {
+				a {
+					font-weight: bold;
+				}
+			}
+
+			.ativo {
+				a {
+					color: #C81A78; 
+					font-weight: bold;
+					text-decoration: none;
+					border-bottom: solid 2px #C81A78;
+				}
+			}
+		}
+	}
+
+	.banner {
+		height: 300px;
+		display: flex;
+		background-image: url("../../img/drinks/color01.png"), url("../../img/drinks/color02.png"), url("../../img/drinks/bg.png");
+		background-repeat: no-repeat;
+		background-position: left top, right bottom, center center;
+		position: relative;	
+		background-size: auto, auto, cover;
+
+		@media (max-width: 767px) {
+	    	height: auto;
+	    	display: block;
+	    	order: 1;
+	    	background-image: url("../../img/drinks/bg-mobile.png");
+	    	background-size: cover;
+	    	background-position: center top;
+		}
+
+		.boxer {
+			width: 100%;
+			/*max-width: 1300px;*/
+    		margin: 0px auto;
+    		position: absolute;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    		display: flex;
+    		@media (max-width: 767px) {
+		    	position: initial;
+    			flex-direction: column;
+			}
+		}
+
+		.winebox {
+			margin-left: auto;
+			margin-right: 50px;
+			@media (max-width: 767px) {
+		    	order: 2;
+		    	margin-right: auto;
+		    	margin-top: 57px;
+			}
+
+			@media (min-width: 768px) and (max-width: 1100px) {
+				display: flex;
+    			align-items: flex-end;
+			}
+
+			.box {
+				&.desktop {
+					display: block;
+
+					@media (min-width: 768px) and (max-width: 1100px) {
+					  width: 400px;
+					}
+
+					@media (max-width: 767px) {
+						display: none;
+					}
+				}
+			}
+		}
+		.textos {
+			display: flex;
+			align-items: center;
+			padding-top: 100px;
+			position: relative;
+			margin-right: 50px;
+			padding-right: 35px;
+
+			@media (max-width: 767px) {
+		    	display: block;
+		    	order: 1;
+				padding: 0;
+		    	padding-top: 20px;
+		    	width: 100%;
+				margin: 0;
+			}
+
+			.frasedrink {
+				font-family: neo-sans, sans-serif;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 40px;
+				line-height: 46px;
+				color: #FFFBE0;
+				margin-bottom: 28px;
+				max-width: 417px;
+				@media (max-width: 767px) {
+			    	font-size: 40px;
+					line-height: 46px;
+					margin-left: 30px;
+					padding-top: 30px;
+				}
+
+				@media (min-width: 768px) and (max-width: 1100px) {
+					font-size: 29px;
+    				line-height: 32px;
+				}
+			}
+
+			.descriptdrink {
+				font-family: 'Lato', sans-serif;
+				font-size: 16px;
+				line-height: 23px;
+				display: flex;
+				align-items: center;
+				color: #FFFFFF;
+				max-width: 315px;
+				@media (max-width: 767px) {
+			    	display: none;
+				}
+			}
+
+			.divlaranja {
+				position: absolute;
+			    right: 0;
+			    bottom: 10px;
+
+			    @media (min-width: 768px) and (max-width: 1100px) {
+					    right: -40px;
+    					top: 74px;
+    					bottom: auto;
+				}
+
+			    img {
+			    	  animation: shake 14.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+					  transform: translate3d(0, 0, 0);
+			    }
+			}
+		}
+
+		.divdrink {
+			display: flex;
+    		align-items: flex-end;
+    		margin-right: auto;
+    		@media (max-width: 767px) {
+		    	display: none;
+			}
+			@media (min-width: 768px) and (max-width: 1100px) {
+				display: none;
+			}
+		}
+	}
+}
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

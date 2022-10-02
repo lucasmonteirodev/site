@@ -1,0 +1,130 @@
+section#rodape {
+
+	background: #2C2C2C;
+	padding-top: 58px;
+
+	.grupo {
+
+		max-width: 1170px;
+		margin: auto;
+
+		@media (max-width: 767px) {
+	        max-width: 100%;
+	        margin: 0px 16px;
+	    }
+
+	    @media (min-width: 768px) and (max-width: 1100px) {
+			max-width: 880px;
+		}
+
+		.div-flex {
+
+			display: flex;
+			justify-content: space-between;
+
+			@media (max-width: 767px) {
+		        display: block;
+		    }
+
+			.destaque {
+				font-family: "Roboto", sans-serif;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 19px;
+				color: #FFFFFF;
+				margin-bottom: 5px;
+			}
+
+			.lista {
+
+				margin-top: 20px;
+
+				a {
+					text-decoration: none;
+					font-family: "Roboto", sans-serif;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 24px;
+					letter-spacing: 0.03em;
+					color: #D1D1D1;
+					display: flex;
+					align-items: center;
+					transition: all .2s ease-in-out;
+				    -webkit-transition: all .2s ease-in-out;
+				    -o-transition: all .2s ease-in-out;
+
+					&:hover {
+						color: #ED145B;
+					}
+
+					img {
+						display: block;
+						margin-right: 10px;
+					}
+				}
+			}
+
+			.bloco-01 {
+				a {
+					text-decoration: none;
+					cursor: pointer;
+
+					img {
+						display: block;
+					}
+				}
+			}
+
+			.bloco-02 {
+				@media (max-width: 767px) {
+			        margin-top: 25px;
+			    }
+			}
+
+			.bloco-03 {
+				max-width: 300px;
+
+				@media (max-width: 767px) {
+			        margin-top: 40px;
+			    }
+			}
+
+			.bloco-04 {
+
+				@media (max-width: 767px) {
+			        margin-top: 40px;
+			    }
+				
+				ul {
+					.lista {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+					}
+				}
+			}
+		}
+
+		.traco {
+			width: 100%;
+			background: #7A7A7A;
+			height: 1px;
+			margin-top: 60px;
+		}
+
+		.direitos-reservados {
+			font-family: "Roboto", sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 22px;
+			padding: 24px 0px;
+			text-align: center;
+			color: #7A7A7A;
+		}
+
+	}
+
+}

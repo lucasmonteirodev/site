@@ -1,0 +1,370 @@
+section#modulo1 {
+
+    .grupo-01 {
+    	background-size: cover !important;
+		background-repeat: no-repeat !important;
+		background-position: center center !important;
+		padding: 54.5px;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+
+    	@media (max-width: 767px) {
+	        display: block;
+	        padding: 50px 16px 30px 16px;
+	    }
+
+	    @media (min-width: 768px) and (max-width: 1100px) {
+			padding: 30px;
+		}
+
+    	.div-left {
+
+    		max-width: 596px;
+    		margin-right: 93px;
+
+    		@media (max-width: 767px) {
+		        max-width: 100%;
+		        margin: auto;
+		    }
+
+		    @media (min-width: 768px) and (max-width: 1100px) {
+				margin-right: 5px;
+			}
+
+    		.tx1 {
+    			font-family: 'Roboto', sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 19px;
+				letter-spacing: 0.49em;
+				text-transform: uppercase;
+				color: #FFFFFF;
+
+				@media (max-width: 767px) {
+			        font-size: 14px;
+					line-height: 16px;
+			    }
+    		}
+
+    		.tx2 {
+    			font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 36px;
+				line-height: 44px;
+				text-transform: uppercase;
+				color: #ED145B;
+				margin-top: 12px;
+
+				@media (max-width: 767px) {
+			        font-size: 24px;
+					line-height: 29px;
+			    }
+    		}
+
+    		.tx3 {
+    			font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 20px;
+				letter-spacing: 0.05em;
+				color: #FFFFFF;
+				margin-top: 20px;
+
+				@media (max-width: 767px) {
+			        font-size: 14px;
+					line-height: 17px;
+			    }
+    		}
+
+    		.tag {
+
+    			display: flex;
+    			margin-top: 20px;
+
+    			span {
+    				font-family: 'Montserrat', sans-serif;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 9px;
+					line-height: 20px;
+					text-align: center;
+					letter-spacing: 0.21em;
+					text-transform: uppercase;
+					color: #FFFFFF;
+					display: block;
+					border: solid 2px #2B2B2B;
+					border-radius: 25px;
+					margin-left: 20px;
+					padding: 1px 15px;
+
+					&:nth-child(1) {
+						margin-left: 0;
+					}
+    			}
+    		}
+    	}
+
+    	.div-right {
+
+    		max-width: 482px;
+
+    		@media (max-width: 767px) {
+		        max-width: 100%;
+		        margin-top: 35px;
+		    }
+
+    		.box {
+    			background: radial-gradient(106.97% 465.57% at 50% 36.07%, #0B0B0B 0%, rgba(11, 11, 11, 0.2) 100%);
+				border: 1px solid #4A3F43;
+				box-sizing: border-box;
+				box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.23), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.165337), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.137105), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.115), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0928953), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0646635);
+				border-radius: 16px;
+				padding: 25px;
+
+				.tx1 {
+					font-family: 'Montserrat', sans-serif;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 17px;
+					color: #FFFFFF;
+					border-radius: 4px;
+					border: 1px solid #303030;
+					box-sizing: border-box;
+					text-align: center;
+					max-width: 111px;
+					padding: 3px 0px;
+				}
+
+				.tx2 {
+					font-family: 'Montserrat', sans-serif;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 18px;
+					line-height: 22px;
+					color: #ED145B;
+					margin-top: 10px;
+				}
+
+				.traco {
+					width: 100%;
+					background: #1E1E1E;
+					height: 1px;
+					margin: 20px auto;
+				}
+
+				.div-flex {
+					display: flex;
+					align-items: center;
+
+					.discount {
+						font-family: 'Montserrat', sans-serif;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 14px;
+						line-height: 13px;
+						color: #FFFFFF;
+						box-sizing: border-box;
+						padding: 10px;
+						background: #303030;
+						border-radius: 4px;
+					}
+
+					.old-price {
+						font-family: 'Montserrat', sans-serif;
+						font-style: normal;
+						font-weight: 500;
+						font-size: 14px;
+						line-height: 17px;
+						color: #AFAFAF;
+						margin-left: 10px;
+					}
+				}
+
+				.new-price {
+					font-family: 'Montserrat', sans-serif;
+					font-style: normal;
+					font-weight: bold;
+					color: #ED145B;
+					margin-top: 4px;
+
+					.rs {
+						font-size: 31px;
+					}
+
+					.preco {
+						font-size: 37px;
+					}
+
+					.mes {
+						font-size: 14px;
+					}
+				}
+
+				.defesa {
+					font-family: 'Montserrat', sans-serif;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 12px;
+					line-height: 20px;
+					color: #AFAFAF;
+				}
+
+				.click-inscrever {
+					display: block;
+				    margin-top: 28px;
+				    width: 100%;
+				    height: 48px;
+				    border-radius: 4px;
+				    background-color: #6DB95A;
+				    line-height: 48px;
+				    text-align: center;
+				    font-weight: bold;
+				    text-decoration: none;
+				    font-family: 'Montserrat', sans-serif;
+				    font-size: 16px;
+				    color: #fff;
+				    cursor: pointer;
+				    transition: all .2s ease-in-out;
+				    -webkit-transition: all .2s ease-in-out;
+				    -o-transition: all .2s ease-in-out;
+
+				    &:hover {
+				    	background-color: #5fa74e;
+				    }
+				}
+    		}
+    	}
+    }
+
+    .grupo-02 {
+    	background-color: #161616;
+
+    	@media (max-width: 767px) {
+	        padding: 25px;
+	        box-sizing: border-box;
+	        position: relative;
+	    }
+
+	    @media (min-width: 768px) and (max-width: 1100px) {
+			position: relative;
+			height: 100px;
+		}
+
+    	.div-flex {
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+
+    		@media (max-width: 767px) {
+		        display: block;
+		    }
+
+		    @media (min-width: 768px) and (max-width: 1100px) {
+				height: 100px;
+			}
+
+    		.tx1 {
+    			font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 14px;
+				line-height: 16px;
+				letter-spacing: 10px;
+				color: #ED145B;
+
+				@media (max-width: 767px) {
+			        letter-spacing: 6px;
+			        text-align: center;
+			        max-width: 320px;
+			        margin: auto;
+			    }
+
+			    @media (min-width: 768px) and (max-width: 1100px) {
+					width: 190px;
+					text-align: center;
+				}
+    		}
+
+    		.wave {
+    			display: block;
+    			margin-left: -275px;
+
+    			@media (max-width: 767px) {
+			        position: absolute;
+			        bottom: 0;
+			        left: -270px;
+			        margin: 0;
+			    }
+
+			    @media (min-width: 768px) and (max-width: 1100px) {
+					position: absolute;
+			        bottom: 0;
+			        left: -270px;
+			        margin: 0;
+				}
+    		}
+
+    		.tx2 {
+    			font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 14px;
+				line-height: 16px;
+				letter-spacing: 6px;
+				color: #FFFFFF;
+				margin-right: 43px;
+
+				@media (max-width: 767px) {
+			        margin: auto;
+			        text-align: center;
+			        margin-top: 14px;
+			        max-width: 320px;
+			    }
+
+			    @media (min-width: 768px) and (max-width: 1100px) {
+					margin: 0px 10px;
+					max-width: 280px;
+					text-align: center;
+				}
+    		}
+
+    		.click-matricula {
+    			display: block;
+    			box-sizing: border-box;
+    			border: 2px solid #ED145B;
+			    width: 139px;
+			    height: 32px;
+			    border-radius: 4px;
+			    line-height: 29px;
+			    text-align: center;
+			    font-weight: bold;
+			    text-decoration: none;
+			    font-family: 'Montserrat', sans-serif;
+			    font-size: 14px;
+			    color: #ED145B;
+			    cursor: pointer;
+			    transition: all .2s ease-in-out;
+			    -webkit-transition: all .2s ease-in-out;
+			    -o-transition: all .2s ease-in-out;
+
+			    &:hover {
+			    	background-color: #ED145B;
+			    	color: #fff;
+			    }
+
+			    @media (max-width: 767px) {
+			        width: 100%;
+			        max-width: 320px;
+			        margin: auto;
+			        margin-top: 14px;
+			    }
+    		}
+    	}
+    }
+
+}

@@ -1,0 +1,1 @@
+"use strict";jQuery(document).on("click",".seta1",function(o){o.preventDefault(),$("html, body").animate({scrollTop:$("#modulo1").offset().top},300)}),jQuery(document).on("click",".clickcta",function(o){o.preventDefault(),$("html, body").animate({scrollTop:$("#modulo1").offset().top},300)});

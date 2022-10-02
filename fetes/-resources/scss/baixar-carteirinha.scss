@@ -1,0 +1,459 @@
+@property --rotate {
+	syntax: "<angle>";
+	initial-value: 132deg;
+	inherits: false;
+}
+
+:root {
+--card-height: 432px;
+--card-width: 270px;
+}
+
+$card-transition-time: 0.5s;
+
+section#modulo1 {
+
+	height: 700px;
+	background: linear-gradient(160.44deg, #0C0E14 -12.97%, #880E4F 214.67%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+
+	@media (max-width: 767px) {
+		height: auto;
+		padding: 50px 0px;
+	}
+
+	.grupo {
+
+		z-index: 2;
+
+		.flip-button {
+			display: block;
+			width: 50px;
+			margin: 0px auto 30px auto;
+			
+			img {
+				width: 50px;
+			}
+		}
+
+		.card {
+			perspective: 600px;
+			position: relative;
+		
+			&.is-switched {
+				.card__wrapper {
+					animation: rotate $card-transition-time linear both;
+				}
+			}
+		}
+		
+		.card__wrapper {
+			transform-style: preserve-3d;
+			animation: rotate-inverse $card-transition-time linear both;
+		}
+		
+		.card__side {
+			backface-visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+		
+			&.is-active {
+				position: static;
+			}
+		}
+		
+		.card__side--back {
+			transform: rotateY(180deg);
+		}
+
+		#carteirinha-front {
+			background: url(../../img/carteirinha/bg-top.png);
+			background-size: initial;
+			background-repeat: no-repeat;
+			background-position: left top;
+			background-color: #0C0E14;
+			width: var(--card-width);
+			height: var(--card-height);
+			padding: 3px;
+			position: relative;
+			border-radius: 6px;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			display: flex;
+
+			&::before {
+				content: "";
+				width: 100%;
+				height: 100%;
+				border-radius: 8px;
+				background-image: linear-gradient(var(--rotate), #5A0733, #B5164C 43%, #E91E63);
+				position: absolute;
+				z-index: -1;
+				/* top: 8px; */
+				padding: 5px;
+				left: -5px;
+				right: 0;
+				margin: auto;
+				animation: spin 2.5s linear infinite;
+			}
+
+			&::after {
+				position: absolute;
+				content: "";
+				top: 0;
+				left: 0;
+				right: 0;
+				z-index: -1;
+				height: 100%;
+				width: 100%;
+				margin: 0 auto;
+				transform: scale(0.9);
+				filter: blur(calc(var(--card-height) / 6));
+				background-image: linear-gradient(var(--rotate), #5A0733, #B5164C 43%, #E91E63);
+				opacity: 1;
+				transition: opacity .5s;
+				animation: spin 2.5s linear infinite;
+			}
+			
+			.conteudo-card {
+
+				padding: 0px 14px;
+				width: 100%;
+				box-sizing: border-box;
+
+				.box-foto {
+					position: relative;
+					height: 86px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					.arrows-circle {
+						position: absolute;
+						left: 0;
+						right: 0;
+						margin: auto;
+					}
+	
+					.foto-aluno {
+						width: 78px;
+						height: 78px;
+						margin: auto;
+						background-position: center center;
+						background-size: cover;
+						background-repeat: no-repeat;
+					}
+				}
+
+				.nome-aluno {
+					font-family: 'Roboto', sans-serif;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 17.1429px;
+					line-height: 23px;
+					text-align: center;
+					color: #FDE4EB;
+					margin-top: 20px;
+				}
+
+				.nome-curso {
+					font-family: 'Roboto', sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14.2857px;
+					line-height: 20px;
+					text-align: center;
+					color: rgb(205, 205, 205);
+					margin-top: 9px;
+				}
+
+				.titulo-dados-pessoais {
+
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					margin: 12px auto;
+
+					hr {
+						border: 1px solid rgb(131, 131, 131);
+						width: 70px;
+						margin: 0;
+					}
+
+					.dadospessoais {
+						font-family: 'Roboto', sans-serif;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 9.5px;
+						line-height: 20px;
+						text-align: center;
+						color: rgb(131, 131, 131);
+					}
+				}
+
+				.dados {
+					width: 100%;
+					
+					tr {
+
+						margin-bottom: 5px;
+
+						td {
+
+							font-family: 'Roboto', sans-serif;
+							font-style: normal;
+							font-size: 14.2857px;
+							line-height: 20px;
+							padding: 3px 0px;
+
+							&:first-child {
+								font-weight: 400;
+								color: rgb(205, 205, 205);
+								text-align: left;
+							}
+
+							&:nth-child(2) {
+								font-weight: 600;
+								color: #FFFFFF;
+								text-align: right;
+							}
+						}
+					}
+				}
+
+				.linha {
+					border: 1px solid rgb(131, 131, 131);
+					width: 100%;
+					margin: 16px auto;
+				}
+
+				.validade {
+					font-family: 'Roboto', sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14.2857px;
+					line-height: 20px;
+					text-align: center;
+					color: rgb(205, 205, 205);
+
+					span {
+						font-weight: 600;
+						color: #fff;
+						text-transform: uppercase;
+					}
+				}
+
+				.defesa {
+					font-family: 'Roboto', sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 8px;
+					line-height: 11px;
+					text-align: center;
+					color: rgb(205, 205, 205);
+					margin: auto;
+					margin-top: 8px;
+					width: 247px;
+				}
+			}
+		}
+
+		#carteirinha-back {
+			background: url(../../img/carteirinha/bg-top.png);
+			background-size: initial;
+			background-repeat: no-repeat;
+			background-position: left top;
+			background-color: #243f92;
+			width: var(--card-width);
+			height: var(--card-height);
+			padding: 3px;
+			position: absolute;
+			border-radius: 6px;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			display: flex;
+
+			&::before {
+				content: "";
+				width: 100%;
+				height: 100%;
+				border-radius: 8px;
+				background-image: linear-gradient(var(--rotate), #5A0733, #B5164C 43%, #E91E63);
+				position: absolute;
+				z-index: -1;
+				/* top: 8px; */
+				padding: 2px;
+				left: -2px;
+				right: 0;
+				margin: auto;
+				animation: spin 2.5s linear infinite;
+			}
+
+			&::after {
+				position: absolute;
+				content: "";
+				top: 0;
+				left: 0;
+				right: 0;
+				z-index: -1;
+				height: 100%;
+				width: 100%;
+				margin: 0 auto;
+				transform: scale(0.9);
+				filter: blur(calc(var(--card-height) / 6));
+				background-image: linear-gradient(var(--rotate), #5A0733, #B5164C 43%, #E91E63);
+				opacity: 1;
+				transition: opacity .5s;
+				animation: spin 2.5s linear infinite;
+			}
+			
+			.conteudo-card {
+
+				padding: 0px 14px;
+				width: 100%;
+				box-sizing: border-box;
+				height: 100%;
+				background: #0C0E14;
+				border-radius: 4px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.agrupamento {
+					.logo-fetes-card {
+						display: block;
+						margin: auto;
+						width: 150px;
+					}
+
+					.qr-code {
+						margin: 28px auto;
+
+						.qrcodeimg {
+							display: block;
+							margin: auto;
+						}
+					}
+
+					.nome-diretor {
+						font-family: 'Rubik', sans-serif;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 14.2857px;
+						line-height: 20px;
+						text-align: center;
+						color: #FFFFFF;
+					}
+
+					.cargo {
+						font-family: 'Roboto', sans-serif;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 10px;
+						line-height: 10px;
+						text-align: center;
+						color: #FFFFFF;
+						margin-top: 10px;
+					}
+
+					.faculdade {
+						font-family: 'Roboto', sans-serif;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 9px;
+						line-height: 10px;
+						text-align: center;
+						color: #FFFFFF;
+						margin-top: 10px;
+					}
+
+					.contato {
+
+						margin-top: 30px;
+
+						.div-flex {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+
+						.txt {
+
+							display: flex;
+							align-items: center;
+							justify-content: center;
+
+							img {
+								display: block;
+								margin-right: 5px;
+							}
+							
+							span {
+								font-family: 'Roboto', sans-serif;
+								font-style: normal;
+								font-weight: 400;
+								font-size: 11.4286px;
+								text-align: center;
+								color: rgb(205, 205, 205);
+							}
+
+							&.txt01 {
+								margin-right: 15px;
+							}
+
+							&.txt03 {
+								margin-top: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@keyframes spin {
+	0% {
+		--rotate: 0deg;
+	}
+
+	100% {
+		--rotate: 360deg;
+	}
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0);
+    }
+
+    70% {
+        transform: rotateY(200deg);
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes rotate-inverse {
+    0% {
+        transform: rotateY(180deg);
+    }
+
+    70% {
+        transform: rotateY(-20deg);
+    }
+
+    100% {
+        transform: rotateY(0);
+    }
+}

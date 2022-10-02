@@ -1,0 +1,166 @@
+$total: 300; // total particles
+$orb-size: 200px;
+$orb-size-m: 100px;
+$particle-size: 4px;
+$particle-size-m: 2px;
+$time: 14s; 
+$base-hue: 340; // change for diff colors (180 is nice)
+
+
+section#modulo3 {
+
+    background: #070707;
+    padding-bottom: 100px;
+
+    @media (max-width: 767px) {
+      padding-bottom: 30px;
+    }
+
+    .grupo {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+
+      @media (max-width: 767px) {
+        display: block;
+        padding: 0px 16px;
+      }
+
+      .div-left {
+
+        max-width: 600px;
+        margin-right: 80px;
+
+        @media (max-width: 767px) {
+          max-width: 100%;
+          margin: auto;
+        }
+
+        .tx1 {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 53px;
+          color: #ED145B;
+
+          @media (max-width: 767px) {
+            font-size: 30px;
+            line-height: 35px;
+          }
+        }
+
+        .tx2 {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          color: #717171;
+          margin-top: 45px;
+
+          @media (max-width: 767px) {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+      }
+
+    	.div-right {
+    		width: 600px;
+    		height: 600px;
+    		position: relative;
+    		overflow: hidden;
+
+        @media (max-width: 767px) {
+          width: 300px;
+          height: 300px;
+          margin: auto;
+          margin-top: 20px;
+        }
+
+    		.wrap {
+    			position: relative;
+    			top: 50%;
+    			left: 50%;
+    			width: 0; 
+    			height: 0; 
+    			transform-style: preserve-3d;
+    			perspective: 1000px;
+    			animation: rotate $time infinite linear; // rotate orb
+
+    			.c {
+    				position: absolute;
+    				width: $particle-size;
+    				height: $particle-size;
+    				border-radius: 50%;
+    				opacity: 0; 
+
+            @media (max-width: 767px) {
+              width: $particle-size-m;
+              height: $particle-size-m;
+            }
+
+    				/* &:nth-child(n + 150) {
+					    background-color: #50167E;
+					} */
+    			}
+    		}
+    	}
+    }
+
+}
+
+
+
+@keyframes rotate {
+  100% {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+
+@for $i from 1 through $total {
+  $z: (random(360) * 1deg); // random angle to rotateZ
+  $y: (random(360) * 1deg); // random to rotateX
+  $hue: ((1/$total * $i) + $base-hue); // set hue
+  
+  .c:nth-child(#{$i}){ // grab the nth particle
+    animation: orbit#{$i} $time infinite;
+    animation-delay: ($i * .01s); 
+    background-color: hsla($hue, 86%, 50%, 1);
+  }
+
+  @keyframes orbit#{$i}{ 
+    20% {
+      opacity: 1; // fade in
+    }
+    30% {
+      transform: rotateZ(-$z) rotateY($y) translateX($orb-size) rotateZ($z); // form orb
+    }
+    80% {
+      transform: rotateZ(-$z) rotateY($y) translateX($orb-size) rotateZ($z); // hold orb state 30-80
+      opacity: 1; // hold opacity 20-80
+    }
+    100% {
+       transform: rotateZ(-$z) rotateY($y) translateX( ($orb-size * 3) ) rotateZ($z); // translateX * 3
+    }
+  }
+
+  @media (max-width: 767px) {
+    @keyframes orbit#{$i}{ 
+      20% {
+        opacity: 1; // fade in
+      }
+      30% {
+        transform: rotateZ(-$z) rotateY($y) translateX($orb-size-m) rotateZ($z); // form orb
+      }
+      80% {
+        transform: rotateZ(-$z) rotateY($y) translateX($orb-size-m) rotateZ($z); // hold orb state 30-80
+        opacity: 1; // hold opacity 20-80
+      }
+      100% {
+         transform: rotateZ(-$z) rotateY($y) translateX( ($orb-size-m * 3) ) rotateZ($z); // translateX * 3
+      }
+    }
+  }
+}

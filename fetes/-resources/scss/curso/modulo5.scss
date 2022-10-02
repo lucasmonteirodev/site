@@ -1,0 +1,187 @@
+section#modulo5 {
+
+	background: #070707;
+	padding: 100px 0px;
+
+	@media (max-width: 767px) {
+		padding: 0px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1100px) {
+		padding: 0px;
+	}
+
+    .grupo {
+    	background: url('../../img/curso/wave-02.png');
+    	background-size: initial;
+    	background-repeat: no-repeat;
+    	background-position: center center;
+    	background-color: #161616;
+		box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.23), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.165337), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.137105), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.115), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0928953), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0646635);
+		border-radius: 4px;
+		box-sizing: border-box;
+		padding: 70px;
+		width: 1170px;
+		height: 706px;
+		margin: auto;
+
+		@media (max-width: 767px) {
+			width: 100%;
+			height: auto;
+			padding: 30px 16px;
+	    }
+
+	    @media (min-width: 768px) and (max-width: 1100px) {
+			width: 100%;
+			height: auto;
+			padding: 30px 16px;
+		}
+
+		.tx1 {
+			font-family: 'Montserrat', sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 36px;
+			line-height: 40px;
+			text-align: center;
+			letter-spacing: 0.2em;
+			color: #FFFFFF;
+
+			@media (max-width: 767px) {
+				font-size: 24px;
+				line-height: 26px;
+		    }
+		}
+
+		.tx2 {
+			font-family: 'Montserrat', sans-serif;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 26px;
+			text-align: center;
+			letter-spacing: 0.655em;
+			color: #ED145B;
+			margin-top: 20px;
+
+			@media (max-width: 767px) {
+				font-size: 18px;
+				line-height: 20px;
+		    }
+		}
+
+		.tx3 {
+			font-family: 'Montserrat', sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 20px;
+			text-align: center;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #A0A0A0;
+			margin-top: 40px;
+		}
+
+		.box {
+			background: radial-gradient(106.97% 465.57% at 50% 36.07%, #0B0B0B 0%, rgba(11, 11, 11, 0.2) 100%);
+			border: 1px solid #4A3F43;
+			box-sizing: border-box;
+			box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.23), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.165337), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.137105), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.115), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0928953), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0646635);
+			border-radius: 16px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 40px;
+			padding: 43px 92px;
+			text-align: center;
+
+			@media (max-width: 767px) {
+				display: block;
+				padding: 30px;
+		    }
+
+		    @media (min-width: 768px) and (max-width: 1100px) {
+				display: block;
+				padding: 30px;
+			}
+
+
+			.divBox {
+				.titulo {
+					font-family: 'Montserrat', sans-serif;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 36px;
+					line-height: 40px;
+					color: #ED145B;
+				}
+
+				.descript {
+					font-family: 'Montserrat', sans-serif;
+					font-style: normal;
+					font-weight: 300;
+					font-size: 18px;
+					line-height: 25px;
+					color: #FFFFFF;
+					margin-top: 4px;
+				}
+			}
+
+			.traco {
+				height: 178px;
+				width: 1px;
+				background: #ED145B;
+				margin: 0px 35px;
+
+				@media (max-width: 767px) {
+					width: 178px;
+					height: 1px;
+					margin: 35px auto;
+			    }
+
+			    @media (min-width: 768px) and (max-width: 1100px) {
+					width: 178px;
+					height: 1px;
+					margin: 35px auto;
+				}
+			}
+		}
+
+		.click-inscricao {
+			display: block;
+			box-sizing: border-box;
+			border: 2px solid #ED145B;
+			margin: auto;
+		    margin-top: 60px;
+		    width: 220px;
+		    height: 48px;
+		    border-radius: 4px;
+		    line-height: 48px;
+		    text-align: center;
+		    font-weight: bold;
+		    text-decoration: none;
+		    font-family: 'Montserrat', sans-serif;
+		    font-size: 16px;
+		    color: #ED145B;
+		    cursor: pointer;
+		    transition: all .2s ease-in-out;
+		    -webkit-transition: all .2s ease-in-out;
+		    -o-transition: all .2s ease-in-out;
+
+		    &:hover {
+		    	background-color: #ED145B;
+		    	color: #fff;
+		    }
+
+		    @media (max-width: 767px) {
+				margin-top: 30px;
+		    }
+
+		    @media (min-width: 768px) and (max-width: 1100px) {
+				margin-top: 30px;
+			}
+		}
+    }
+
+}

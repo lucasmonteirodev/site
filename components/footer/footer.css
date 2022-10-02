@@ -1,0 +1,21 @@
+#footer {
+    padding: 20px 0px;
+    background: #242526;
+}
+
+#footer a {
+    width: max-content;
+    margin: auto;
+    display: block;
+}
+
+#footer a img {
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+    #footer a img {
+        width: 300px;
+    }
+}

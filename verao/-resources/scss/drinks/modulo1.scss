@@ -1,0 +1,551 @@
+$cor-laranja: #F56755;
+$cor-azul: #48B999;
+$cor-rosa: #E94272;
+$cor-amarelo: #F5A134;
+
+section#modulo1 {
+	background: #FEF9D9;
+	padding: 30px 0px; 
+	.conteudo {
+		width: 1200px;
+		margin: 0 auto;
+		@media (max-width: 767px) {
+	    	width: 100%;
+		}
+
+		@media (min-width: 768px) and (max-width: 1100px) {
+		  width: 95%;
+		}
+
+		.collapse {
+
+			@media (max-width: 767px) {
+				width: 90%;
+				margin: auto;
+			}
+
+			.drink1, .drink2, .drink3, .drink4 {
+				margin-bottom: 17px;
+			}
+
+			.drink1 {
+				.faqanswer {
+					border: 1px solid $cor-laranja;
+
+					.titulo {
+						color: $cor-laranja;
+					}
+
+					.selecao {
+						.titulo {
+							font-family: 'neo-sans', sans-serif;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 32px;
+							line-height: 23px;
+							text-align: center;
+							color: $cor-laranja;
+							margin-top: 40px;
+							margin-bottom: 42px;
+							@media (max-width: 767px) {
+						    	font-size: 21px;
+						    	margin-top: 20px;
+    							margin-bottom: 20px;
+							}
+
+							@media (min-width: 768px) and (max-width: 1100px) {
+								width: 60%;
+								margin: auto;
+								line-height: 32px;
+								margin-top: 30px;
+								margin-bottom: 30px;
+							}
+						}
+					}
+				}
+			}
+			.drink2 {
+				.faqanswer {
+					border: 1px solid $cor-azul;
+
+					.titulo {
+						color: $cor-azul;
+					}
+
+					.selecao {
+						.titulo {
+							font-style: normal;
+							font-weight: bold;
+							font-size: 32px;
+							line-height: 23px;
+							text-align: center;
+							color: $cor-azul;
+							margin-top: 40px;
+							margin-bottom: 42px;
+							@media (max-width: 767px) {
+						    	font-size: 21px;
+						    	margin-top: 20px;
+    							margin-bottom: 20px;
+							}
+
+							@media (min-width: 768px) and (max-width: 1100px) {
+								width: 60%;
+								margin: auto;
+								line-height: 32px;
+								margin-top: 30px;
+								margin-bottom: 30px;
+							}
+						}
+					}
+				}
+			}
+			.drink3 {
+				.faqanswer {
+					border: 1px solid $cor-rosa;
+
+					.titulo {
+						color: $cor-rosa;
+					}
+
+					.selecao {
+						.titulo {
+							font-style: normal;
+							font-weight: bold;
+							font-size: 32px;
+							line-height: 23px;
+							text-align: center;
+							color: $cor-rosa;
+							margin-top: 40px;
+							margin-bottom: 42px;
+							@media (max-width: 767px) {
+						    	font-size: 21px;
+						    	margin-top: 20px;
+    							margin-bottom: 0px;
+							}
+
+							@media (min-width: 768px) and (max-width: 1100px) {
+								width: 60%;
+								margin: auto;
+								line-height: 32px;
+								margin-top: 30px;
+								margin-bottom: 30px;
+							}
+						}
+					}
+				}
+			}
+			.drink4 {
+				.faqanswer {
+					border: 1px solid $cor-amarelo;
+
+					.titulo {
+						color: $cor-amarelo;
+					}
+
+					.selecao {
+						.titulo {
+							font-style: normal;
+							font-weight: bold;
+							font-size: 32px;
+							line-height: 23px;
+							text-align: center;
+							color: $cor-amarelo;
+							margin-top: 40px; 
+							margin-bottom: 42px;
+							@media (max-width: 767px) {
+						    	font-size: 21px;
+						    	margin-top: 20px;
+    							margin-bottom: 20px;
+							}
+
+							@media (min-width: 768px) and (max-width: 1100px) {
+								width: 60%;
+								margin: auto;
+								line-height: 32px;
+								margin-top: 30px;
+								margin-bottom: 30px;
+							}
+						}
+					}
+				}
+			}
+
+			.boxdrink1 {
+				background: $cor-laranja;
+			}
+			.boxdrink2 {
+				background: $cor-azul;
+			}
+			.boxdrink3 {
+				background: $cor-rosa;
+			}
+			.boxdrink4 {
+				background: $cor-amarelo;
+			}
+
+			.boxdrink1, .boxdrink2, .boxdrink3, .boxdrink4 {
+				padding: 10px;
+				display: flex;
+				border-radius: 4px 4px 0px 0px;
+				position: relative;
+				@media (max-width: 767px) {
+			    	width: 95%;
+			    	margin: auto;
+					border-radius: 4px;
+				}
+
+				.divimagem {
+					width: 348px;
+					height: 150px;
+					border-radius: 4px;
+					@media (max-width: 767px) {
+				    	height: auto;
+				    	width: 100%;
+					}
+
+					img {
+						width: 100%;
+						/*@media (max-width: 767px) {
+					    	display: none;
+						}*/
+					}
+				}
+
+				.divnomedrink {
+
+					max-width: 240px;
+					display: flex;
+    				align-items: center;
+    				margin-left: -95px;
+
+    				@media (max-width: 767px) {
+				    	display: block;
+				    	position: absolute;
+				    	margin-left: 0;
+				    	bottom: 20px;
+				    	left: 20px;
+					}
+
+					.nomedrink {
+						font-family: neo-sans, sans-serif;
+						font-style: normal;
+						font-weight: 900;
+						font-size: 40px;
+						line-height: 35px;
+
+						@media (max-width: 767px) {
+					    	font-size: 28.2353px;
+							line-height: 25px;
+							max-width: 178px;
+						}
+
+						span {
+							font-style: italic;
+							font-weight: 400;
+						}
+					}
+				}
+
+				.textoapresentacao {
+
+					margin-left: 45px;
+					display: flex;
+    				align-items: center;
+
+    				@media (max-width: 767px) {
+				    	display: none;
+					}
+
+					@media (min-width: 768px) and (max-width: 1100px) {
+						display: none;
+					}
+
+					p {
+						font-family: 'Lato', sans-serif;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 16px;
+						line-height: 23px;
+						color: #FFFFFF;
+						width: 300px;
+					}
+				}
+
+				.vejareceita {
+					position: absolute;
+					right: 109px;
+    				top: 64px;
+
+    				@media (max-width: 767px) {
+				    	display: none;
+					}
+
+					@media (min-width: 768px) and (max-width: 1100px) {
+						right: 30px;
+					}
+
+					p {
+						font-family: 'Lato', sans-serif;
+						display: flex;
+						align-items: center;
+						font-weight: bold;
+						font-size: 14px;
+						line-height: 23px;
+						color: #fff;
+						img {
+							margin-left: 13px;
+							-webkit-transition-duration: 1s;
+						    -moz-transition-duration: 1s;
+						    -o-transition-duration: 1s;
+						    transition-duration: 1s;
+						}
+					}
+				}
+			}
+
+			.togglefaq {
+				color: #FEF9D9;
+				text-decoration: none;
+
+				&.active {
+					.seta {
+						-webkit-transform: rotate(180deg);
+					    -moz-transform: rotate(180deg);
+					    -o-transform: rotate(180deg);
+					    -ms-transform: rotate(180deg);
+					    transform: rotate(180deg);
+					}
+				}
+			}
+
+			.faqanswer {
+				display: none;
+				width: 100%;
+				box-sizing: border-box;
+				padding: 33px 105px;
+				border-radius: 0px 0px 4px 4px;
+
+				@media (max-width: 767px) {
+			    	width: 95%;
+			    	margin: auto;
+			    	padding: 14px;
+				}
+
+				@media (min-width: 768px) and (max-width: 1100px) {
+				   padding: 20px;
+				}
+
+				.grupo {
+
+					display: flex;
+
+					@media (max-width: 767px) {
+				    	display: block;
+					}
+
+					.ingredientes {
+						margin-right: 55px;
+						@media (max-width: 767px) {
+					    	margin-right: 0;
+						}
+
+						@media (min-width: 768px) and (max-width: 1100px) {
+							width: 50%;
+						}
+					}
+
+					.preparo {
+						@media (min-width: 768px) and (max-width: 1100px) {
+							width: 50%;
+						}
+					}
+
+					.titulo {
+						font-family: 'neo-sans', sans-serif;
+						display: flex;
+						align-items: center;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 26px;
+						line-height: 23px;
+						margin-bottom: 20px;
+
+						img {
+							margin-right: 14px;
+						}
+					}
+
+					.listagem {
+						font-family: 'Lato', sans-serif;
+						font-weight: normal;
+						font-size: 16px;
+						line-height: 23px;
+						min-width: 388px;
+
+						@media (max-width: 767px) {
+					    	min-width: 100%;
+					    	text-align: center;
+					    	margin-bottom: 25px;
+						}
+
+						@media (min-width: 768px) and (max-width: 1100px) {
+							min-width: auto;
+						}
+					}
+				}
+
+			}
+
+			.faqanswer p {
+				font-size: 13px;
+				line-height: 17px;  
+			}
+
+			.icon-plus {
+				color: #5ec4cd;
+				margin-right: 20px;
+				font-size: 20px;
+				float:left;
+			}
+
+			.icon-minus {
+				color: #5ec4cd;
+				margin-right: 20px;
+				font-size: 20px;
+				float:left;
+			}
+		}
+	}
+}
+
+
+.SectionProductListWrapper {
+	.Filter {
+		.Select-label {
+			background: #FEF9D9;
+			border-color: #FEF9D9;
+			border-bottom-color: #000;
+		}
+	}
+
+	.Filter {
+		&.FixMenu {
+			background: #FEF9D9;
+		}
+	}
+
+	.SectionProductList {
+		.ProductList {
+			.cross_card {
+				background-color: #FEF9D9;
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+
+
+/* CROSS DOS VINHOS */
+
+  .grupocross {
+
+  	text-align: center;
+
+    .produtoCapsula {
+		display: inline-block;
+		margin-right: 15px;
+    	margin-left: 15px;
+		
+		.box {
+			height: 310px!important;
+		    width: 180px;
+		    font-family: lato,sans-serif;
+		    height: calc(100% - 55px);
+		    padding: 20px;
+		    padding: 10px;
+		    position: relative;
+		    margin: 20px 10px 0px;
+		}
+
+	    .vinhoimagem {
+	    	img {
+	    		height: 175px;
+	    	}
+	    }
+
+	    .descriptions {
+			.first-line {
+				text-align: center;
+				margin-bottom: 5px;
+				h3 {
+					height: 48px;
+					font-weight: bold;
+					font-size: 14px;
+					line-height: 16px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					letter-spacing: -0.2px;
+					color: #1D1D1B;
+				}
+			}
+			.second-line {
+				margin-bottom: 5px;
+				.old-price {
+					font-weight: normal;
+					font-size: 12px;
+					line-height: 12px;
+					color: #888;
+					display: inline-block;
+					margin-right: 10px;
+				}
+				.discount {
+					font-weight: 600;
+					font-size: 10px;
+					line-height: 12px;
+					text-align: center;
+					color: #FFFFFF;
+					background: linear-gradient(164.67deg, #A82472 0%, #75075F 100%);
+					border-radius: 2px;
+					display: inline-block;
+					padding: 3px 5px;
+				}
+				
+			}
+			.third-line {
+				margin-bottom: 5px;
+				vertical-align: top;
+				.socio {
+					font-weight: bold;
+					font-size: 10px;
+					line-height: 10px;
+					text-transform: uppercase;
+					color: #888;
+					width: 40px;
+					display: inline-block;
+					text-align: left;
+				}
+				.socio-price {
+					font-weight: 900;
+					font-size: 18px;
+					line-height: 20px;
+					color: #A82472;
+					display: inline-block;
+					vertical-align: top;
+				}
+			}
+			.fourth-line {
+				text-align: center;
+				.nao-socio-price {
+					font-weight: 500;
+					font-size: 12px;
+					line-height: 14px;
+					align-items: center;
+					color: #888;
+				}
+			}
+		}
+    }
+
+  }

@@ -1,0 +1,42 @@
+section#modulo3 {
+
+	background: #070707;
+	padding-bottom: 50px;
+
+	.grupo {
+
+		@media (max-width: 767px) {
+			width: 100%;
+			padding: 0px 16px;
+			box-sizing: border-box;
+		}
+
+		.tx1 {
+			font-family: 'Montserrat', sans-serif;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 36px;
+			line-height: 48px;
+			text-align: center;
+			color: #FFFFFF;
+
+			@media (max-width: 767px) {
+				font-size: 24px;
+				line-height: 32px;
+				text-align: left;
+			}
+		}
+
+		.thumb {
+			display: block;
+			margin: auto;
+			margin-top: 48px;
+			width: 800px;
+
+			@media (max-width: 767px) {
+				width: 100%;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,145 @@
+section#modulo6 {
+
+	background: #070707;
+	padding-bottom: 50px;
+
+	@media (max-width: 767px) {
+		padding: 0px 24px;
+		padding-bottom: 50px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1100px) {
+		padding: 0px 24px;
+		padding-bottom: 50px;
+	}
+
+	.grupo {
+
+		.tx1 {
+			font-family: 'Montserrat', sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 48px;
+			line-height: 53px;
+			color: #ED145B;
+			text-align: center;
+
+			@media (max-width: 767px) {
+				font-size: 24px;
+				line-height: 29px;
+				max-width: 100%;
+				text-align: left;
+		    }
+		}
+
+		.box {
+
+			max-width: 1171px;
+			margin: auto;
+			margin-top: 48px;
+
+			.badge {
+				width: 158px;
+				height: 40px;
+				background: #ED145B;
+				border-radius: 8px 8px 0px 0px;
+				font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 20px;
+				text-align: center;
+				color: #FFFFFF;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.collapse {
+
+	            border-top: solid 1px #1A1A1A;
+
+	            .divFAQ {
+
+	                margin-bottom: 8px;
+	                border-bottom: solid 1px #1A1A1A;
+
+	                .togglefaq {
+	                    text-decoration: none;
+
+	                    &.active {
+	                        .seta {
+	                            -webkit-transform: rotate(180deg);
+	                            -moz-transform: rotate(180deg);
+	                            -o-transform: rotate(180deg);
+	                            -ms-transform: rotate(180deg);
+	                            transform: rotate(180deg);
+	                        }
+	                    }
+
+	                    .pergunta {
+	                        width: 100%;
+	                        display: flex;
+	                        align-items: center;
+	                        padding: 15px 0px 15px 0px;
+
+	                        @media (min-width: 767px) {
+
+	                        	&:hover {
+	                                p {
+	                                	color: #ED145B; 
+	                                }
+	                            }
+	                            
+	                        }
+
+	                        p {
+	                            font-family: 'Montserrat', sans-serif;
+								font-style: normal;
+								font-weight: 700;
+								font-size: 20px;
+								line-height: 28px;
+								color: #fff;
+								transition: all .2s ease-in-out;
+		                        -webkit-transition: all .2s ease-in-out;
+		                        -o-transition: all .2s ease-in-out;
+
+		                        @media (max-width: 767px) {
+									font-size: 18px;
+									line-height: 20px;
+							    }
+	                        }
+
+	                        .seta {
+	                            margin-left: auto;
+	                            margin-right: 20px;
+	                        }
+	                    }
+	                }
+
+	                .faqanswer {
+	                    display: none;
+	                    width: 100%;
+	                    padding: 14px 0px;
+
+	                    .resposta {
+
+	                        padding: 0px 20px;
+
+	                        p {
+	                            font-family: Lato, sans-serif;
+	                            font-style: normal;
+	                            font-weight: normal;
+	                            font-size: 14px;
+	                            line-height: 20px;
+	                            color: #afafaf;
+	                        }
+	                    }
+	                }
+	            }
+	        }
+		}
+
+	}
+
+}
