@@ -1,0 +1,200 @@
+.modal {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 9;
+    overflow-x: hidden;
+
+    .modal-area {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+
+        .btn_fechar, .btn_close {
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            background-color: transparent;
+            border: none;
+            transition: .2s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+
+.modal-clubes {
+    .modal-area {
+        .modal-content {
+            background: #fff;
+            width: 375px;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 15px 20px;
+            border-radius: 8px;
+
+            .title {
+                font-family: neo-sans, sans-serif !important;
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+                color: #333333;
+            }
+            .subtitle {
+                font-family: Lato;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: #555555;
+                margin: 20px auto;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+            .options ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 4px;
+                    width: 164px;
+                    height: 168px;
+                    padding: 15px 6px;
+                    border: 1px solid #E6E6E6;
+                    transition: all .10s ease-out;
+                    cursor: pointer;
+                    margin-bottom: 18px;
+                    position: relative;
+                    > img {
+                        height: 93px;
+                    }
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                    }
+                    .checkmark {
+                        position: absolute;
+                        height: 20px;
+                        width: 20px;
+                        border: 1px solid #CCCCCC;
+                        background: transparent;
+                        top: 9px;
+                        right: 9px;
+                        border-radius: 3px;
+                        z-index: 5;
+                        transition: border .25s linear;
+                        -webkit-transition: border .25s linear;
+                    }
+                    input:checked ~ .checkmark {
+                        border: 1px solid #C81A78;
+                        background-color: #C81A78;
+                    }
+                    .checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+                    input:checked ~ .checkmark:after {
+                        display: block;
+                    }
+                    .checkmark:after {
+                        left: 6px;
+                        top: 0px;
+                        width: 7px;
+                        height: 13px;
+                        border: solid white;
+                        border-width: 0 2.3px 2.3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                    .title {
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #555;
+                        font-weight: 700;
+                        margin: 0 auto;
+                    }
+                    .subtitle {
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #888888;
+                        font-weight: 400;
+                        margin: 0 auto;
+                    }
+                }
+                .card.active {
+                    border: 1px solid #C81A78;
+                    border-radius: 4px;
+                    opacity: 1;
+                    transition: .2s;
+                    /* pointer-events: none; */
+                }
+            }
+            .ctaProsseguir {
+                width: 100%;
+                margin: 0 auto;
+                background: #a0a0a0;
+                padding: 14px 0;
+                font-family: Lato, sans-serif;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 24px;
+                color: #fff;
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+                border-radius: 4px;
+                border: none;
+                text-align: center;
+                cursor: pointer;
+                pointer-events: none;
+                margin: 15px auto 15px;
+                transition: .2s;
+
+                &.active {
+                    background: #C81A78;
+                    pointer-events: auto;
+                }
+            }
+            
+            .btn_faca_teste {
+                text-align: center;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: bold;
+                font-family: 'Open Sans', sans-serif;
+                color: #C81A78;
+                cursor: pointer;
+                border: none;
+                background-color: transparent;
+                margin: 10px 0 5px;
+            }
+
+        }
+        
+    }
+}
