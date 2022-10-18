@@ -1,15 +1,32 @@
 var resposta = [
 	{
-		"quizType": "cliente", 
+		"quizType": "pgt01",
 		"opcao": "opcao-1",
 		"opcaoNome": "Sim",
-		"resposta": "Muito bom! Um cafezinho com açúcar sempre desperta a gente, né?"
+		"resposta": "Ótimo! É muito bom ter você com a gente!"
 	},
 	{
-		"quizType": "cliente", 
+		"quizType": "pgt01",
 		"opcao": "opcao-2",
 		"opcaoNome": "Não",
-		"resposta": "Maravilha! Sem açúcar a gente consegue apreciar mais o café, né? Esse é o meu favorito também."
+		"resposta": "Ok! Vai ser um prazer te apresentar um universo de possibilidades!"
+	},{
+		"quizType": "pstvo",
+		"opcao": "opcao-1",
+		"opcaoNome": "Quero tirar dúvidas sobre Super Link",
+		"resposta": "Ok, irei te apresentar. Aguarde um momento."
+	},
+	{
+		"quizType": "pstvo",
+		"opcao": "opcao-2",
+		"opcaoNome": "Quero tirar dúvidas sobre Receba Rápido",
+		"resposta": "Ok, irei te apresentar. Aguarde um momento."
+	},
+	{
+		"quizType": "pstvo",
+		"opcao": "opcao-3",
+		"opcaoNome": "Quero receber dicas para melhorar meu negócio",
+		"resposta": "Ok, estou verificando o que podemos fazer. Aguarde um momento."
 	},
 	{
 		"quizType": "foods",

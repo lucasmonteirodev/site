@@ -35,6 +35,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap">
 
+        <link rel="stylesheet" type="text/css" media="screen" href="/build/css/reset.css?v=2" />
+
 		<link rel="stylesheet" type="text/css" href="https://www.wine.com.br/-resources/plugins/slick/1.8.0/slick.css">
 		<link rel="stylesheet" type="text/css" href="https://www.wine.com.br/-resources/plugins/slick/1.8.0/slick-theme.css">
 

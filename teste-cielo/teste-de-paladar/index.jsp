@@ -52,7 +52,7 @@
 				</div>
 				<div class="page loadResultado animation">
 					<img src="https://img.wine.com.br/hotsite/2020/winebox-do-meu-jeito/teste-de-paladar/load-image.svg" alt="">
-					<p class="title">Estamos analisando sua resposta</p>
+					<p class="title">Aguarde um momento</p>
 					<p>
 						<span class="dot bg-f79552"></span>
 						<span class="dot bg-f2684b"></span>
@@ -122,6 +122,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="../-resources/js/answers.js"></script>
+<script src="../-resources/js/answers2.js"></script>
 <script src="../-resources/js/result.js"></script>
 <script src="../-resources/js/jqueryFunctions.js"></script>
 <script src="../-resources/js/animations.js"></script>

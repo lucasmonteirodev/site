@@ -43,12 +43,12 @@ function initChat() {
 		clearInterval(homeLogoAnimation)
 	}, 500);
 
-	maleBot('Oi, eu sou a Elô e eu tenho uma novidade para você! 😃', true, false, 1);
-	maleBot('Sabemos que precisamos estar cada vez mais próximos e conectados. E é com ajuda da internet que vamos fazer isso! É lá que seu negócio precisa estar.', true, false, 2, 3000);
+	eloBot('Oi, eu sou a Elô e eu tenho uma novidade para você! 😃', true, false, 1);
+	eloBot('Sabemos que precisamos estar cada vez mais próximos e conectados. E é com ajuda da internet que vamos fazer isso! É lá que seu negócio precisa estar.', true, false, 2, 3000);
 
 	setTimeout(function() {
-		maleBot('Por isso estou aqui, pra ajudar você e seu negócio. Fica muito mais fácil ter a Cielo com você na luta de todo dia, não é?', true, false, 3);
-		maleBot('Mas antes de começarmos, qual o seu nome?', true, false, 4, 3000);
+		eloBot('Por isso estou aqui, pra ajudar você e seu negócio. Fica muito mais fácil ter a Cielo com você na luta de todo dia, não é?', true, false, 3);
+		eloBot('Mas antes de começarmos, qual o seu nome?', true, false, 4, 3000);
 
 		setTimeout(function() {
 			$('.inputBox input').prop('disabled', false);
@@ -99,8 +99,8 @@ function clientChat() {
 	document.querySelector('.inputBox').remove()
 	chatArea.insertAdjacentHTML('beforeend', chatBox)
 	scrollChatBottom()
-	maleBot(`Prazer, ${realUserName}.`, true, false, 5, 1000);
-	maleBot('Então vamos continuar, conta pra mim, você já é cliente Cielo?', true, true, 6, 2000, 'cliente');
+	eloBot(`Prazer, ${realUserName}.`, true, false, 5, 1000);
+	eloBot('Então vamos continuar, conta pra mim, você já é cliente Cielo?', true, true, 6, 2000, 'pgt01');
 	scrollChatBottom()
 	setTimeout(function() {
 		$('.ctaPlace').show();
@@ -108,7 +108,7 @@ function clientChat() {
 	}, 2000)
 }
 // INSERINDO NOME
-function maleBot(speak ='', load = false, interaction = false, conversationPosition = 0, timer = 2000, quizType ='', speakBold ='') {
+function eloBot(speak ='', load = false, interaction = false, conversationPosition = 0, timer = 2000, quizType ='', speakBold ='') {
 	var chatBox, conversationContent, conversationContentWithInteraction;
 	let optionPicture = quizType;
 	if(load === true) {
@@ -128,7 +128,7 @@ function maleBot(speak ='', load = false, interaction = false, conversationPosit
 				<img id="opcao-1" class="${optionPicture}" src="../img/cielo/respostas/${optionPicture}-01.jpg?v=1" alt="">
 				<img id="opcao-2" class="${optionPicture}" src="../img/cielo/respostas/${optionPicture}-02.jpg?v=1" alt="">
 				<img id="opcao-3" class="${optionPicture}" src="../img/cielo/respostas/${optionPicture}-03.jpg?v=1" alt="">
-				<img id="opcao-4" class="${optionPicture}" src="../img/cielo/respostas/${optionPicture}-04.jpg?v=1" alt="">
+				<img id="opcao-4" class="${optionPicture}" src="../img/cielo/respostas/${optionPicture}-04.jpg?v=1" alt="">	
 			</div>`
 			$('.position-' + conversationPosition + ' .chatbox p').remove()
 			$('.position-' + conversationPosition + ' .chatbox').css('padding', '10px');
@@ -147,45 +147,6 @@ function maleBot(speak ='', load = false, interaction = false, conversationPosit
 	chatArea.insertAdjacentHTML('beforeend', chatBox)
 	scrollChatBottom()
 }
-function femaleBot(speak, load = false, interaction = false, conversationPosition = 0, timer = 2000, quizType ='') {
-	var chatBox, conversationContent, conversationContentWithInteraction;
-	let optionPicture = quizType;
-	if(load === true) {
-		conversationContent = 
-		`<p class="anima">
-		<span class="dot bg-f79552"></span>
-		<span class="dot bg-f2684b"></span>
-		<span class="dot bg-b6116e"></span>
-		<span class="dot bg-017ceb"></span>
-		</p>`
-	}
-	setTimeout(function() {
-		if(interaction) {
-			conversationContent = `
-			<p class="text">${speak}</p>
-			<div class="options">
-			<img id="opcao-1" class="${optionPicture}" src="../img/cielo/respostas/${optionPicture}-01.jpg?v=1" alt="">
-			<img id="opcao-2" class="${optionPicture}" src="../img/cielo/respostas/${optionPicture}-02.jpg?v=1" alt="">
-			<img id="opcao-3" class="${optionPicture}" src="../img/cielo/respostas/${optionPicture}-03.jpg?v=1" alt="">
-			<img id="opcao-4" class="${optionPicture}" src="../img/cielo/respostas/${optionPicture}-04.jpg?v=1" alt="">	
-			</div>`
-			$('.position-' + conversationPosition + ' .chatbox p').remove()
-			$('.position-' + conversationPosition + ' .chatbox').css('padding', '10px');
-			conversationContent = $('.position-' + conversationPosition + ' .chatbox').append(conversationContent)
-			scrollChatBottom()
-		} else {
-			conversationContent = $('.position-' + conversationPosition + ' p').text(speak)
-			scrollChatBottom()
-		}
-	}, timer)
-	if(interaction) {
-		chatBox = `<div class="quiz animation position-${conversationPosition} ${optionPicture}"><img class="avatar" src="https://img.wine.com.br/hotsite/2020/winebox-do-meu-jeito/teste-de-paladar/quiz-image-home-2.png" alt=""><div class="chatbox">${conversationContent}</div></div>`
-	} else {
-		chatBox = `<div class="user2 animation position-${conversationPosition}"><img src="https://img.wine.com.br/hotsite/2020/winebox-do-meu-jeito/teste-de-paladar/quiz-image-home-2.png" alt="">${conversationContent}</div>`	
-	}
-	chatArea.insertAdjacentHTML('beforeend', chatBox)
-	scrollChatBottom()
-}
 function clientAnswers(speak) {
 	let firstLetter = realUserName.charAt(0).toUpperCase();
 	chatBox = 
@@ -197,27 +158,27 @@ function clientAnswers(speak) {
 	scrollChatBottom()
 }
 function callForResult() {
-	$('.ctaConfirmar').css('background', '#573D90')
+	$('.ctaConfirmar').css('background', '#017ceb')
 	$('.ctaConfirmar').text('SABER O RESULTADO')
 
 	$('.ctaConfirmar').click(function() {
 		// Create Result
-		let result = find_duplicate_in_array(selectedOptions);
-		criaUrlMinhaWine(result);
+		// let result = find_duplicate_in_array(selectedOptions);
+		// criaUrlMinhaWine(result);
 		let titulo, texto;
-		resultados.forEach(function(el) {
-			if(el.cluster === cluster) {
-				titulo = el.title;
-				texto = el.texto;
-			}
-		})
+		// resultados.forEach(function(el) {
+		// 	if(el.cluster === cluster) {
+		// 		titulo = el.title;
+		// 		texto = el.texto;
+		// 	}
+		// })
 		// Create Result
 		// Insert Value in Result
 		insertResult = 
 		`<div class="askBox">
-		<img class="logo" src="https://img.wine.com.br/hotsite/2020/winebox-do-meu-jeito/teste-de-paladar/logo-wbdsj.svg" alt="">
-		<img class="winebox" src="https://img.wine.com.br/hotsite/2020/winebox-do-meu-jeito/teste-de-paladar/clube-winebox.svg" alt="">
-		<p class="title">${realUserName}, a winebox do seu jeito é:</p>
+		<!-- <img class="logo" src="https://img.wine.com.br/hotsite/2020/winebox-do-meu-jeito/teste-de-paladar/logo-wbdsj.svg" alt="">
+		<img class="winebox" src="https://img.wine.com.br/hotsite/2020/winebox-do-meu-jeito/teste-de-paladar/clube-winebox.svg" alt=""> -->
+		<p class="title">${realUserName}, estas são as melhores opções para você:</p>
 		<p class="subtitle">${titulo}</p>
 		<p class="resposta">${texto}</p>
 		</div>`
@@ -239,52 +200,52 @@ function scrollChatBottom(){
 		scrollTop: alturaChat
 	})
 }
-function find_duplicate_in_array(arra1) {
-	var object = {};
-	var result = [];
+// function find_duplicate_in_array(arra1) {
+// 	var object = {};
+// 	var result = [];
 
-	arra1.forEach(function (item) {
-		if(!object[item]) {
-			object[item] = 0;
-		}
-		object[item] += 1;
-	})
-	for (var prop in object) {
-		if(object[prop] >= 2) {
-			result.push(prop);
-		}
-	}
-	return result;
-}
+// 	arra1.forEach(function (item) {
+// 		if(!object[item]) {
+// 			object[item] = 0;
+// 		}
+// 		object[item] += 1;
+// 	})
+// 	for (var prop in object) {
+// 		if(object[prop] >= 2) {
+// 			result.push(prop);
+// 		}
+// 	}
+// 	return result;
+// }
 
-function criaUrlMinhaWine(myArray) {
-	if(myArray.includes('opcao-4')) {
-		cluster = 'CLUSTER4';	
-	}
-	if(myArray.includes('opcao-3')) {
-		cluster = 'CLUSTER5';	
-		if(myArray.includes('opcao-4')) {
-			cluster = 'CLUSTER6';	
-		}
-	}
-	if(myArray.includes('opcao-2')) {
-		cluster = 'CLUSTER2';
-		if(myArray.includes('opcao-3')) {
-			cluster = 'CLUSTER9';	
-		} else if(myArray.includes('opcao-4')) {
-			cluster = 'CLUSTER10';
-		}
-	}
+// function criaUrlMinhaWine(myArray) {
+// 	if(myArray.includes('opcao-4')) {
+// 		cluster = 'CLUSTER4';	
+// 	}
+// 	if(myArray.includes('opcao-3')) {
+// 		cluster = 'CLUSTER5';	
+// 		if(myArray.includes('opcao-4')) {
+// 			cluster = 'CLUSTER6';	
+// 		}
+// 	}
+// 	if(myArray.includes('opcao-2')) {
+// 		cluster = 'CLUSTER2';
+// 		if(myArray.includes('opcao-3')) {
+// 			cluster = 'CLUSTER9';	
+// 		} else if(myArray.includes('opcao-4')) {
+// 			cluster = 'CLUSTER10';
+// 		}
+// 	}
 
-	if(myArray.includes('opcao-1')) {
-		cluster = 'CLUSTER1';
-		if(myArray.includes('opcao-2')) {
-			cluster = 'CLUSTER3';	
-		} else if(myArray.includes('opcao-3')) {
-			cluster = 'CLUSTER7';
-		} else if(myArray.includes('opcao-4')) {
-			cluster = 'CLUSTER8';
-		}
-	}
-	return cluster;
-}
+// 	if(myArray.includes('opcao-1')) {
+// 		cluster = 'CLUSTER1';
+// 		if(myArray.includes('opcao-2')) {
+// 			cluster = 'CLUSTER3';	
+// 		} else if(myArray.includes('opcao-3')) {
+// 			cluster = 'CLUSTER7';
+// 		} else if(myArray.includes('opcao-4')) {
+// 			cluster = 'CLUSTER8';
+// 		}
+// 	}
+// 	return cluster;
+// }

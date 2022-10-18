@@ -4,7 +4,8 @@ function reloadJquerySelectFunction() {
 		$('.ctaConfirmar').addClass('active')
 		let lastInteraction = $('.conteudo-chat').children('.animation').last();
 		let lastClass = $(lastInteraction).attr('class').slice(-5)
-		$('.' + lastClass +' .options img').removeClass('active');
+		// $('.' + lastClass +' .options img').removeClass('active');
+		$('.options img').removeClass('active');
 		$(this).addClass('active')
 		atualSelect = $(this).attr('id')
 	})
@@ -64,6 +65,7 @@ $(document).ready(function () {
 		let opcaoNomeSelecionada, respostaSelecionada;
 		let lastInteraction = $('.conteudo-chat').children('.animation').last();
 		let lastClass = $(lastInteraction).attr('class').slice(-5)
+		console.log(lastClass)
 		let lastCardInteraction = $('.quiz.animation.' + lastClass)
 		$(lastCardInteraction).css('pointer-events', 'none');
 		selectedOptions.push(atualSelect)
@@ -78,24 +80,50 @@ $(document).ready(function () {
 		//Adicionando Respostas do Json answer.js
 
 		switch(lastClass) {
-			case 'coffe':
-			clientAnswers(`Das opções, fico com "${opcaoNomeSelecionada}".`)
-			setTimeout(function() {
-				maleBot(`${respostaSelecionada}`, true, false, 7, 2000);
-				femaleBot(`${realUserName}, e comida, qual destes pratos combina mais com você?`, true, true, 8, 3000, 'foods');
+			case 'pgt01':
+			if (opcaoNomeSelecionada == "Sim") {
+				clientAnswers(`${opcaoNomeSelecionada}, sou cliente Cielo!`)
+
 				setTimeout(function() {
-					reloadJquerySelectFunction()
-				}, 3000)
+					eloBot(`${respostaSelecionada}`, true, false, 7, 2000);
+					eloBot(`${realUserName}, com o que posso te ajudar?`, true, true, 8, 3000, 'pstvo');
+					setTimeout(function() {
+						reloadJquerySelectFunction()
+					}, 3000)
+				}, 500)
+			}else {
+				clientAnswers(`${opcaoNomeSelecionada}, eu não sou cliente Cielo.`)
+
+				setTimeout(function() {
+					eloBot(`${respostaSelecionada}`, true, false, 7, 2000);
+					eloBot(`${realUserName}, quais das opções abaixo você se encontra no momento?`, true, true, 8, 3000, 'foods');
+					setTimeout(function() {
+						reloadJquerySelectFunction()
+					}, 3000)
+				}, 500)
+			}
+			break;
+			case 'pstvo':
+			clientAnswers(`${opcaoNomeSelecionada}.`)
+			setTimeout(function() {
+				eloBot(`Ok, estamos reunindo algumas informações, aguarde um momento.`, true, false, 18, 1000);
+				setTimeout(function() {
+					eloBot(`Opa, acho que já achamos uma resposta.`, true, false, 20);	
+				}, 2000)
+				callForResult()
+				selectedOptions.pop()
+				$('.ctaConfirmar').text('Ver informações')
+				$('.ctaConfirmar').addClass('active')
 			}, 500)
 			break;
 			case 'foods':
 			clientAnswers(`Das comidas disponíveis, prefiro "${opcaoNomeSelecionada}".`)
 			setTimeout(function() {
-				maleBot(`${respostaSelecionada}`, true, false, 9, 1000);
-				femaleBot(`Foi difícil escolher só um, né? Te entendo.`, true, false, 10, 2000);
+				eloBot(`${respostaSelecionada}`, true, false, 9, 1000);
+				eloBot(`Foi difícil escolher só um, né? Te entendo.`, true, false, 10, 2000);
 				setTimeout(function() {
-					maleBot(`Mas mandou bem na escolha.`, true, false, 11, 1000);
-					femaleBot(`E para acompanhar, qual sobremesa é a mais gostosa?`, true, true, 12, 2000, 'cands');
+					eloBot(`Mas mandou bem na escolha.`, true, false, 11, 1000);
+					eloBot(`E para acompanhar, qual sobremesa é a mais gostosa?`, true, true, 12, 2000, 'cands');
 					setTimeout(function() {
 						reloadJquerySelectFunction()	
 					}, 2000)
@@ -105,9 +133,9 @@ $(document).ready(function () {
 			case 'cands':
 			clientAnswers(`Hmmm, "${opcaoNomeSelecionada}".`)
 			setTimeout(function() {
-				maleBot(`${respostaSelecionada}`, true, false, 13, 1000);
-				femaleBot(`Está quase acabando, ${realUserName}.`, true, false, 14, 2000);
-				maleBot(`Agora conta pra gente: o que você mais gosta de fazer no final de semana?`, true, true, 15, 3000, 'dates');
+				eloBot(`${respostaSelecionada}`, true, false, 13, 1000);
+				eloBot(`Está quase acabando, ${realUserName}.`, true, false, 14, 2000);
+				eloBot(`Agora conta pra gente: o que você mais gosta de fazer no final de semana?`, true, true, 15, 3000, 'dates');
 				setTimeout(function() {
 					reloadJquerySelectFunction()
 				}, 3000)
@@ -116,8 +144,8 @@ $(document).ready(function () {
 			case 'dates':
 			clientAnswers(`Nossa, essa foi difícil. Das opções, vou de "${opcaoNomeSelecionada}".`)
 			setTimeout(function() {
-				femaleBot(`${respostaSelecionada}`, true, false, 16, 1000);
-				maleBot(`Maravilha. Para fechar, conta pra gente: se você gostasse de drinks, qual dessas opções faria em casa?`, true, true, 17, 2000, 'drink');
+				eloBot(`${respostaSelecionada}`, true, false, 16, 1000);
+				eloBot(`Maravilha. Para fechar, conta pra gente: se você gostasse de drinks, qual dessas opções faria em casa?`, true, true, 17, 2000, 'drink');
 				setTimeout(function() {
 					reloadJquerySelectFunction()
 				}, 3000)
@@ -126,10 +154,10 @@ $(document).ready(function () {
 			case 'drink':
 			clientAnswers(`De drinks, fico com "${opcaoNomeSelecionada}".`)
 			setTimeout(function() {
-				femaleBot(`Mandou bem. Inclusive, vou até pesquisar como fazer este drink em casa, fiquei com vontade.`, true, false, 18, 1000);
-				maleBot(`Olha, ${realUserName}, pelo o que nos contou, conseguimos conhecer um pouquinho melhor você.`, true, false, 19, 2000);
+				eloBot(`Mandou bem. Inclusive, vou até pesquisar como fazer este drink em casa, fiquei com vontade.`, true, false, 18, 1000);
+				eloBot(`Olha, ${realUserName}, pelo o que nos contou, conseguimos conhecer um pouquinho melhor você.`, true, false, 19, 2000);
 				setTimeout(function() {
-					femaleBot(`Opa, acho que já achamos uma resposta.`, true, false, 20);	
+					eloBot(`Opa, acho que já achamos uma resposta.`, true, false, 20);	
 				}, 2000)
 				callForResult()
 				selectedOptions.pop()
@@ -160,8 +188,8 @@ $(document).ready(function () {
 
 		// setTimeout(function(){
 		// 	clientAnswers(`Não concordo com o resultado.`)
-		// 	femaleBot('Entendemos que talvez essa não seja a melhor opção para você, mas não tem problema.', true, false, 21, 2000);
-		// 	maleBot(`Conta pra gente quais das opções abaixo mais agrada você.` , true, true, 22, 3000, 'lasts', 'Pode selecionar até duas.');
+		// 	eloBot('Entendemos que talvez essa não seja a melhor opção para você, mas não tem problema.', true, false, 21, 2000);
+		// 	eloBot(`Conta pra gente quais das opções abaixo mais agrada você.` , true, true, 22, 3000, 'lasts', 'Pode selecionar até duas.');
 		// 	setTimeout(function() {
 		// 		lastSelect()
 		// 	}, 4000)
