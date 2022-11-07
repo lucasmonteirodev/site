@@ -45,6 +45,10 @@ section#modulo-09 {
                     border: solid 1px $azul-escuro;
                 }
 
+                &.hide {
+                    display: none;
+                }
+
                 .togglefaq {
                     text-decoration: none;
 
@@ -111,6 +115,28 @@ section#modulo-09 {
                             color: #555555;
                         }
                     }
+                }
+            }
+
+            .click-ver-mais {
+                text-decoration: none;
+                font-family: 'Lato', sans-serif;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 14px;
+                line-height: 17px;
+                text-decoration-line: underline;
+                color: $azul-medio;
+                width: 70px;
+                margin: 20px auto 0px auto;
+                text-align: center;
+                display: block;
+                transition: all .2s ease-in-out;
+                -webkit-transition: all .2s ease-in-out;
+                -o-transition: all .2s ease-in-out;
+
+                &:hover {
+                    color: $azul-escuro;
                 }
             }
         }

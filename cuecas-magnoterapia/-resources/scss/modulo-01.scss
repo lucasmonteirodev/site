@@ -34,6 +34,10 @@ section#modulo-01 {
             @media (max-width: 767px) {
                 display: none;
             }
+
+            @media (min-width: 768px) and (max-width: 1180px) {
+                width: 400px;
+            }
         }
 
         .div-conteudo {
@@ -110,6 +114,56 @@ section#modulo-01 {
                     margin-top: 32px;
                 }
             }
+        }
+    }
+}
+
+#barra-fixa-compra {
+    display: none;
+
+    @media (max-width: 767px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 0px;
+        position: fixed;
+        bottom: 0;
+        background: url(../../img/outros/bg-barra-fixa-02.png), url(../../img/outros/bg-barra-fixa.png);
+        background-size: initial;
+        background-repeat: no-repeat;
+        background-position: left bottom, right center;
+        background-color: $branco;
+        z-index: 10;
+        box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.17);
+        -webkit-transition: all 2s ease;
+        -moz-transition: all 2s ease;
+        -o-transition: all 2s ease;
+        -ms-transition: all 2s ease;
+        transition: all 2s ease;
+        overflow: hidden;
+
+        &.height-active {
+	        height: 80px;
+	        overflow: initial;
+	    }
+    }
+
+    .grupo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+
+        .logo-cuecas-magnoterapia-alpha {
+            display: block;
+        }
+
+        .cta {
+            height: 40px;
+            line-height: 40px;
+            width: 174px;
+            margin: 0;
         }
     }
 }

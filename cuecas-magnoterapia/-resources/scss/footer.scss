@@ -1,0 +1,217 @@
+footer#footer {
+
+    .grupo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 50px 0px;
+
+        @media (max-width: 767px) {
+            display: block;
+            padding: 40px 16px;
+            box-sizing: border-box;
+        }
+
+        .box {
+            .link-item {
+                font-family: 'Lato', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: $cinza-medio;
+                text-decoration: none;
+                cursor: pointer;
+                display: block;
+                margin-bottom: 22px;
+                transition: all .2s ease-in-out;
+			    -webkit-transition: all .2s ease-in-out;
+			    -o-transition: all .2s ease-in-out;
+
+                &.destaque {
+                    color: $preto;
+                    font-weight: 700;
+                }
+
+                &.disabled {
+                    pointer-events: none;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &:hover {
+                    color: $azul-medio;
+                }
+            }
+
+            &.box-02 {
+                max-width: 220px;
+                margin: 0px 110px;
+
+                @media (max-width: 767px) {
+                    max-width: 100%;
+                    margin: auto;
+                    margin-top: 30px;
+                }
+
+                .link-item {
+                    &:nth-child(3) {
+                        margin-top: 71px;
+
+                        @media (max-width: 767px) {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+
+            &.box-03 {
+
+                width: 328px;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+
+                .rastrear-pedido {
+                    text-decoration: none;
+                    width: 183px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid $azul-medio;
+                    border-radius: 3px;
+                    font-family: 'Lato', sans-serif;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: $azul-medio;
+                    letter-spacing: 0.4px;
+                    transition: all .2s ease-in-out;
+                    -webkit-transition: all .2s ease-in-out;
+                    -o-transition: all .2s ease-in-out;
+
+                    @media (max-width: 767px) {
+                        margin-top: 30px;
+                    }
+
+                    &:hover {
+                        background: $azul-medio;
+                        color: $branco;
+
+                        svg {
+                            path {
+                                fill: $branco;
+                            }
+                        }
+                    }
+
+                    svg {
+                        display: block;
+                        margin-left: 10px;
+
+                        path {
+                            fill: $azul-medio;
+                        }
+                    }
+                }
+
+                hr {
+                    border: solid 1px $cinza-claro;
+                    margin: 17px 0px;
+                }
+
+                .pagamentos {
+                    display: block;
+                }
+
+                .site-blindado {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .grupo-02 {
+        background: $azul-escuro;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 767px) {
+            display: block;
+            padding: 25px 16px 110px 16px;
+            height: auto;
+            box-sizing: border-box;
+        }
+
+        .div-flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 767px) {
+                display: block;
+            }
+
+            .logo-mundo-alpha {
+                display: block;
+
+                @media (max-width: 767px) {
+                    margin: auto;
+                }
+            }
+
+            .tx1 {
+                max-width: 320px;
+                margin: 0px 140px;
+                font-family: 'Lato', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: $branco;
+
+                @media (max-width: 767px) {
+                    text-align: center;
+                    width: 100%;
+                    margin: 30px auto;
+                }
+            }
+
+            .redes-sociais {
+                display: flex;
+                align-items: center;
+
+                @media (max-width: 767px) {
+                    justify-content: center;
+                }
+
+                .tx2 {
+                    font-family: 'Lato', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: $branco;
+                }
+
+                .icon-social {
+                    display: block;
+                    width: 20px;
+                    text-decoration: none;
+
+                    &.instagram {
+                        margin: 0px 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}

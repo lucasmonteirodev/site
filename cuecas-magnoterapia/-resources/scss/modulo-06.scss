@@ -26,6 +26,10 @@ section#modulo-06 {
             padding: 20px 0px;
         }
 
+        @media (min-width: 768px) and (max-width: 1180px) {
+            width: 90%;
+        }
+
         .tx1 {
             color: $azul-escuro;
             max-width: 610px;

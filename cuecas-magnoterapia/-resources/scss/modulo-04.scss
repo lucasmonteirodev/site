@@ -50,6 +50,10 @@ section#modulo-04 {
                     margin-bottom: 30px;
                 }
 
+                @media (min-width: 768px) and (max-width: 1180px) {
+                    margin: 0px 5px; 
+                }
+
                 .bg-white {
                     background: $branco;
                     border-radius: 5px;
