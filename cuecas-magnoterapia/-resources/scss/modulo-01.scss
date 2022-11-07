@@ -1,203 +1,115 @@
-::-webkit-scrollbar {
-	width: 10px;
-	background: #18191A;
-}
+section#modulo-01 {
+    height: 600px;
+    width: 100%;
+    background: url(../../img/modulo-01/bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-/* Track */
-::-webkit-scrollbar-track {
-	border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-	background: #FFB400;
-	border-radius: 10px;
-}
+    @media (max-width: 767px) {
+        background: url(../../img/modulo-01/bg-mob.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+        padding: 40px 0px;
+    }
 
-section#hotsite {
+    .grupo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-	background: #18191A;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	position: relative;
+        @media (max-width: 767px) {
+            display: block;
+        }
 
-	@media (max-width: 767px) {
-		height: auto;
-		display: block;
-		padding: 50px 30px;
-		box-sizing: border-box;
-	}
+        .foto-produto {
+            display: block;
+            margin-right: 70px;
 
-	#modulo1 {
-		.grupo {
-			.logo-lucasmonteirodev {
-				display: block;
-				margin: auto;
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
 
-				@media (max-width: 767px) {
-					display: none;
-				}
-			}
+        .div-conteudo {
+            .logo-cuecas {
+                display: block;
+                margin: auto;
 
-			.logo-lucasmonteirodev-mob {
-				display: none;
+                @media (max-width: 767px) {
+                    width: 300px;
+                }
+            }
 
-				@media (max-width: 767px) {
-					display: block;
-					width: 90%;
-					margin: auto;
-				}
-			}
+            .foto-produto-mob {
+                display: none;
 
-			.div-flex {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				margin-top: 100px;
+                @media (max-width: 767px) {
+                    width: 262px;
+                    display: block;
+                    margin: auto;
+                    margin-top: 25px;
+                }
+            }
 
-				@media (max-width: 767px) {
-					display: block;
-					margin-top: 50px;
-				}
+            .list {
 
-				.click {
-					width: 300px;
-					height: 200px;
-					background: #242526;
-					border-radius: 10px;
-					border: solid 1px #FFB400;
-					display: flex;
-					align-items: center;
-					margin: 0px 15px;
-					justify-content: center;
-					transition: all .2s ease-in-out;
-					-webkit-transition: all .2s ease-in-out;
-					-o-transition: all .2s ease-in-out;
+                width: 355px;
+                margin: auto;
+                margin-top: 15px;
 
-					@media (max-width: 767px) {
-						width: 100%;
-						margin: auto;
-						margin-bottom: 30px;
-					}
+                @media (max-width: 767px) {
+                    width: 295px;
+                    margin-top: 32px;
+                }
 
-					img {
-						width: 250px;
-						display: block;
+                p {
 
-						@media (max-width: 767px) {
-							width: 90%;
-						}
-					}
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 12px;
 
-					&.click-02 {
+                    .check {
+                        display: block;
+                        margin-right: 10px;
 
-						img {
-							width: 200px;
+                        @media (max-width: 767px) {
+                            width: 21px;
+                        }
+                    }
 
-							@media (max-width: 767px) {
-								width: 70%;
-							}
-						}
-					}
+                    span {
+                        font-family: 'Lato', sans-serif;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16.8468px;
+                        line-height: 25px;
+                        color: $branco;
 
-					&:hover {
-						background: hsla(42, 100%, 50%, 0.166);
-					}
-				}
-			}
+                        @media (max-width: 767px) {
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+            }
 
-			.click-linkedin {
-				width: 40px;
-				display: block;
-				margin: auto;
-				margin-top: 100px;
+            .cta {
+                margin-top: 32px;
+                margin-left: 66px;
+                width: 343px;
 
-				@media (max-width: 767px) {
-					margin-top: 50px;
-				}
-
-				svg {
-					width: 40px;
-					height: 40px;
-					display: block;
-
-					path {
-						transition: all .2s ease-in-out;
-						-webkit-transition: all .2s ease-in-out;
-						-o-transition: all .2s ease-in-out;
-					}
-				}
-
-				&:hover {
-					svg {
-						path {
-							fill: #fff
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.culd{
-		position: absolute;
-		top: 100px;
-		left: 100px;
-		width: 10px;
-		height: 10px;
-		border: 1px solid #FFB400;
-		transform-origin: top left;
-		transform: scale(0) rotate(0deg) translate(-50%,-50%);
-		animation: culd 12s  ease-in forwards infinite;
-
-		@media (max-width: 767px) {
-			top: 30px;
-			left: 240px;
-		}
-	}
-	.culd:nth-child(2n){
-		border-color: #FFB400;
-	}
-	.culd:nth-child(2){
-		animation-delay: 2s;
-		top: 80%;
-		left: 10%;
-	}
-	.culd:nth-child(3){
-		animation-delay: 4s;
-		top: 10%;
-		left: 50%;
-
-		@media (max-width: 767px) {
-			display: none;
-		}
-	}
-	.culd:nth-child(4){
-		animation-delay: 6s;
-		top: 80%;
-    	left: 66%;
-
-		@media (max-width: 767px) {
-			display: none;
-		}
-	}
-	.culd:nth-child(5){
-		animation-delay: 8s;
-		top: 40%;
-		left: 90%;
-	}
-	@keyframes culd{
-		from{
-			transform: scale(0) rotate(0deg) translate(-50%,-50%);
-			opacity: 1;
-		}
-		to{
-			transform: scale(20) rotate(360deg) translate(-50%,-50%);
-			opacity: 0;
-		}
-	}
-
+                @media (max-width: 767px) {
+                    width: 100%;
+                    margin: auto;
+                    margin-top: 32px;
+                }
+            }
+        }
+    }
 }

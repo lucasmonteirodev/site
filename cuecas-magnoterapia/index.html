@@ -41,72 +41,641 @@
 	<meta name="twitter:creator" content="@lucasmonteirodev">
 
 	<!-- Styles -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" media="screen" href="./build/css/slick-carousel/slick.css?v=1" />
 	<link rel="stylesheet" type="text/css" media="screen" href="./build/css/slick-carousel/slick-theme.css?v=1" />
 
 	<link rel="stylesheet" type="text/css" media="screen" href="./build/css/reset.css?v=1" /> 
 	<link rel="stylesheet" type="text/css" media="screen" href="./build/css/style.css?v=1" />
-
-	<!-- JQuery -->
-	<script src="./build/js/jquery.min.js?v=1"></script>
 </head>
 <body>
 
 	<section id="hotsite">
 
 		<header id="header">
-			
+
+			<div class="frete"></div>
+
+			<div id="menu-desktop">
+		
+				<a href="/" class="logo"><img src="./img/header/logo-mundo-alpha.png"></a>
+		
+				<nav>
+					<ul id="main">
+						<li class="item-menu active"><a href="#">Início</a></li>
+						<li class="item-menu"><a href="#">Produtos</a></li>
+						<li class="item-menu"><a href="#">Sobre</a></li>
+						<li class="item-menu"><a href="#">Perguntas frequentes</a></li>
+						<li class="item-menu"><a href="#">Rastrear pedido</a></li>
+					</ul>
+				</nav>
+		
+			</div>
+		
+			<div class="container" id="menu-mobile">
+		
+				<div class="nav-principal">
+					<a href="/" class="logo-mob"><img src="./img/header/logo-mundo-alpha.png"></a>
+				</div>
+		
+				<input id="toggle" type="checkbox">
+		
+				<label class="toggle-container" for="toggle">
+					<span class="button button-toggle"></span>
+				</label>
+		
+				<nav class="nav">
+					<a class="nav-item" href="">Início</a>
+					<a class="nav-item" href="">Produtos</a>
+					<a class="nav-item" href="">Sobre</a>
+					<a class="nav-item" href="">Perguntas frequentes</a>
+					<a class="nav-item" href="">Rastrear pedido</a>
+				</nav>
+		
+		
+			</div>
 		</header>
 
 		<section id="modulo-01">
-			
+			<div class="grupo">
+				<img src="./img/modulo-01/cueca-magnoterapia-alpha.png" alt="" class="foto-produto">
+
+				<div class="div-conteudo">
+					<img src="./img/modulo-01/logo-cuecas-magnoterapia-alpha.svg" alt="" class="logo-cuecas">
+
+					<img src="./img/modulo-01/cueca-magnoterapia-alpha.png" alt="" class="foto-produto-mob">
+
+					<div class="list">
+						<p><img src="./img/modulo-01/check.svg" alt="" class="check"> <span>Aumenta o tamanho e espessura do pênis</span></p>
+						<p><img src="./img/modulo-01/check.svg" alt="" class="check"> <span>Combate a impotência sexual</span></p>
+						<p><img src="./img/modulo-01/check.svg" alt="" class="check"> <span>Melhora o desempenho sexual</span></p>
+						<p><img src="./img/modulo-01/check.svg" alt="" class="check"> <span>Prolonga ereção ao máximo</span></p>
+						<p><img src="./img/modulo-01/check.svg" alt="" class="check"> <span>Combate a infertilidade</span></p>
+						<p><img src="./img/modulo-01/check.svg" alt="" class="check"> <span>Solução natural e 100% livre de remédios</span></p>
+					</div>
+
+					<a href="javascript:void(0)" class="cta click-scroll">EU QUERO</a>
+				</div>
+			</div>
 		</section>
 
 		<section id="modulo-02">
-			
+			<div class="grupo">
+				<p class="tx1 title">Já broxou na hora H? 😱</p>
+				<p class="tx2 subtitle">Seu desempenho na cama não é dos melhores?</p>
+				<p class="tx3 subtitle">Então a <b>CUECA DE MAGNOTERAPIA ALPHA</b> é pra você!</p>
+
+				<div class="div-flex">
+					<div class="box-01 box">
+						<img src="./img/modulo-02/icone-01.png" alt="" class="icon icone-01">
+						<p class="descript txt-regular">A Cueca de Magnoterapia Alpha é a melhor solução na melhoria do rendimento físico, sexual e aumento da libido.</p>
+					</div>
+
+					<div class="box-02 box">
+						<img src="./img/modulo-02/icone-02.png" alt="" class="icon icone-02">
+						<p class="descript txt-regular">É considerada a melhor para quem deseja retomar uma vida sexual saudável ou apimentar ainda mais a relação.</p>
+					</div>
+
+					<div class="box-03 box">
+						<img src="./img/modulo-02/icone-03.png" alt="" class="icon icone-03">
+						<p class="descript txt-regular">Seus efeitos vem ajudando milhares de homens, sua composição avançada não possui efeitos colaterais, e seus resultados são garantidos e comprovados.</p>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section id="modulo-03">
-			
+			<div class="grupo">
+				<div class="div-flex">
+					<div class="div-left">
+						<p class="tx1 title">Entenda porque a Cueca de Magnoterapia Alpha funciona</p>
+
+						<img src="./img/modulo-03/divisoria.png" alt="" class="divisoria">
+
+						<p class="tx2 txt-regular">
+							A Cueca de Magnoterapia Alpha é um produto <b>100% natural</b> e seu uso diário é o segredo para a vitalidade e o prazer.
+							
+							<br><br>Rica em pedras de tumalinas aliadas a ativadores infravermelhos, ela age de forma eficaz no aumento do fluxo sanguíneo, proporcionando a quem usa uma <b>ereção longa</b> e com <b>potência máxima</b>, além do auxílio contra a impotência, ejaculação precoce e promovendo o aumento peniano.
+							
+							<br><br><b>A Cueca de Magnoterapia Alpha® é o que falta no seu dia a dia para regular seu corpo, e se tornar uma verdadeira MÁQUINA na cama.</b>
+						</p>
+					</div>
+
+					<div class="div-right">
+						<img src="./img/modulo-03/antes-depois.png" alt="" class="foto-antes-depois">
+
+						<a href="javascript:void(0)" class="cta click-scroll">QUERO TER UM SUPER PÊNIS</a>
+					</div>
+					
+				</div>
+
+				<img src="./img/modulo-03/divisoria.png" alt="" class="divisoria-02">
+
+				<div class="beneficios">
+					<p class="tx1 title">É benefício que não acaba mais!</p>
+
+					<div class="box-beneficios">
+						<div class="item item-01">
+							<img src="./img/modulo-03/icone-beneficio-01.svg" alt="" class="icone">
+
+							<p class="descript">Aumenta o tamanho e espessura do pênis</p>
+						</div>
+
+						<div class="item item-02">
+							<img src="./img/modulo-03/icone-beneficio-02.svg" alt="" class="icone">
+
+							<p class="descript">Prolonga ereção ao máximo</p>
+						</div>
+
+						<div class="item item-03">
+							<img src="./img/modulo-03/icone-beneficio-03.svg" alt="" class="icone">
+
+							<p class="descript">Combate a impotência sexual</p>
+						</div>
+
+						<div class="item item-04">
+							<img src="./img/modulo-03/icone-beneficio-04.svg" alt="" class="icone">
+
+							<p class="descript">Combate a infertilidade</p>
+						</div>
+
+						<div class="item item-05">
+							<img src="./img/modulo-03/icone-beneficio-05.svg" alt="" class="icone">
+
+							<p class="descript">Melhora o desempenho sexual</p>
+						</div>
+
+						<div class="item item-06">
+							<img src="./img/modulo-03/icone-beneficio-06.svg" alt="" class="icone">
+
+							<p class="descript">Solução natural e 100% livre de remédios</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section id="modulo-04">
-			
+			<div class="grupo">
+				<p class="tx1 title">Escolha a melhor opção para você</p>
+
+				<img src="./img/modulo-04/divisoria.png" alt="" class="divisoria">
+
+				<div class="box-produtos">
+					<div class="card card-01 card-unitario">
+						<div class="bg-white">
+							<div class="destaque">
+								<p class="texto-destaque">💰 Mais barato</p>
+	
+								<img src="./img/modulo-04/frete-gratis.svg" alt="" class="frete-gratis">
+							</div>
+	
+							<div class="foto-produto">
+								<img src="./img/produtos/cueca-unitaria.png" alt="" class="foto-destaque-produto">
+							</div>
+	
+							<p class="nome-produto">1 CUECA ALPHA</p>
+	
+							<p class="preco-de">de <span>R$ 246,83</span> por:</p>
+	
+							<p class="novo-preco"><span class="parcelamento">5x</span> <span class="rs">R$</span><span class="preco-integral">23</span><span class="preco-decimal"><span class="virgula">,</span><span class="valor-decimal">98</span></span></p>
+	
+							<p class="preco-total">ou R$ <span class="valor">119,90</Span> à vista</p>
+	
+							<p class="economize"><img src="./img/modulo-04/icone-economize.svg" alt="" class="icone"> <span>Economize R$ <span class="valor-economize">126,93</span></span></p>
+	
+							<div class="tamanho">
+								<p class="txt">Tamanho:</p>
+								
+								<div class="box-tamanhos">
+									<p class="tam tam01" data-tamanho="unit_tam_p" data-url="https://www.lucasmonteirodev.com.br/cueca/unitario/tam-p">P</p>
+									<p class="tam tam02" data-tamanho="unit_tam_m" data-url="https://www.lucasmonteirodev.com.br/cueca/unitario/tam-m">M</p>
+									<p class="tam tam03" data-tamanho="unit_tam_g" data-url="https://www.lucasmonteirodev.com.br/cueca/unitario/tam-g">G</p>
+									<p class="tam tam04" data-tamanho="unit_tam_gg" data-url="https://www.lucasmonteirodev.com.br/cueca/unitario/tam-gg">GG</p>
+									<p class="tam tam05" data-tamanho="unit_tam_xg" data-url="https://www.lucasmonteirodev.com.br/cueca/unitario/tam-xg">XG</p>
+								</div>
+
+								<p class="alerta" style="display: none;">Escolha o tamanho da cueca</p>
+							</div>
+						</div>
+
+						<a href="javascript:void(0)" data-selected="nao-selecionado" data-type="unitario" class="cta unitario">EU QUERO</a>
+					</div>
+
+					<div class="card card-02 card-kit-3">
+						<div class="bg-white">
+							<div class="destaque">
+								<p class="texto-destaque">🚨 Mais vendido</p>
+	
+								<img src="./img/modulo-04/frete-gratis.svg" alt="" class="frete-gratis">
+							</div>
+	
+							<div class="foto-produto">
+								<img src="./img/produtos/kit-3.png" alt="" class="foto-destaque-produto">
+							</div>
+	
+							<p class="nome-produto">1 CUECA ALPHA</p>
+	
+							<p class="preco-de">de <span>R$ 246,83</span> por:</p>
+	
+							<p class="novo-preco"><span class="parcelamento">5x</span> <span class="rs">R$</span><span class="preco-integral">23</span><span class="preco-decimal"><span class="virgula">,</span><span class="valor-decimal">98</span></span></p>
+	
+							<p class="preco-total">ou R$ <span class="valor">119,90</Span> à vista</p>
+	
+							<p class="economize"><img src="./img/modulo-04/icone-economize.svg" alt="" class="icone"> <span>Economize R$ <span class="valor-economize">126,93</span></span></p>
+	
+							<div class="tamanho">
+								<p class="txt">Tamanho:</p>
+								
+								<div class="box-tamanhos">
+									<p class="tam tam01" data-tamanho="kit3_tam_p" data-url="https://www.lucasmonteirodev.com.br/cueca/kit-3/tam-p">P</p>
+									<p class="tam tam02" data-tamanho="kit3_tam_m" data-url="https://www.lucasmonteirodev.com.br/cueca/kit-3/tam-m">M</p>
+									<p class="tam tam03" data-tamanho="kit3_tam_g" data-url="https://www.lucasmonteirodev.com.br/cueca/kit-3/tam-g">G</p>
+									<p class="tam tam04" data-tamanho="kit3_tam_gg" data-url="https://www.lucasmonteirodev.com.br/cueca/kit-3/tam-gg">GG</p>
+									<p class="tam tam05" data-tamanho="kit3_tam_xg" data-url="https://www.lucasmonteirodev.com.br/cueca/kit-3/tam-xg">XG</p>
+								</div>
+
+								<p class="alerta" style="display: none;">Escolha o tamanho da cueca</p>
+							</div>
+						</div>
+
+						<a href="javascript:void(0)" data-selected="nao-selecionado" data-type="kit-3" class="cta kit-3">EU QUERO</a>
+					</div>
+
+					<div class="card card-03 card-kit-6">
+						<div class="bg-white">
+							<div class="destaque">
+								<p class="texto-destaque">⏳ Melhor oferta</p>
+	
+								<img src="./img/modulo-04/frete-gratis.svg" alt="" class="frete-gratis">
+							</div>
+	
+							<div class="foto-produto">
+								<img src="./img/produtos/kit-6.png" alt="" class="foto-destaque-produto">
+							</div>
+	
+							<p class="nome-produto">1 CUECA ALPHA</p>
+	
+							<p class="preco-de">de <span>R$ 246,83</span> por:</p>
+	
+							<p class="novo-preco"><span class="parcelamento">5x</span> <span class="rs">R$</span><span class="preco-integral">23</span><span class="preco-decimal"><span class="virgula">,</span><span class="valor-decimal">98</span></span></p>
+	
+							<p class="preco-total">ou R$ <span class="valor">119,90</Span> à vista</p>
+	
+							<p class="economize"><img src="./img/modulo-04/icone-economize.svg" alt="" class="icone"> <span>Economize R$ <span class="valor-economize">126,93</span></span></p>
+	
+							<div class="tamanho">
+								<p class="txt">Tamanho:</p>
+								
+								<div class="box-tamanhos">
+									<p class="tam tam01" data-tamanho="kit6_tam_p" data-url="https://www.lucasmonteirodev.com.br/cueca/kit-6/tam-p">P</p>
+									<p class="tam tam02" data-tamanho="kit6_tam_m" data-url="https://www.lucasmonteirodev.com.br/cueca/kit-6/tam-m">M</p>
+									<p class="tam tam03" data-tamanho="kit6_tam_g" data-url="https://www.lucasmonteirodev.com.br/cueca/kit-6/tam-g">G</p>
+									<p class="tam tam04" data-tamanho="kit6_tam_gg" data-url="https://www.lucasmonteirodev.com.br/cueca/kit-6/tam-gg">GG</p>
+									<p class="tam tam05" data-tamanho="kit6_tam_xg" data-url="https://www.lucasmonteirodev.com.br/cueca/kit-6/tam-xg">XG</p>
+								</div>
+
+								<p class="alerta" style="display: none;">Escolha o tamanho da cueca</p>
+							</div>
+						</div>
+
+						<a href="javascript:void(0)" data-selected="nao-selecionado" data-type="kit-6" class="cta kit-6">EU QUERO</a>
+					</div>
+				</div>
+
+				<p class="defesa">*Cores sortidas e enviadas aleatoriamente.</p>
+			</div>
 		</section>
 
 		<section id="modulo-05">
-			
+			<div class="grupo">
+				<img src="./img/modulo-05/selo-testado-e-aprovado.png" alt="" class="selo">
+
+				<div class="grupo-texto">
+					<p class="tx1 title">Produto testado e aprovado cientificamente</p>
+
+					<p class="tx2">Anos de pesquisa por médicos especialistas (urologistas, dermatologistas e andrologistas) levaram a este incrível método de tratamento contra a impotência sexual masculina!</p>
+				</div>
+			</div>
 		</section>
 
 		<section id="modulo-06">
-			
+			<div class="grupo">
+				<p class="tx1 title">Veja o que a Cueca de Magnoterapia Alpha® pode fazer por você!</p>
+
+				<div class="div-flex carrossel-gifs">
+					<div class="div-gif-01">
+						<img src="./img/modulo-06/gif-01.gif" class="gif-01" alt="">
+					</div>
+					
+					<div class="div-gif-02">
+						<img src="./img/modulo-06/gif-02.gif" class="gif-02" alt="">
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section id="modulo-07">
-			
+			<div class="grupo">
+				<p class="tx1 title">Quem usou, aprovou!</p>
+
+				<p class="tx2 subtitle">Veja o que nossos clientes dizem sobre a Cueca Alpha</p>
+
+				<div class="carrossel-comentarios-01">
+					<div class="step">
+						<div class="box-margin">
+							<img src="./img/modulo-07/thumb.png" alt="" class="thumb">
+							<img src="./img/modulo-07/thumb-mob.png" alt="" class="thumb-mob">
+
+							<div class="div-comentario">
+								<div>
+									<p class="comentario">Eu amei muito! Minha relação sexual melhorou 100%. Agora não tenho mais o desconforto em ”desanimar” na hora H. Me sinto muito mais ativo e potente. Esta cueca feliz um milagre em mim, rsrs.</p>
+
+									<p class="autor">● Pedro Mauro, 26 anos</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="step">
+						<div class="box-margin">
+							<img src="./img/modulo-07/thumb.png" alt="" class="thumb">
+							<img src="./img/modulo-07/thumb-mob.png" alt="" class="thumb-mob">
+
+							<div class="div-comentario">
+								<div>
+									<p class="comentario">Eu amei muito! Minha relação sexual melhorou 100%. Agora não tenho mais o desconforto em ”desanimar” na hora H. Me sinto muito mais ativo e potente. Esta cueca feliz um milagre em mim, rsrs.</p>
+
+									<p class="autor">● Pedro Mauro, 26 anos</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="step">
+						<div class="box-margin">
+							<img src="./img/modulo-07/thumb.png" alt="" class="thumb">
+							<img src="./img/modulo-07/thumb-mob.png" alt="" class="thumb-mob">
+
+							<div class="div-comentario">
+								<div>
+									<p class="comentario">Eu amei muito! Minha relação sexual melhorou 100%. Agora não tenho mais o desconforto em ”desanimar” na hora H. Me sinto muito mais ativo e potente. Esta cueca feliz um milagre em mim, rsrs.</p>
+
+									<p class="autor">● Pedro Mauro, 26 anos</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="step">
+						<div class="box-margin">
+							<img src="./img/modulo-07/thumb.png" alt="" class="thumb">
+							<img src="./img/modulo-07/thumb-mob.png" alt="" class="thumb-mob">
+
+							<div class="div-comentario">
+								<div>
+									<p class="comentario">Eu amei muito! Minha relação sexual melhorou 100%. Agora não tenho mais o desconforto em ”desanimar” na hora H. Me sinto muito mais ativo e potente. Esta cueca feliz um milagre em mim, rsrs.</p>
+
+									<p class="autor">● Pedro Mauro, 26 anos</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="step">
+						<div class="box-margin">
+							<img src="./img/modulo-07/thumb.png" alt="" class="thumb">
+							<img src="./img/modulo-07/thumb-mob.png" alt="" class="thumb-mob">
+
+							<div class="div-comentario">
+								<div>
+									<p class="comentario">Eu amei muito! Minha relação sexual melhorou 100%. Agora não tenho mais o desconforto em ”desanimar” na hora H. Me sinto muito mais ativo e potente. Esta cueca feliz um milagre em mim, rsrs.</p>
+
+									<p class="autor">● Pedro Mauro, 26 anos</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section id="modulo-08">
-			
+			<div class="grupo">
+				<div class="div-flex">
+					<img src="./img/modulo-08/selo-garantia.svg" alt="" class="selo-garantia">
+
+					<div class="textos">
+						<p class="tx1 title">Satisfação garantida ou seu dinheiro de volta</p>
+
+						<img src="./img/modulo-08/selo-garantia.svg" alt="" class="selo-garantia-mob">
+
+						<p class="tx2 subtitle">Você compra, utiliza o produto e se dentro de 7 dias você não estiver satisfeito, devolvemos todo o seu dinheiro.</p>
+					</div>
+				</div>
+
+				<img src="./img/modulo-08/divisoria.svg" alt="" class="divisoria">
+
+				<div class="div-flex-02">
+					<div class="textos">
+						<p class="tx1 title">Em dúvida quanto comprar pela internet?</p>
+
+						<img src="./img/modulo-08/selo-site-seguro.svg" alt="" class="selo-site-seguro-mob">
+
+						<p class="tx2 subtitle">Não se preocupe! Comprar a Cueca de Magnoterapia Alpha é fácil e seguro.</p>
+
+						<div class="lista">
+							<p class="item"><img src="./img/modulo-08/check.svg" alt="" class="check"> <span>Os dados pessoais e financeiros não são compartilhados</span></p>
+							<p class="item"><img src="./img/modulo-08/check.svg" alt="" class="check"> <span>100% confiável com proteção criptografada</span></p>
+							<p class="item"><img src="./img/modulo-08/check.svg" alt="" class="check"> <span>Entrega garantida no prazo e política de devolução</span></p>
+						</div>
+					</div>
+
+					<img src="./img/modulo-08/selo-site-seguro.svg" alt="" class="selo-site-seguro">
+				</div>
+
+				<a href="javascript:void(0)" class="cta click-modal abreModal" data-modal="facilidade">VEJA COMO É FÁCIL ADQUIRIR SUA CUECA ALPHA</a>
+			</div>
 		</section>
 
 		<section id="modulo-09">
-			
+			<div class="grupo">
+				<p class="tx1 title">Continua com dúvida?</p>
+				<p class="tx2 subtitle">Talvez esses tópicos possam te ajudar.</p>
+
+				<div class="collapse">
+
+					<div class="faq1 divFAQ">
+						<a href="#" class="togglefaq">
+							<div class="pergunta">
+								<p>O que é a Cueca de Magnoterapia Alpha?</p>
+								<img src="./img/modulo-09/arrow-down.svg" class="seta">
+							</div>
+						</a>
+						<div class="faqanswer">
+							<div class="resposta">
+								<p>A Cueca de Magnoterapia Alpha é um produto (cueca masculina) 100% natural e seu uso diário é o segredo para a vitalidade e o prazer. Rica em pedras de tumalinas aliadas a ativadores infravermelhos, ela age de forma eficaz no aumento do fluxo sanguíneo, proporcionando a quem usa uma ereção longa e com potência máxima, além do auxílio contra a impotência, ejaculação precoce e promovendo o aumento peniano.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="faq2 divFAQ">
+						<a href="#" class="togglefaq">
+							<div class="pergunta">
+								<p>Ela cumpre tudo que promete? Funciona mesmo?</p>
+								<img src="./img/modulo-09/arrow-down.svg" class="seta">
+							</div>
+						</a>
+						<div class="faqanswer">
+							<div class="resposta">
+								<p>A cobrança do Clube Wine é realizada mensalmente, à vista e de forma automática em seu cartão de crédito. Mas caso você tenha optado em assinar o plano de pagamento anual, pode parcelar em até 12x sem juros. <br>No dia escolhido para cobrança, você receberá um e-mail com a confirmação do pagamento, e no caso do anual, um e-mail informando o que pedido foi gerado.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="faq3 divFAQ">
+						<a href="#" class="togglefaq">
+							<div class="pergunta">
+								<p>Existe contra indicação?</p>
+								<img src="./img/modulo-09/arrow-down.svg" class="seta">
+							</div>
+						</a>
+						<div class="faqanswer">
+							<div class="resposta">
+								<p>Pode sim, mas somente se ela for do plano mensal e no caso do anual, após o consumo dos 12 créditos pré-contratados.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="faq4 divFAQ">
+						<a href="#" class="togglefaq">
+							<div class="pergunta">
+								<p>Quais as cores disponíveis e como escolher?</p>
+								<img src="./img/modulo-09/arrow-down.svg" class="seta">
+							</div>
+						</a>
+						<div class="faqanswer">
+							<div class="resposta">
+								<p>O valor da taxa de entrega de sua WineBox varia conforme a sua localidade.<br>Você poderá conferir o valor da taxa de entrega no momento que realizar assinatura, assim que selecionar o endereço de entrega. <br>No caso do anual, será cobrado o frete referente a 12 pedidos (um envio por mês).</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
 		</section>
 
 		<section id="modulo-10">
-			
+			<div class="grupo">
+				<form action="">
+					<div class="div-01">
+						<p class="tx1">Cadastre-se e receba todas as novidades e ofertas em primeira mão!</p>
+					</div>
+	
+					<div class="div-02">
+						<div class="form-group">
+							<label for="enauk">Digite seu e-mail:</label>
+	
+							<input type="email" name="email" id="email" placeholder="E-mail">
+						</div>
+					</div>
+
+					<div class="div-03">
+						<a href="javascript:void(0)" class="cta click-form">CADASTRAR</a>
+					</div>
+				</form>
+			</div>
 		</section>
 
 		<footer id="footer">
 			
 		</footer>
 
+		<div class="modal modal-produto modal-facilidade" style="display: none;">
+			<div class="modal-area">
+				<div class="fechar"><img src="./img/modulo-08/close.svg" class="click-fechar-modal"></div> 
+
+				<div class="grupo">
+		
+					<p class="tx1 title">Veja como é fácil adquirir sua Cueca Alpha</p>
+
+					<img src="./img/modulo-08/como-comprar.gif" class="como-comprar">
+
+					<p class="tx2">Após escolher seu kit, tamanho e clicar no botão <b>“EU QUERO”</b> você será redirecionado para uma das maiores e mais seguras plataformas de pagamentos da América Latina. Então preencha seus dados corretamente, e clique no botão verde indicando <b>“COMPRAR AGORA”</b> e pronto! Viu como é Fácil?</p>
+
+					<a href="javascript:void(0)" class="cta click-scroll click-fechar-modal">EU QUERO</a>
+		
+				</div>
+			</div>
+		</div>
+
 	</section>
 
 	<!-- Scripts -->
+	<script src="./build/js/jquery.min.js"></script>
 	<script src="./build/js/scripts.js?v=1"></script>
+	<script src="./build/js/modal-abrir-fechar.js"></script>
 	<script src="./build/js/slick-carousel/slick.min.js?v=1"></script>
+
+	<script>
+
+		$('.carrossel-comentarios-01').slick({
+			dots: true,
+			infinite: true,
+			speed: 300,
+			fade: false,
+			centerMode: true,
+			variableWidth: true,
+  			centerPadding: '0px',
+			arrows: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			responsive: [{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1
+				}
+			}]
+		});
+
+		$('.carrossel-gifs').slick({
+			dots: false,
+			infinite: false,
+			speed: 300,
+			fade: false,
+			variableWidth: true,
+			arrows: false,
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			responsive: [{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					dots: true
+				}
+			}]
+		});
+
+
+		// FAQ
+
+		$('#modulo-09 .togglefaq').click(function(e) {
+			e.preventDefault();
+			var notthis = $('#modulo-09 .active').not(this);
+			notthis.toggleClass('active').next('.faqanswer').slideToggle(300);
+			$(this).toggleClass('active').next().slideToggle("fast");
+		});
+
+		jQuery(document).on('click', '.click-scroll', function(event){
+			event.preventDefault();
+			$('html, body').animate({
+			scrollTop: $('#modulo-04').offset().top
+			}, 300);
+		});
+	</script>
 
 </body>
 </html>

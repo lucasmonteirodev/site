@@ -1,203 +1,114 @@
-::-webkit-scrollbar {
-	width: 10px;
-	background: #18191A;
-}
+section#modulo-06 {
 
-/* Track */
-::-webkit-scrollbar-track {
-	border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-	background: #FFB400;
-	border-radius: 10px;
-}
+    background-color: $azul-escuro;
+    padding: 60px 0px;
 
-section#hotsite {
+    @media (max-width: 767px) {
+        padding: 40px 16px;
+        box-sizing: border-box;
+    }
 
-	background: #18191A;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	position: relative;
+    .grupo {
+        width: 1165px;
+        height: 460px;
+        background: url(../../img/modulo-06/bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 40px 0px;
+        box-sizing: border-box;
+        margin: auto;
+        border-radius: 10px;
 
-	@media (max-width: 767px) {
-		height: auto;
-		display: block;
-		padding: 50px 30px;
-		box-sizing: border-box;
-	}
+        @media (max-width: 767px) {
+            width: 100%;
+            height: auto;
+            padding: 20px 0px;
+        }
 
-	#modulo1 {
-		.grupo {
-			.logo-lucasmonteirodev {
-				display: block;
-				margin: auto;
+        .tx1 {
+            color: $azul-escuro;
+            max-width: 610px;
+            margin: auto;
+            text-align: center;
 
-				@media (max-width: 767px) {
-					display: none;
-				}
-			}
+            @media (max-width: 767px) {
+                padding: 0px 20px;
+                box-sizing: border-box;
+            }
+        }
 
-			.logo-lucasmonteirodev-mob {
-				display: none;
+        .div-flex {
+            
+            width: 600px;
+            margin: auto;
+            margin-top: 44px;
 
-				@media (max-width: 767px) {
-					display: block;
-					width: 90%;
-					margin: auto;
-				}
-			}
+            @media (max-width: 767px) {
+                width: 100%;
+            }
 
-			.div-flex {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				margin-top: 100px;
+            .slick-list {
+                @media (max-width: 767px) {
+                    padding-left: 20px;
+                    box-sizing: border-box;
+                }
+            }
 
-				@media (max-width: 767px) {
-					display: block;
-					margin-top: 50px;
-				}
+            .slick-dots li button:before {
+                font-size: 12px; 
+                color: $cinza-medio;
+                opacity: 1;
+            }
+    
+            .slick-dots {
+                position: initial;
+                margin-top: 20px;
+            }
+    
+            .slick-dots li {
+                margin: 0 2px;
+                display: inline-block;
+            }
+    
+            .slick-dots li.slick-active button:before {
+                opacity: 1;
+                color: $azul-escuro;
+            }
 
-				.click {
-					width: 300px;
-					height: 200px;
-					background: #242526;
-					border-radius: 10px;
-					border: solid 1px #FFB400;
-					display: flex;
-					align-items: center;
-					margin: 0px 15px;
-					justify-content: center;
-					transition: all .2s ease-in-out;
-					-webkit-transition: all .2s ease-in-out;
-					-o-transition: all .2s ease-in-out;
+            .div-gif-01 {
+                margin-right: 100px;
+                width: 250px;
+                height: 250px;
+                border-radius: 4px;
+                overflow: hidden;
 
-					@media (max-width: 767px) {
-						width: 100%;
-						margin: auto;
-						margin-bottom: 30px;
-					}
+                @media (max-width: 767px) {
+                    margin: auto;
+                    margin-right: 20px;
+                }
 
-					img {
-						width: 250px;
-						display: block;
+                .gif-01 {
+                    width: 100%;
+                    margin-top: -32px;
+                }
+            }
 
-						@media (max-width: 767px) {
-							width: 90%;
-						}
-					}
+            .div-gif-02 {
+                width: 250px;
+                height: 250px;
+                border-radius: 4px;
+                overflow: hidden;
 
-					&.click-02 {
+                @media (max-width: 767px) {
+                    margin: auto;
+                }
 
-						img {
-							width: 200px;
-
-							@media (max-width: 767px) {
-								width: 70%;
-							}
-						}
-					}
-
-					&:hover {
-						background: hsla(42, 100%, 50%, 0.166);
-					}
-				}
-			}
-
-			.click-linkedin {
-				width: 40px;
-				display: block;
-				margin: auto;
-				margin-top: 100px;
-
-				@media (max-width: 767px) {
-					margin-top: 50px;
-				}
-
-				svg {
-					width: 40px;
-					height: 40px;
-					display: block;
-
-					path {
-						transition: all .2s ease-in-out;
-						-webkit-transition: all .2s ease-in-out;
-						-o-transition: all .2s ease-in-out;
-					}
-				}
-
-				&:hover {
-					svg {
-						path {
-							fill: #fff
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.culd{
-		position: absolute;
-		top: 100px;
-		left: 100px;
-		width: 10px;
-		height: 10px;
-		border: 1px solid #FFB400;
-		transform-origin: top left;
-		transform: scale(0) rotate(0deg) translate(-50%,-50%);
-		animation: culd 12s  ease-in forwards infinite;
-
-		@media (max-width: 767px) {
-			top: 30px;
-			left: 240px;
-		}
-	}
-	.culd:nth-child(2n){
-		border-color: #FFB400;
-	}
-	.culd:nth-child(2){
-		animation-delay: 2s;
-		top: 80%;
-		left: 10%;
-	}
-	.culd:nth-child(3){
-		animation-delay: 4s;
-		top: 10%;
-		left: 50%;
-
-		@media (max-width: 767px) {
-			display: none;
-		}
-	}
-	.culd:nth-child(4){
-		animation-delay: 6s;
-		top: 80%;
-    	left: 66%;
-
-		@media (max-width: 767px) {
-			display: none;
-		}
-	}
-	.culd:nth-child(5){
-		animation-delay: 8s;
-		top: 40%;
-		left: 90%;
-	}
-	@keyframes culd{
-		from{
-			transform: scale(0) rotate(0deg) translate(-50%,-50%);
-			opacity: 1;
-		}
-		to{
-			transform: scale(20) rotate(360deg) translate(-50%,-50%);
-			opacity: 0;
-		}
-	}
+                .gif-02 {
+                    width: 100%;
+                }
+            }
+        }
+    }
 
 }

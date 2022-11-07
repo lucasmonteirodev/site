@@ -1,203 +1,119 @@
-::-webkit-scrollbar {
-	width: 10px;
-	background: #18191A;
-}
+section#modulo-09 {
 
-/* Track */
-::-webkit-scrollbar-track {
-	border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-	background: #FFB400;
-	border-radius: 10px;
-}
+    background-color: $cinza-claro;
+    padding: 60px 0px;
 
-section#hotsite {
+    @media (max-width: 767px) {
+        padding: 40px 16px;
+        box-sizing: border-box;
+    }
 
-	background: #18191A;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	position: relative;
+    .grupo {
 
-	@media (max-width: 767px) {
-		height: auto;
-		display: block;
-		padding: 50px 30px;
-		box-sizing: border-box;
-	}
+        max-width: 633px;
+        margin: auto;
 
-	#modulo1 {
-		.grupo {
-			.logo-lucasmonteirodev {
-				display: block;
-				margin: auto;
+        .tx1 {
+            color: $azul-medio;
+            text-align: center;
+        }
 
-				@media (max-width: 767px) {
-					display: none;
-				}
-			}
+        .tx2 {
+            margin-top: 5px;
+            color: $cinza-escuro;
+            text-align: center;
+        }
 
-			.logo-lucasmonteirodev-mob {
-				display: none;
+        .collapse {
 
-				@media (max-width: 767px) {
-					display: block;
-					width: 90%;
-					margin: auto;
-				}
-			}
+            margin-top: 50px;
 
-			.div-flex {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				margin-top: 100px;
+            @media (max-width: 767px) {
+                margin-top: 40px;
+            }
 
-				@media (max-width: 767px) {
-					display: block;
-					margin-top: 50px;
-				}
+            .divFAQ {
 
-				.click {
-					width: 300px;
-					height: 200px;
-					background: #242526;
-					border-radius: 10px;
-					border: solid 1px #FFB400;
-					display: flex;
-					align-items: center;
-					margin: 0px 15px;
-					justify-content: center;
-					transition: all .2s ease-in-out;
-					-webkit-transition: all .2s ease-in-out;
-					-o-transition: all .2s ease-in-out;
+                margin-bottom: 8px;
+                border: solid 1px $branco;
+                border-radius: 4px;
+                transition: all .2s ease-in-out;
+                -webkit-transition: all .2s ease-in-out;
+                -o-transition: all .2s ease-in-out;
 
-					@media (max-width: 767px) {
-						width: 100%;
-						margin: auto;
-						margin-bottom: 30px;
-					}
+                &:hover {
+                    border: solid 1px $azul-escuro;
+                }
 
-					img {
-						width: 250px;
-						display: block;
+                .togglefaq {
+                    text-decoration: none;
 
-						@media (max-width: 767px) {
-							width: 90%;
-						}
-					}
+                    &.active {
+                        .seta {
+                            -webkit-transform: rotate(180deg);
+                            -moz-transform: rotate(180deg);
+                            -o-transform: rotate(180deg);
+                            -ms-transform: rotate(180deg);
+                            transform: rotate(180deg);
+                        }
 
-					&.click-02 {
+                        .pergunta {
+                            border-radius: 4px 4px 0px 0px !important;
+                        }
+                    }
 
-						img {
-							width: 200px;
+                    .pergunta {
+                        width: 100%;
+                        background: $branco;
+                        border-radius: 4px;
+                        display: flex;
+                        align-items: center;
+                        padding: 15px 0px 15px 0px;
+                        transition: all .2s ease-in-out;
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
 
-							@media (max-width: 767px) {
-								width: 70%;
-							}
-						}
-					}
+                        p {
+                            font-family: Lato, sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: $azul-escuro;
+                            padding-left: 20px;
+                        }
 
-					&:hover {
-						background: hsla(42, 100%, 50%, 0.166);
-					}
-				}
-			}
+                        .seta {
+                            margin-left: auto;
+                            margin-right: 20px;
+                        }
+                    }
+                }
 
-			.click-linkedin {
-				width: 40px;
-				display: block;
-				margin: auto;
-				margin-top: 100px;
+                .faqanswer {
+                    display: none;
+                    width: 100%;
+                    padding: 14px 0px;
+                    background: $branco;
+                    border-radius: 0px 0px 4px 4px;
+                    border-top: solid 1px $cinza-claro;
 
-				@media (max-width: 767px) {
-					margin-top: 50px;
-				}
+                    .resposta {
 
-				svg {
-					width: 40px;
-					height: 40px;
-					display: block;
+                        padding: 0px 20px;
 
-					path {
-						transition: all .2s ease-in-out;
-						-webkit-transition: all .2s ease-in-out;
-						-o-transition: all .2s ease-in-out;
-					}
-				}
-
-				&:hover {
-					svg {
-						path {
-							fill: #fff
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.culd{
-		position: absolute;
-		top: 100px;
-		left: 100px;
-		width: 10px;
-		height: 10px;
-		border: 1px solid #FFB400;
-		transform-origin: top left;
-		transform: scale(0) rotate(0deg) translate(-50%,-50%);
-		animation: culd 12s  ease-in forwards infinite;
-
-		@media (max-width: 767px) {
-			top: 30px;
-			left: 240px;
-		}
-	}
-	.culd:nth-child(2n){
-		border-color: #FFB400;
-	}
-	.culd:nth-child(2){
-		animation-delay: 2s;
-		top: 80%;
-		left: 10%;
-	}
-	.culd:nth-child(3){
-		animation-delay: 4s;
-		top: 10%;
-		left: 50%;
-
-		@media (max-width: 767px) {
-			display: none;
-		}
-	}
-	.culd:nth-child(4){
-		animation-delay: 6s;
-		top: 80%;
-    	left: 66%;
-
-		@media (max-width: 767px) {
-			display: none;
-		}
-	}
-	.culd:nth-child(5){
-		animation-delay: 8s;
-		top: 40%;
-		left: 90%;
-	}
-	@keyframes culd{
-		from{
-			transform: scale(0) rotate(0deg) translate(-50%,-50%);
-			opacity: 1;
-		}
-		to{
-			transform: scale(20) rotate(360deg) translate(-50%,-50%);
-			opacity: 0;
-		}
-	}
+                        p {
+                            font-family: Lato, sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #555555;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 }

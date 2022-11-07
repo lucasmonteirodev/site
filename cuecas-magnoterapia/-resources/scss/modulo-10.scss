@@ -1,203 +1,124 @@
-::-webkit-scrollbar {
-	width: 10px;
-	background: #18191A;
-}
+section#modulo-10 {
 
-/* Track */
-::-webkit-scrollbar-track {
-	border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-	background: #FFB400;
-	border-radius: 10px;
-}
+    background: url(../../img/modulo-10/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: $azul-medio;
+    padding: 24px 0px;
 
-section#hotsite {
+    @media (max-width: 767px) {
+        padding: 20px 16px 40px 16px;
+        box-sizing: border-box;
+        background: url(../../img/modulo-10/bg-mob.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: $azul-medio;
+    }
 
-	background: #18191A;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	position: relative;
+    .grupo {
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-	@media (max-width: 767px) {
-		height: auto;
-		display: block;
-		padding: 50px 30px;
-		box-sizing: border-box;
-	}
+            @media (max-width: 767px) {
+                display: block;
+            }
 
-	#modulo1 {
-		.grupo {
-			.logo-lucasmonteirodev {
-				display: block;
-				margin: auto;
+            .div-01 {
+                .tx1 {
+                    width: 144px;
+                    font-family: 'Lato', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $branco;
 
-				@media (max-width: 767px) {
-					display: none;
-				}
-			}
+                    @media (max-width: 767px) {
+                        width: 275px;
+                        margin: auto;
+                        text-align: center;
+                    }
+                }
+            }
 
-			.logo-lucasmonteirodev-mob {
-				display: none;
+            .div-02 {
 
-				@media (max-width: 767px) {
-					display: block;
-					width: 90%;
-					margin: auto;
-				}
-			}
+                width: 327px;
+                margin: 0px 50px;
 
-			.div-flex {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				margin-top: 100px;
+                @media (max-width: 767px) {
+                    width: 100%;
+                    margin: auto;
+                    margin-top: 30px;
+                }
 
-				@media (max-width: 767px) {
-					display: block;
-					margin-top: 50px;
-				}
+                .form-group {
 
-				.click {
-					width: 300px;
-					height: 200px;
-					background: #242526;
-					border-radius: 10px;
-					border: solid 1px #FFB400;
-					display: flex;
-					align-items: center;
-					margin: 0px 15px;
-					justify-content: center;
-					transition: all .2s ease-in-out;
-					-webkit-transition: all .2s ease-in-out;
-					-o-transition: all .2s ease-in-out;
-
-					@media (max-width: 767px) {
-						width: 100%;
-						margin: auto;
-						margin-bottom: 30px;
-					}
-
-					img {
-						width: 250px;
+					label {
+						font-family: 'Lato', sans-serif;
+						font-style: normal;
+						font-weight: 600;
+						font-size: 14px;
+						line-height: 16px;
+						color: $branco;
 						display: block;
-
-						@media (max-width: 767px) {
-							width: 90%;
-						}
+						margin-bottom: 8px;
 					}
 
-					&.click-02 {
+					input {
+						width: 100%;
+						min-height: 40px;
+						border: 1px solid $branco;
+						border-radius: 4px;
+						font-family: 'Lato', sans-serif;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 20px;
+						color: $cinza-escuro;
+                        background: $branco;
+						padding: 10px;
+						box-sizing: border-box;
+                        transition: all .2s ease-in-out;
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
 
-						img {
-							width: 200px;
-
-							@media (max-width: 767px) {
-								width: 70%;
-							}
-						}
-					}
-
-					&:hover {
-						background: hsla(42, 100%, 50%, 0.166);
-					}
-				}
-			}
-
-			.click-linkedin {
-				width: 40px;
-				display: block;
-				margin: auto;
-				margin-top: 100px;
-
-				@media (max-width: 767px) {
-					margin-top: 50px;
-				}
-
-				svg {
-					width: 40px;
-					height: 40px;
-					display: block;
-
-					path {
-						transition: all .2s ease-in-out;
-						-webkit-transition: all .2s ease-in-out;
-						-o-transition: all .2s ease-in-out;
+                        &:focus {
+                            border: 1px solid $amarelo;
+                        }
 					}
 				}
+            }
 
-				&:hover {
-					svg {
-						path {
-							fill: #fff
-						}
-					}
-				}
-			}
-		}
-	}
+            .div-03 {
 
-	.culd{
-		position: absolute;
-		top: 100px;
-		left: 100px;
-		width: 10px;
-		height: 10px;
-		border: 1px solid #FFB400;
-		transform-origin: top left;
-		transform: scale(0) rotate(0deg) translate(-50%,-50%);
-		animation: culd 12s  ease-in forwards infinite;
+                padding-top: 25px;
 
-		@media (max-width: 767px) {
-			top: 30px;
-			left: 240px;
-		}
-	}
-	.culd:nth-child(2n){
-		border-color: #FFB400;
-	}
-	.culd:nth-child(2){
-		animation-delay: 2s;
-		top: 80%;
-		left: 10%;
-	}
-	.culd:nth-child(3){
-		animation-delay: 4s;
-		top: 10%;
-		left: 50%;
+                @media (max-width: 767px) {
+                    padding-top: 10px;
+                }
 
-		@media (max-width: 767px) {
-			display: none;
-		}
-	}
-	.culd:nth-child(4){
-		animation-delay: 6s;
-		top: 80%;
-    	left: 66%;
+                .cta {
+                    height: 40px;
+                    line-height: 40px;
+                    width: 250px;
+                    background: #FFCC00;
+                    color: $cinza-escuro;
 
-		@media (max-width: 767px) {
-			display: none;
-		}
-	}
-	.culd:nth-child(5){
-		animation-delay: 8s;
-		top: 40%;
-		left: 90%;
-	}
-	@keyframes culd{
-		from{
-			transform: scale(0) rotate(0deg) translate(-50%,-50%);
-			opacity: 1;
-		}
-		to{
-			transform: scale(20) rotate(360deg) translate(-50%,-50%);
-			opacity: 0;
-		}
-	}
+                    &:hover {
+                        background: #e2b500;
+                    }
+
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 
 }
