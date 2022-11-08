@@ -77,6 +77,15 @@
         }]
     });
 
+    // CLICK VER MAIS FAQ
+
+    $("#modulo-09 .click-ver-mais").click(function() {
+
+        $('#modulo-09 .collapse .divFAQ').removeClass('hide');
+        $(this).hide();
+
+    });
+
 
     // RASTREAR PEDIDO
 
@@ -85,9 +94,9 @@
 
         event.preventDefault();
 
-        urlCorreio = "https://www.linkcorreios.com.br/?id2=";
-        codigoCorreios = $("#codigo");
-        alertaRastreio = $('.alerta-rastreio');
+        const urlCorreio = "https://www.linkcorreios.com.br/?id2=";
+        const codigoCorreios = $("#codigo");
+        const alertaRastreio = $('.alerta-rastreio');
 
         if (codigoCorreios.val().length < 13 || codigoCorreios.val().length > 13) {
 
