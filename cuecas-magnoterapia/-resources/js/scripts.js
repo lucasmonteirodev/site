@@ -113,7 +113,7 @@
 
         event.preventDefault();
 
-        const urlCorreio = "https://www.linkcorreios.com.br/?id2=";
+        const urlCorreio = "https://www.muambator.com.br/pacotes/";
         const codigoCorreios = $("#codigo");
         const alertaRastreio = $('.alerta-rastreio');
 
@@ -123,7 +123,7 @@
 
         } else {
 
-            window.open(urlCorreio + codigoCorreios.val());
+            window.open(urlCorreio + codigoCorreios.val() + "/detalhes/");
 
         }
     });
@@ -180,6 +180,25 @@
         $('html, body').animate({
         scrollTop: $('#modulo-03 .divisoria-02').offset().top
         }, 300);
+    });
+
+
+    // LEAD FORM 
+
+    $("#form-lead").submit(function(e) {
+        e.preventDefault();
+        jQuery("#form-lead").hide();
+        jQuery("#modulo-10 .feedback").show();
+        setTimeout(function (){
+            jQuery("#modulo-10 .feedback").hide();
+            jQuery("#form-lead").show();
+        }, 4000)
+        jQuery.ajax({
+            url:'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeKoTGGkxF9ViDdneTcEMJYlFgBt-ITEOHCbxl1gBB9fcM9SA/formResponse',
+            type:'post',
+            crossDomain: true,
+            data:jQuery('form').serialize(),
+        })
     });
 
 

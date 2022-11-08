@@ -58,6 +58,8 @@ section#modulo-04 {
                     background: $branco;
                     border-radius: 5px;
                     padding: 20px 0px;
+                    min-height: 582px;
+                    box-sizing: border-box;
 
                     .destaque {
                         display: flex;
@@ -271,6 +273,16 @@ section#modulo-04 {
                             color: #ca0202;
                             margin-top: 11px;
                         }
+                    }
+                }
+
+                &.card-01 {
+                    .novo-preco {
+                        margin-top: 37px;
+                    }
+
+                    .tamanho {
+                        margin-top: 39px;
                     }
                 }
 
