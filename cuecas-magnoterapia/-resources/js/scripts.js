@@ -59,6 +59,25 @@
         }]
     });
 
+    $('.carrossel-comentarios-02').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                arrows: false,
+                centerMode: true,
+                variableWidth: true,
+                centerPadding: '0px'
+            }
+        }]
+    });
+
     $('.carrossel-gifs').slick({
         dots: false,
         infinite: false,
@@ -153,6 +172,13 @@
         event.preventDefault();
         $('html, body').animate({
         scrollTop: $('#modulo-04').offset().top
+        }, 300);
+    });
+
+    jQuery(document).on('click', '.click-beneficios', function(event){
+        event.preventDefault();
+        $('html, body').animate({
+        scrollTop: $('#modulo-03 .divisoria-02').offset().top
         }, 300);
     });
 

@@ -6,6 +6,8 @@ section#modulo-10 {
     background-position: center center;
     background-color: $azul-medio;
     padding: 24px 0px;
+    height: 128px;
+    box-sizing: border-box;
 
     @media (max-width: 767px) {
         padding: 20px 16px 40px 16px;
@@ -15,9 +17,16 @@ section#modulo-10 {
         background-repeat: no-repeat;
         background-position: center center;
         background-color: $azul-medio;
+        height: 246px;
     }
 
     .grupo {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
         form {
             display: flex;
             align-items: center;
@@ -116,6 +125,25 @@ section#modulo-10 {
                     @media (max-width: 767px) {
                         width: 100%;
                     }
+                }
+            }
+        }
+
+        .feedback {
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Lato', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 20px;
+                color: #FFFFFF;
+
+                img {
+                    display: block;
+                    margin-right: 10px;
                 }
             }
         }
