@@ -255,7 +255,7 @@
                 $("#modulo-04 .card-01 .cta").removeClass("nao-selecionado");
                 $(this).addClass('active');
                 $("#modulo-04 .card-01 .alerta").hide();
-                $("#modulo-04 .card-01 .cta").attr('href','https://seguro.mundoalphastore.com/r/54SZOQORRZ?utm_source=Meta&#038;utm_campaign=LP02-C03');
+                $("#modulo-04 .card-01 .cta").attr('href',unitario_tamanho_p);
                 break;
             case 'unit_tam_m':
                 $("#modulo-04 .card-01 .cta").attr('data-selected', 'selecionado');
@@ -263,7 +263,7 @@
                 $("#modulo-04 .card-01 .cta").removeClass("nao-selecionado");
                 $(this).addClass('active');
                 $("#modulo-04 .card-01 .alerta").hide();
-                $("#modulo-04 .card-01 .cta").attr('href','https://seguro.mundoalphastore.com/r/6EY2N66ALU?utm_source=Meta&#038;utm_campaign=LP02-C03');
+                $("#modulo-04 .card-01 .cta").attr('href',unitario_tamanho_m);
                 break;
             case 'unit_tam_g':
                 $("#modulo-04 .card-01 .cta").attr('data-selected', 'selecionado');
@@ -271,7 +271,7 @@
                 $("#modulo-04 .card-01 .cta").removeClass("nao-selecionado");
                 $(this).addClass('active');
                 $("#modulo-04 .card-01 .alerta").hide();
-                $("#modulo-04 .card-01 .cta").attr('href','https://mundoalpha.pay.yampi.com.br/r/CQX57Q9UG6?utm_source=Meta&#038;utm_campaign=LP02-C03');
+                $("#modulo-04 .card-01 .cta").attr('href',unitario_tamanho_g);
                 break;
             case 'unit_tam_gg':
                 $("#modulo-04 .card-01 .cta").attr('data-selected', 'selecionado');
@@ -279,7 +279,7 @@
                 $("#modulo-04 .card-01 .cta").removeClass("nao-selecionado");
                 $(this).addClass('active');
                 $("#modulo-04 .card-01 .alerta").hide();
-                $("#modulo-04 .card-01 .cta").attr('href','https://seguro.mundoalphastore.com/r/MEWJJQX7C9?utm_source=Meta&#038;utm_campaign=LP02-C03');
+                $("#modulo-04 .card-01 .cta").attr('href',unitario_tamanho_gg);
                 break;
             case 'unit_tam_xg':
                 $("#modulo-04 .card-01 .cta").attr('data-selected', 'selecionado');
@@ -287,7 +287,7 @@
                 $("#modulo-04 .card-01 .cta").removeClass("nao-selecionado");
                 $(this).addClass('active');
                 $("#modulo-04 .card-01 .alerta").hide();
-                $("#modulo-04 .card-01 .cta").attr('href','https://mundoalpha.pay.yampi.com.br/r/K8I73SQ91F?utm_source=Meta&#038;utm_campaign=LP02-C03');
+                $("#modulo-04 .card-01 .cta").attr('href',unitario_tamanho_xg);
                 break;
             case 'kit3_tam_p':
                 $("#modulo-04 .card-02 .cta").attr('data-selected', 'selecionado');
@@ -295,7 +295,7 @@
                 $("#modulo-04 .card-02 .cta").removeClass("nao-selecionado");
                 $(this).addClass('active');
                 $("#modulo-04 .card-02 .alerta").hide();
-                $("#modulo-04 .card-02 .cta").attr('href','https://seguro.mundoalphastore.com/r/QO6U7715SQ?utm_source=Meta&#038;utm_campaign=LP02-C03');
+                $("#modulo-04 .card-02 .cta").attr('href',kit3_tamanho_p);
                 break;
             case 'kit3_tam_m':
                 $("#modulo-04 .card-02 .cta").attr('data-selected', 'selecionado');
@@ -303,7 +303,7 @@
                 $("#modulo-04 .card-02 .cta").removeClass("nao-selecionado");
                 $(this).addClass('active');
                 $("#modulo-04 .card-02 .alerta").hide();
-                $("#modulo-04 .card-02 .cta").attr('href','https://seguro.mundoalphastore.com/r/LQ0VTOS886?utm_source=Meta&#038;utm_campaign=LP02-C03');
+                $("#modulo-04 .card-02 .cta").attr('href',kit3_tamanho_m);
                 break;
             case 'kit3_tam_g':
                 $("#modulo-04 .card-02 .cta").attr('data-selected', 'selecionado');
@@ -311,7 +311,7 @@
                 $("#modulo-04 .card-02 .cta").removeClass("nao-selecionado");
                 $(this).addClass('active');
                 $("#modulo-04 .card-02 .alerta").hide();
-                $("#modulo-04 .card-02 .cta").attr('href','https://mundoalpha.pay.yampi.com.br/b/9QBMQ9ETNMSK?utm_source=Meta&#038;utm_campaign=LP02-C03');
+                $("#modulo-04 .card-02 .cta").attr('href',kit3_tamanho_g);
                 break;
             case 'kit3_tam_gg':
                 $("#modulo-04 .card-02 .cta").attr('data-selected', 'selecionado');
@@ -319,7 +319,7 @@
                 $("#modulo-04 .card-02 .cta").removeClass("nao-selecionado");
                 $(this).addClass('active');
                 $("#modulo-04 .card-02 .alerta").hide();
-                $("#modulo-04 .card-02 .cta").attr('href','https://seguro.mundoalphastore.com/r/RFRPU7W6JB?utm_source=Meta&#038;utm_campaign=LP02-C03');
+                $("#modulo-04 .card-02 .cta").attr('href',kit3_tamanho_gg);
                 break;
             case 'kit3_tam_xg':
                 $("#modulo-04 .card-02 .cta").attr('data-selected', 'selecionado');
@@ -327,7 +327,7 @@
                 $("#modulo-04 .card-02 .cta").removeClass("nao-selecionado");
                 $(this).addClass('active');
                 $("#modulo-04 .card-02 .alerta").hide();
-                $("#modulo-04 .card-02 .cta").attr('href','https://mundoalpha.pay.yampi.com.br/b/TS1TYUODRLCS?utm_source=Meta&#038;utm_campaign=LP02-C03');
+                $("#modulo-04 .card-02 .cta").attr('href',kit3_tamanho_xg);
                 break;
             case 'kit6_tam_p':
                 $("#modulo-04 .card-03 .cta").attr('data-selected', 'selecionado');
@@ -335,7 +335,7 @@
                 $("#modulo-04 .card-03 .cta").removeClass("nao-selecionado");
                 $(this).addClass('active');
                 $("#modulo-04 .card-03 .alerta").hide();
-                $("#modulo-04 .card-03 .cta").attr('href','https://seguro.mundoalphastore.com/r/HIOOZHXBIL?utm_source=Meta&#038;utm_campaign=LP02-C03');
+                $("#modulo-04 .card-03 .cta").attr('href',kit6_tamanho_p);
                 break;
             case 'kit6_tam_m':
                 $("#modulo-04 .card-03 .cta").attr('data-selected', 'selecionado');
@@ -343,7 +343,7 @@
                 $("#modulo-04 .card-03 .cta").removeClass("nao-selecionado");
                 $(this).addClass('active');
                 $("#modulo-04 .card-03 .alerta").hide();
-                $("#modulo-04 .card-03 .cta").attr('href','https://seguro.mundoalphastore.com/r/8PDINDTY8U?utm_source=Meta&#038;utm_campaign=LP02-C03');
+                $("#modulo-04 .card-03 .cta").attr('href',kit6_tamanho_m);
                 break;
             case 'kit6_tam_g':
                 $("#modulo-04 .card-03 .cta").attr('data-selected', 'selecionado');
@@ -351,7 +351,7 @@
                 $("#modulo-04 .card-03 .cta").removeClass("nao-selecionado");
                 $(this).addClass('active');
                 $("#modulo-04 .card-03 .alerta").hide();
-                $("#modulo-04 .card-03 .cta").attr('href','https://mundoalpha.pay.yampi.com.br/b/NPCPA7ZMPBKO?utm_source=Meta&#038;utm_campaign=LP02-C03');
+                $("#modulo-04 .card-03 .cta").attr('href',kit6_tamanho_g);
                 break;
             case 'kit6_tam_gg':
                 $("#modulo-04 .card-03 .cta").attr('data-selected', 'selecionado');
@@ -359,7 +359,7 @@
                 $("#modulo-04 .card-03 .cta").removeClass("nao-selecionado");
                 $(this).addClass('active');
                 $("#modulo-04 .card-03 .alerta").hide();
-                $("#modulo-04 .card-03 .cta").attr('href','https://seguro.mundoalphastore.com/r/HM07JDXG0Y?utm_source=Meta&#038;utm_campaign=LP02-C03');
+                $("#modulo-04 .card-03 .cta").attr('href',kit6_tamanho_gg);
                 break;
             case 'kit6_tam_xg':
                 $("#modulo-04 .card-03 .cta").attr('data-selected', 'selecionado');
@@ -367,7 +367,7 @@
                 $("#modulo-04 .card-03 .cta").removeClass("nao-selecionado");
                 $(this).addClass('active');
                 $("#modulo-04 .card-03 .alerta").hide();
-                $("#modulo-04 .card-03 .cta").attr('href','https://mundoalpha.pay.yampi.com.br/b/RW3MP60BTYSC?utm_source=Meta&#038;utm_campaign=LP02-C03');
+                $("#modulo-04 .card-03 .cta").attr('href',kit6_tamanho_xg);
                 break;
         }
 
