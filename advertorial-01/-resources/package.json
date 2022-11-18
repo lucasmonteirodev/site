@@ -1,0 +1,24 @@
+{
+  "name": "fetes",
+  "version": "1.0.0",
+  "description": "starter project for fetes pages",
+  "main": "index.jsp",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fetes",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "jest": "^29.0.3",
+    "readable-stream": "^3.4.0",
+    "sass": "^1.54.9"
+  }
+}
