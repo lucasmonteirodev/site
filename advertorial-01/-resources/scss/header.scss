@@ -1,0 +1,42 @@
+header {
+
+    width: 100%;
+
+    .top-01 {
+        background: $verde-escuro;
+        padding: 3px 0px;
+        
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: $branco;
+            text-align: center;
+        }
+    }
+
+    .top-02 {
+        background: $gradiente;
+        padding: 5px 0px;
+
+        a {
+            width: 150px;
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+            margin: auto;
+
+            img {
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        
+    }
+    
+}

@@ -1,7 +1,141 @@
 section#modulo-01 {
 
+    padding: 50px 0px;
+    width: 100%;
+
     @media (max-width: 767px) {
         
+    }
+
+    .grupo {
+        max-width: 1170px;
+        margin: auto;
+
+        .subtitulo {
+            margin-top: 20px;
+        }
+
+        .data-atualizacao {
+            margin-top: 20px;
+        }
+
+        .traco-01 {
+            margin: 30px 0px;
+        }
+
+        .div-dupla {
+            display: flex;
+            align-items: flex-start;
+
+            .conteudo {
+                width: 750px;
+                margin: 30px 50px 0px 35px;
+
+                .banner-promocional {
+                    width: 750px;
+                    height: 420px;
+                    display: block;
+                    margin: 40px auto;
+
+                    .banner-desk {
+                        display: block;
+                        transition: all .2s ease-in-out;
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+
+                        &:hover {
+                            transform: scale(1.02);
+                        }
+
+                        @media (max-width: 767px) {
+                            display: none;
+                        }
+                    }
+
+                    .banner-mob {
+                        display: none;
+
+                        @media (max-width: 767px) {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .side-bar {
+                width: 300px;
+                padding-top: 30px;
+
+                &.stickIt {
+                    position: fixed;
+                    top: 0px;
+                    margin-left: 835px;
+                }
+
+                .item-promocional {
+                    display: block;
+                    width: 300px;
+                    background: $branco;
+                    border: 1px solid $cinza-claro;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    padding: 16px;
+                    box-sizing: border-box;
+
+                    .tx1 {
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 17px;
+                        line-height: 17px;
+                        text-align: center;
+                        color: $verde-escuro;
+                    }
+
+                    hr {
+                        margin: 12px 0px;
+                    }
+
+                    .tx2 {
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 21px;
+                        text-align: center;
+                        color: $preto;
+                    }
+
+                    .foto-produto {
+                        display: block;
+                        margin: 20px auto 10px auto;
+                        width: 100%;
+                    }
+
+                    .tx3 {
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 21px;
+                        text-align: center;
+                        color: $preto;
+                    }
+
+                    .cta {
+                        margin-top: 20px;
+                    }
+
+                    &:hover {
+
+                        .cta {
+                            background-color: #78ad40;
+                        }
+                        
+                    }
+                }
+            }
+        }
     }
 
 }
