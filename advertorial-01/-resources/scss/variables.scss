@@ -5,6 +5,7 @@ $cinza-escuro: #242526;
 $cinza-claro: #CCCCCC;
 $cinza-medio: #4F4F4F;
 $preto: #000000;
+$verde-claro: #8cc05e;
 
 .titulo {
     font-family: 'Open Sans', sans-serif;
@@ -13,6 +14,11 @@ $preto: #000000;
     font-size: 52px;
     line-height: 58px;
     color: $preto;
+
+    @media (max-width: 767px) {
+        font-size: 32px;
+        line-height: 36px;
+    }
 }
 
 .subtitulo {
@@ -22,6 +28,11 @@ $preto: #000000;
     font-size: 20px;
     line-height: 28px;
     color: $preto;
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 26px;
+    }
 }
 
 .data-atualizacao {
@@ -31,6 +42,11 @@ $preto: #000000;
     font-size: 14px;
     line-height: 14px;
     color: $preto;
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 12px;
+    }
 }
 
 .txt {
@@ -41,6 +57,11 @@ $preto: #000000;
     line-height: 32px;
     color: $preto;
 
+    @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
     b {
         font-weight: 600;
     }
@@ -48,10 +69,20 @@ $preto: #000000;
     .big {
         font-weight: 700;
         font-size: 27px;
+
+        @media (max-width: 767px) {
+            font-size: 25px;
+        }
+    }
+
+    a {
+        text-decoration: underline;
+        color: $verde-escuro;
+        font-weight: 500;
     }
 }
 
-ul {
+.lista {
 
     list-style: disc;
     padding-left: 40px;
@@ -64,6 +95,11 @@ ul {
         font-size: 20px;
         line-height: 32px;
         color: $preto;
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+            line-height: 26px;
+        }
     }
 }
 
@@ -80,6 +116,14 @@ hr {
     &:first-child {
         margin-top: 0;
     }
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+        width: 100%;
+    }
 }
 
 .referencia {
@@ -89,6 +133,11 @@ hr {
     font-size: 10px;
     line-height: 17px;
     color: $preto;
+
+    @media (max-width: 767px) {
+        font-size: 8px;
+        line-height: 16px;
+    }
 }
 
 .cta {
@@ -102,7 +151,7 @@ hr {
     text-align: center;
     font-weight: 700;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #fff;
     cursor: pointer;

@@ -1,0 +1,56 @@
+body.dark {
+    section#modulo-01 {
+        background: $cinza-escuro;
+
+        .titulo {
+            color: $verde-claro;
+        }
+
+        .subtitulo {
+            color: $branco;
+        }
+
+        .data-atualizacao {
+            color: $branco;
+        }
+
+        .txt {
+            color: $branco;
+
+            a {
+                color: $verde-claro;
+            }
+
+            .big {
+                color: $verde-claro;
+            }
+        }
+
+        .lista {
+            li {
+                color: $branco;
+            }
+        }
+
+        .referencia {
+            color: $branco;
+        }
+
+        .item-promocional {
+
+            background: $preto !important;
+
+            .tx1 {
+                color: $verde-claro !important;
+            }
+
+            .tx2 {
+                color: $branco !important;
+            }
+
+            .tx3 {
+                color: $branco !important;
+            }
+        }
+    }
+}

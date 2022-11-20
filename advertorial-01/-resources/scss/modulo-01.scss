@@ -2,14 +2,29 @@ section#modulo-01 {
 
     padding: 50px 0px;
     width: 100%;
+    transition: background-color 800ms ease;
 
     @media (max-width: 767px) {
-        
+        padding: 40px 16px;
+        box-sizing: border-box;
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+        padding: 50px 16px;
+        box-sizing: border-box;
     }
 
     .grupo {
         max-width: 1170px;
         margin: auto;
+
+        @media (max-width: 767px) {
+            max-width: 100%;
+        }
+
+        @media (min-width: 768px) and (max-width: 1200px) {
+            max-width: 100%;
+        }
 
         .subtitulo {
             margin-top: 20px;
@@ -21,21 +36,49 @@ section#modulo-01 {
 
         .traco-01 {
             margin: 30px 0px;
+
+            @media (max-width: 767px) {
+                margin: 30px auto;
+            }
         }
 
         .div-dupla {
             display: flex;
             align-items: flex-start;
 
+            @media (max-width: 767px) {
+                display: block;
+            }
+
             .conteudo {
                 width: 750px;
                 margin: 30px 50px 0px 35px;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                    margin: 30px 0px;
+                }
+
+                @media (min-width: 768px) and (max-width: 1200px) {
+                    width: 70%;
+                    margin: 30px 20px 0px 0px;
+                }
 
                 .banner-promocional {
                     width: 750px;
                     height: 420px;
                     display: block;
                     margin: 40px auto;
+
+                    @media (max-width: 767px) {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    @media (min-width: 768px) and (max-width: 1200px) {
+                        width: 100%;
+                        height: auto;
+                    }
 
                     .banner-desk {
                         display: block;
@@ -50,6 +93,10 @@ section#modulo-01 {
                         @media (max-width: 767px) {
                             display: none;
                         }
+
+                        @media (min-width: 768px) and (max-width: 1200px) {
+                            width: 100%;
+                        }
                     }
 
                     .banner-mob {
@@ -57,6 +104,7 @@ section#modulo-01 {
 
                         @media (max-width: 767px) {
                             display: block;
+                            width: 100%;
                         }
                     }
                 }
@@ -66,10 +114,29 @@ section#modulo-01 {
                 width: 300px;
                 padding-top: 30px;
 
+                @media (max-width: 767px) {
+                    width: 100%;
+                    padding-top: 10px;
+                }
+
+                @media (min-width: 768px) and (max-width: 1200px) {
+                    width: 30%;
+                }
+
                 &.stickIt {
                     position: fixed;
                     top: 0px;
                     margin-left: 835px;
+
+                    @media (max-width: 767px) {
+                        margin: 0;
+                        position: initial;
+                    }
+
+                    @media (min-width: 768px) and (max-width: 1200px) {
+                        margin-left: 0;
+                        right: 0;
+                    }
                 }
 
                 .item-promocional {
@@ -81,6 +148,18 @@ section#modulo-01 {
                     text-decoration: none;
                     padding: 16px;
                     box-sizing: border-box;
+                    transition: all .2s ease-in-out;
+                    -webkit-transition: all .2s ease-in-out;
+                    -o-transition: all .2s ease-in-out;
+
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
+
+                    @media (min-width: 768px) and (max-width: 1200px) {
+                        width: 100%;
+                        padding: 10px;
+                    }
 
                     .tx1 {
                         font-family: 'Poppins', sans-serif;
@@ -94,6 +173,10 @@ section#modulo-01 {
 
                     hr {
                         margin: 12px 0px;
+
+                        @media (max-width: 767px) {
+                            margin: 12px auto;
+                        }
                     }
 
                     .tx2 {
@@ -110,6 +193,10 @@ section#modulo-01 {
                         display: block;
                         margin: 20px auto 10px auto;
                         width: 100%;
+
+                        @media (max-width: 767px) {
+                            max-width: 288px;
+                        }
                     }
 
                     .tx3 {
@@ -127,6 +214,8 @@ section#modulo-01 {
                     }
 
                     &:hover {
+
+                        border: solid 1px $verde-escuro;
 
                         .cta {
                             background-color: #78ad40;
