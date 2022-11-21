@@ -3,28 +3,28 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
-        <meta name="robots" content="index, follow">
+        <meta name="robots" content="noindex, nofollow">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Web -->
-        <title>Teste de Paladar | WineBox do Seu Jeito</title>
-        <meta name="title" content="Teste de Paladar | WineBox do Seu Jeito" />
-        <meta name="description" content="Faça o nosso teste de paladar e encontre os vinhos que dão match com você!" />
+        <title>Cielo Digi</title>
+        <meta name="title" content="Cielo Digi" />
+        <meta name="description" content="" />
 
         <!-- Facebook -->
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Conheça a linha Teste de Paladar | WineBox do Seu Jeito 🍷" />
+        <meta property="og:title" content="Cielo Digi 🍷" />
         <meta property="og:image" content="https://www.wine.com.br/winebox-do-seu-jeito/teste-paladar/img/capa.png" />
         <meta property="og:site_name" content="Wine" />
         <meta property="og:url" content="https://www.wine.com.br/winebox-do-seu-jeito/teste-paladar/" />
-        <meta property="og:description" content="Faça o nosso teste de paladar e encontre os vinhos que dão match com você!" />
+        <meta property="og:description" content="" />
 
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@wine_vinhos">
-        <meta name="twitter:title" content="Conheça a linha Teste de Paladar | WineBox do Seu Jeito 🍷">
-        <meta name="twitter:description" content="Faça o nosso teste de paladar e encontre os vinhos que dão match com você!">
+        <meta name="twitter:title" content="Cielo Digi 🍷">
+        <meta name="twitter:description" content="">
         <meta name="twitter:image:src" content="https://www.wine.com.br/winebox-do-seu-jeito/teste-paladar/img/capa.png">
         <meta name="twitter:url" content="https://www.wine.com.br/winebox-do-seu-jeito/teste-paladar/">
         <meta name="twitter:domain" content="www.wine.com.br">
@@ -48,7 +48,7 @@
             <header>
                 <div class="logo">
                     <a title="Home">
-                        <img src="img/logo.png" alt="">
+                        <img src="./img/cielo/logo-cielo-digisvg.svg" alt="">
                     </a>
                 </div>
             </header>
@@ -60,10 +60,8 @@
                     <!-- <div class="init_text">Comece agora o seu de <b style="font-weight: 700;">Teste Paladar</b>:</div> -->
     
                     <div class="question">
-                        Digite seu nome abaixo
-                        <br class="mobile-break">
-                        para começar seu<br>
-                        <span>Teste de Paladar</span>:
+                        <span>Descubra a melhor solução para o seu negócio</span> <br><br>
+                        Digite seu nome para começar<br>
                     </div>
                     
                     <div class="input_control">
@@ -79,91 +77,91 @@
                 </div>
 
                 <div class="question_wrapper next" visited="0">
-                    <div class="question">Das opções a seguir, qual delas representa o que você mais gosta?</div>
+                    <div class="question">Lucas, você já é cliente Cielo?</div>
                     <div class="answers">
                         <button class="answer" data-answer="A" type="button">
-                            <div><img src="./img/icone/img-1.png"></div>CAPPUCCINO
+                            <div><img src="./img/icone/img-1.png"></div>Sim
                         </button>
                         <button class="answer" data-answer="B" type="button">
-                            <div><img src="./img/icone/img-2.png"></div>CAFÉ
+                            <div><img src="./img/icone/img-2.png"></div>Não
                         </button>
-                        <button class="answer" data-answer="C" type="button">
+                        <!-- <button class="answer" data-answer="C" type="button">
                             <div><img src="./img/icone/img-3.png"></div>ÁGUA DE COCO
                         </button>
                         <button class="answer" data-answer="D" type="button">
                             <div><img src="./img/icone/img-4.png"></div>MILKSHAKE
-                        </button>
+                        </button> -->
                     </div>
                 </div>
 
                 <div class="question_wrapper next" visited="0">
-                    <div class="question">Para comida, qual destes pratos combina mais com você?</div>
+                    <div class="question">Quais das opções abaixo você se encontra no momento?</div>
                     <div class="answers">
                         <button class="answer" data-answer="A" type="button">
-                            <div><img src="./img/icone/img-5.png"></div>PIZZA
+                            <div><img src="./img/icone/img-5.png"></div>Estou abrindo um negócio
                         </button>
                         <button class="answer" data-answer="B" type="button">
-                            <div><img src="./img/icone/img-6.png"></div>HAMBÚRGUER
+                            <div><img src="./img/icone/img-6.png"></div>Não tenho um negócio ainda
                         </button>
                         <button class="answer" data-answer="C" type="button">
-                            <div><img src="./img/icone/img-7.png"></div>FRUTOS DO MAR
+                            <div><img src="./img/icone/img-7.png"></div>Já tenho um negócio
                         </button>
-                        <button class="answer" data-answer="D" type="button">
+                        <!-- <button class="answer" data-answer="D" type="button">
                             <div><img src="./img/icone/img-8.png"></div>PÃO DE QUEIJO
-                        </button>
+                        </button> -->
                     </div>
                 </div>
 
                 <div class="question_wrapper next" visited="0">
-                    <div class="question">E para acompanhar, qual sobremesa é a mais gostosa?</div>
+                    <div class="question">Onde você faz suas vendas?</div>
                     <div class="answers">
                         <button class="answer" data-answer="A" type="button">
-                            <div><img src="./img/icone/img-9.png"></div>BRIGADEIRO
+                            <div><img src="./img/icone/img-9.png"></div>Em uma loja física
                         </button>
                         <button class="answer" data-answer="B" type="button">
-                            <div><img src="./img/icone/img-10.png"></div>BROWNIE
+                            <div><img src="./img/icone/img-10.png"></div>Online (Internet e Redes Sociais)
                         </button>
                         <button class="answer" data-answer="C" type="button">
-                            <div><img src="./img/icone/img-11.png"></div>SALADA DE FRUTAS
+                            <div><img src="./img/icone/img-11.png"></div>Tanto online quanto lojas físicas
                         </button>
-                        <button class="answer" data-answer="D" type="button">
+                        <!-- <button class="answer" data-answer="D" type="button">
                             <div><img src="./img/icone/img-12.png"></div>MOUSSE DE MARACUJÁ
+                        </button> -->
+                    </div>
+                </div>
+
+                <div class="question_wrapper next" visited="0">
+                    <div class="question">Quanto você pretende vender?</div>
+                    <div class="answers">
+                        <button class="answer" data-answer="A" type="button">
+                            <div><img src="./img/icone/img-13.png"></div>Até 10 mil
+                        </button>
+                        <button class="answer" data-answer="B" type="button">
+                            <div><img src="./img/icone/img-14.png"></div>De 10 a 100 mil
+                        </button>
+                        <button class="answer" data-answer="C" type="button">
+                            <div><img src="./img/icone/img-15.png"></div>De 100 mil a 1,2 milhão
+                        </button>
+                        <button class="answer" data-answer="D" type="button">
+                            <div><img src="./img/icone/img-16.png"></div>Mais de 1,2 milhão
                         </button>
                     </div>
                 </div>
 
                 <div class="question_wrapper next" visited="0">
-                    <div class="question">Agora conta pra gente: quem é você no final de semana?</div>
+                    <div class="question">Qual o seu maior objetivo agora?</div>
                     <div class="answers">
                         <button class="answer" data-answer="A" type="button">
-                            <div><img src="./img/icone/img-13.png"></div>DESCOLADO
+                            <div><img src="./img/icone/img-17.png"></div>Quero digitalizar meu negócio
                         </button>
                         <button class="answer" data-answer="B" type="button">
-                            <div><img src="./img/icone/img-14.png"></div>MESTRE CUCA
+                            <div><img src="./img/icone/img-18.png"></div>Quero mais divulgação
                         </button>
                         <button class="answer" data-answer="C" type="button">
-                            <div><img src="./img/icone/img-15.png"></div>AVENTUREIRO
+                            <div><img src="./img/icone/img-19.png"></div>Preciso de dinheiro na mão
                         </button>
                         <button class="answer" data-answer="D" type="button">
-                            <div><img src="./img/icone/img-16.png"></div>ANTENADO
-                        </button>
-                    </div>
-                </div>
-
-                <div class="question_wrapper next" visited="0">
-                    <div class="question">Se você pudesse escolher uma das bebidas abaixo, qual seria?</div>
-                    <div class="answers">
-                        <button class="answer" data-answer="A" type="button">
-                            <div><img src="./img/icone/img-17.png"></div>SANGRIA
-                        </button>
-                        <button class="answer" data-answer="B" type="button">
-                            <div><img src="./img/icone/img-18.png"></div>CACHAÇA
-                        </button>
-                        <button class="answer" data-answer="C" type="button">
-                            <div><img src="./img/icone/img-19.png"></div>CERVEJA
-                        </button>
-                        <button class="answer" data-answer="D" type="button">
-                            <div><img src="./img/icone/img-20.png"></div>GIN TÔNICA
+                            <div><img src="./img/icone/img-20.png"></div>Quero apenas transacionar
                         </button>
                     </div>
                 </div>
@@ -174,7 +172,7 @@
                     </div>
                     
                     <div class="input_control">
-                        <input id="useremail" name="entry.1085826053" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Digite seu email aqui..." required>
+                        <input id="useremail" name="" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Digite seu email aqui..." required>
 
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M22 2L2 22" stroke="#F26649" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
@@ -191,7 +189,7 @@
                     </div>
                     
                     <div class="input_control">
-                        <input id="userphone" name="entry.1029840402" type="tel" pattern="\([0-9]{2,3}\) [0-9]{5}-[0-9]{4}" placeholder="Digite seu celular aqui..." required>
+                        <input id="userphone" name="" type="tel" pattern="\([0-9]{2,3}\) [0-9]{5}-[0-9]{4}" placeholder="Digite seu celular aqui..." required>
 
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M22 2L2 22" stroke="#F26649" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
@@ -238,18 +236,18 @@
 
             <div class="loader_wrapper" id="loading_screen">
                 <img src="./img/animacao.png">
-                <p id="loader_subs">Analisando paladar</p>
+                <p id="loader_subs">Analisando suas respostas</p>
             </div>
         </div>
 
         <div id="match_screen">
-            <div class="header">Descubra os vinhos ideais para você!</div>
+            <div class="header">Sua melhor solução está aqui!</div>
 
             <div class="wrapper">
                 <div class="club_wraper">
                     <div class="match" data-club="A">
-                        <img src="./img/match/tinto-leve.png" alt="O club ideal para você!">
-                        <img src="./img/match/tinto-leve-m.png" alt="O club ideal para você!">
+                        <img src="./img/cielo/resultado.png" alt="">
+                        <img src="./img/cielo/resultado.png" alt="">
 
                         <div class="description">
                             <h2>Vinhos leves que agradam qualquer paladar</h2>
@@ -288,8 +286,8 @@
                     </div>
 
                     <div class="match" data-club="B">
-                        <img src="./img/match/tinto-intenso.png" alt="O club ideal para você!">
-                        <img src="./img/match/tinto-intenso-m.png" alt="O club ideal para você!">
+                        <img src="./img/cielo/resultado.png" alt="">
+                        <img src="./img/cielo/resultado.png" alt="">
 
                         <div class="description">
                             <h2>Suas refeições só ficam completas se acompanhadas de um vinho? </h2>
@@ -328,8 +326,8 @@
                     </div>
 
                     <div class="match" data-club="C">
-                        <img src="./img/match/versateis.png" alt="O club ideal para você!">
-                        <img src="./img/match/versateis-m.png" alt="O club ideal para você!">
+                        <img src="./img/cielo/resultado.png" alt="O club ideal para você!">
+                        <img src="./img/cielo/resultado.png" alt="O club ideal para você!">
 
                         <div class="description">
                             <h2>Frescor e diversidade não faltam por aqui.</h2>
@@ -368,8 +366,8 @@
                     </div>
                     
                     <div class="match" data-club="D">
-                        <img src="./img/match/branco-leve.png" alt="O club ideal para você!">
-                        <img src="./img/match/branco-leve-m.png" alt="O club ideal para você!">
+                        <img src="./img/cielo/resultado.png" alt="">
+                        <img src="./img/cielo/resultado.png" alt="">
 
                         <div class="description">
                             <h2>Se é para refrescar, que seja com vinho, não é mesmo? </h2>
@@ -408,8 +406,8 @@
                     </div>
 
                     <div class="match" data-club="AB">
-                        <img src="./img/match/tinto-leve-tinto-intenso.png" alt="O club ideal para você!">
-                        <img src="./img/match/tinto-leve-tinto-intenso-m.png" alt="O club ideal para você!">
+                        <img src="./img/cielo/resultado.png" alt="">
+                        <img src="./img/cielo/resultado.png" alt="">
 
                         <div class="description">
                             <h2>Um pouco de tudo</h2>
@@ -480,8 +478,8 @@
                     </div>
                     
                     <div class="match" data-club="AC">
-                        <img src="./img/match/tinto-leve-versateis.png" alt="O club ideal para você!">
-                        <img src="./img/match/tinto-leve-versateis-m.png" alt="O club ideal para você!">
+                        <img src="./img/cielo/resultado.png" alt="">
+                        <img src="./img/cielo/resultado.png" alt="">
 
                         <div class="description">
                             <h2>Diferenciada: essa é a palavra.</h2>
@@ -552,8 +550,8 @@
                     </div>
 
                     <div class="match" data-club="AD">
-                        <img src="./img/match/tinto-leve-branco-leve.png" alt="O club ideal para você!">
-                        <img src="./img/match/tinto-leve-branco-leve-m.png" alt="O club ideal para você!">
+                        <img src="./img/cielo/resultado.png" alt="">
+                        <img src="./img/cielo/resultado.png" alt="">
 
                         <div class="description">
                             <h2>De complicada, só a vida.</h2>
@@ -624,8 +622,8 @@
                     </div>
 
                     <div class="match" data-club="BC">
-                        <img src="./img/match/tinto-intenso-versateis.png" alt="O club ideal para você!">
-                        <img src="./img/match/tinto-intenso-versateis-m.png" alt="O club ideal para você!">
+                        <img src="./img/cielo/resultado.png" alt="">
+                        <img src="./img/cielo/resultado.png" alt="">
 
                         <div class="description">
                             <h2>Prefere vinhos com mais aromas e sabores, que pede uma comidinha gostosa, e sabe apreciar tintos, brancos, rosés e até um belo espumante?</h2>
@@ -696,8 +694,8 @@
                     </div>
 
                     <div class="match" data-club="BD">
-                        <img src="./img/match/branco-leve-tinto-intenso.png" alt="O club ideal para você!">
-                        <img src="./img/match/branco-leve-tinto-intenso-m.png" alt="O club ideal para você!">
+                        <img src="./img/cielo/resultado.png" alt="">
+                        <img src="./img/cielo/resultado.png" alt="">
 
                         <div class="description">
                             <h2>Gosta de experimentar diferentes estilos de vinhos?</h2>
@@ -768,8 +766,8 @@
                     </div>
 
                     <div class="match" data-club="CD">
-                        <img src="./img/match/branco-leve-versateis.png" alt="O club ideal para você!">
-                        <img src="./img/match/branco-leve-versateis-m.png" alt="O club ideal para você!">
+                        <img src="./img/cielo/resultado.png" alt="">
+                        <img src="./img/cielo/resultado.png" alt="">
 
                         <div class="description">
                             <h2>Refrescância não falta por aqui.</h2>

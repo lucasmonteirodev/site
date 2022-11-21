@@ -106,17 +106,17 @@ const index = (() => {
     function saveLeadIntoForm() {
         const {questions} = document.forms;
 
-        if (questions.checkValidity()) {
-            $.ajax({
-                url:'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfosB4_P7AVBOgzbmV2PJGGRh4Ld1QrlLPeLud_Vg8AlQ5gog/formResponse',
-                type:'post',
-                crossDomain: true,
-                data: $(questions).serialize(),
-            });
-        }
-        else {
-            alert('Você esqueceu de preencher algum campo :(')
-        }
+        // if (questions.checkValidity()) {
+        //     $.ajax({
+        //         url:'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfosB4_P7AVBOgzbmV2PJGGRh4Ld1QrlLPeLud_Vg8AlQ5gog/formResponse',
+        //         type:'post',
+        //         crossDomain: true,
+        //         data: $(questions).serialize(),
+        //     });
+        // }
+        // else {
+        //     alert('Você esqueceu de preencher algum campo :(')
+        // }
     }
 
 
@@ -141,10 +141,10 @@ const index = (() => {
                 $('body').addClass('loader');
 
                 setTimeout(() => {
-                    $('#loader_subs').text('Buscando o vinho perfeito');
+                    $('#loader_subs').text('Buscando a combinação perfeita');
 
                     setTimeout(() => {
-                        $('#loader_subs').text('Encontramos seu match!');
+                        $('#loader_subs').text('Encontramos sua solução!');
 
                         setTimeout(() => {
                             $('body').removeClass('loader');

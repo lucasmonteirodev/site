@@ -6,10 +6,9 @@ body {
     max-width: 100vw !important;
     overflow-x: hidden;
     height: 100vh;
-    background-color: #6F55A8;
-    background-image: url(../../img/bg.png);
-    background-size: contain;
-    background-position: bottom;
+    background-image: url(../../img/cielo/beneficios-cielo.png), url(../../img/cielo/beneficios-cielo-2.png), linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(103,176,243,1) 80%, rgba(1,124,235,1) 100%);
+    background-size: initial;
+    background-position: left bottom, right top -70px;
     background-repeat: no-repeat;
 
     &.loader {
