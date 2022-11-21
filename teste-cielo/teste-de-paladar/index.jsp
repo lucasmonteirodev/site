@@ -19,10 +19,10 @@
 			</div>
 			<div class="conteudo">
 				<div class="groupfirstcontent">
-					<img class="logo" src="https://www.cielo.com.br/assets_cielo/cielo_digi/logo.svg" alt="">
+					<img class="logo" src="../img/cielo/logo-cielo-digisvg.svg" alt="">
 					<div class="image-loader">
-						<img class="loader-1" src="https://img.wine.com.br/hotsite/2020/winebox-do-meu-jeito/teste-de-paladar/quiz-image-home-1.png" alt="">
-						<img class="loader-2" src="https://img.wine.com.br/hotsite/2020/winebox-do-meu-jeito/teste-de-paladar/quiz-image-home-2.png" alt="">
+						<img class="loader-1" src="../img/cielo/load-01.png" alt="">
+						<img class="loader-2" src="../img/cielo/load-02.png" alt="">
 					</div>
 					<p class="title">Vamos começar</p>
 					<p class="subtitle">Com a ajuda da Elô, descubra as melhores soluções para o seu negócio.</p>

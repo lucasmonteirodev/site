@@ -63,9 +63,8 @@ section#quiz {
 
 			.logo {
 				width: 300px;
-				background: #017ceb;
-				padding: 20px;
-				border-radius: 20px;
+				display: block;
+				margin: auto;
 			}
 			.title {
 				font-size: 31px;
@@ -428,19 +427,24 @@ section#quiz {
 								width: 45% !important;
 								/* height: 100%; */
 								margin: 2.5%;
-								opacity: 0.5;
 								-webkit-transition: all .10s ease-out;
 								-moz-transition: all .10s ease-out;
 								-ms-transition: all .10s ease-out;
 								-o-transition: all .10s ease-out;
 								transition: all .10s ease-out;
 								cursor: pointer;
+								border: 2px solid #fff;
 							}
 							img.active {
-								border: 2px solid #017ceb;
+								border: 2px solid #dee058;
 								border-radius: 4px;
-								opacity: 1;
 								pointer-events: none;
+							}
+
+							.pgt01 {
+								&:nth-child(3), &:nth-child(4) {
+									display: none;
+								}
 							}
 						}
 						.text {
@@ -802,7 +806,7 @@ section#quiz {
 										margin: 10px;
 									}
 									img.active {
-										border: 3px solid #017ceb;
+										border: 2px solid #dee058;
 										opacity: 1;
 										pointer-events: none;
 									}
@@ -854,10 +858,11 @@ section#quiz {
 						}
 						.ctaPlace {
 							.ctaConfirmar, .ctaResultado {
-								width: 400px;
+								width: 440px;
 								padding: 12px 0;
 								font-size: 16px;
 								line-height: 22px;
+								margin-left: 43px;
 							}
 						}
 					}
