@@ -1,0 +1,112 @@
+section#termos {
+
+    background: $branco;
+    padding: 70px 0px;
+
+    @media (max-width: 767px) {
+        padding: 40px 0px;
+    }
+
+    .grupo {
+
+        max-width: 1200px;
+        margin: auto;
+        padding: 0px 16px;
+        box-sizing: border-box;
+
+        @media (max-width: 767px) {
+            max-width: 100%;
+        }
+
+        .titulo {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 52px;
+            line-height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $verde-escuro;
+            margin-bottom: 70px;
+
+            img {
+                display: block;
+                margin-left: 30px;
+                width: 140px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 32px;
+                line-height: 36px;
+                flex-direction: column;
+                margin-bottom: 50px;
+
+                span {
+                    order: 2;
+                    text-align: center;
+                }
+
+                img {
+                    width: 80px;
+                    margin: auto;
+                    order: 1;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        .box-texto {
+
+            margin-bottom: 70px;
+
+            @media (max-width: 767px) {
+                margin-bottom: 50px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .columns {
+                .t1-privacidade {
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-size: 22px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                    color: $cinza-medio;
+
+                    @media (max-width: 767px) {
+                        font-size: 18px;
+                    }
+                }
+    
+                .p-texto {
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    color: $cinza-medio;
+                    margin-bottom: 1rem;
+    
+                    b {
+                        font-weight: bold;
+                        margin-right: 5px;
+                    }
+
+                    a {
+                        text-decoration: underline;
+                        color: $verde-escuro;
+                    }
+
+                    @media (max-width: 767px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+}

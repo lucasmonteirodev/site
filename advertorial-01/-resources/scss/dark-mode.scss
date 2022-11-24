@@ -53,4 +53,20 @@ body.dark {
             }
         }
     }
+
+    #termos {
+        background: $cinza-escuro;
+
+        .titulo {
+            color: $verde-claro;
+        }
+
+        .t1-privacidade, .p-texto {
+            color: $branco !important;
+
+            a {
+                color: $verde-claro !important;
+            }
+        }
+    }
 }

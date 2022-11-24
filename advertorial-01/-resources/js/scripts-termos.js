@@ -1,14 +1,3 @@
-// Fixando sidebar ao scrollar 
-
-const topLimit = $('#sidebar').offset().top;
-$(window).scroll(function () {
-    if (topLimit <= $(window).scrollTop()) {
-        $('#sidebar').addClass('stickIt')
-    } else {
-        $('#sidebar').removeClass('stickIt')
-    }
-})
-
 // Dark Mode Setup
 
 var darkMode;
@@ -51,16 +40,3 @@ $('.light-button').on('click', function () {
     // set stored value to 'light'
     localStorage.setItem('dark-mode', 'light');
 });
-
-
-
-// // HORA E DATA DINAMICOS
-		
-Date.prototype.removeHour = function(h){
-    this.setHours(this.getHours()-h);
-    return this;
-}
-
-var data_atual = new Date();
-
-$("#data_hora").text(data_atual.removeHour(1).toLocaleString('pt-br').replace(" ", " - "));
