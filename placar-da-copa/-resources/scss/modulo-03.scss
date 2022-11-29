@@ -308,11 +308,11 @@ section#modulo-03 {
                 margin-top: 16px;
             }
 
-            .publicidade {
+            .box-desin {
                 a {
                     text-decoration: none;
 
-                    #publicidade-02 {
+                    #desin-02 {
                         display: block;
 
                         @media (max-width: 767px) {
@@ -320,7 +320,7 @@ section#modulo-03 {
                         }
                     }
 
-                    #publicidade-02-mob {
+                    #desin-02-mob {
                         display: none;
 
                         @media (max-width: 767px) {
@@ -333,7 +333,7 @@ section#modulo-03 {
         }
     }
 
-    .publicidade-03 {
+    .desin-03 {
 
         margin-top: 80px;
 
@@ -341,7 +341,7 @@ section#modulo-03 {
             margin-top: 40px;
         }
 
-        .link-publicidade-03 {
+        .desincha-03 {
             display: block;
             width: 1048px;
             margin: auto;
@@ -351,7 +351,7 @@ section#modulo-03 {
                 width: 100%;
             }
 
-            #publicidade-03 {
+            #desin-03 {
                 display: block;
 
                 @media (max-width: 767px) {
@@ -359,7 +359,7 @@ section#modulo-03 {
                 }
             }
 
-            #publicidade-03-mob {
+            #desin-03-mob {
                 display: none;
 
                 @media (max-width: 767px) {

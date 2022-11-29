@@ -324,11 +324,11 @@ section#modulo-01 {
                 margin-top: 16px;
             }
 
-            .publicidade {
+            .box-desin {
                 a {
                     text-decoration: none;
 
-                    #publicidade-01 {
+                    #desin-01 {
                         display: block;
 
                         @media (max-width: 767px) {
@@ -336,7 +336,7 @@ section#modulo-01 {
                         }
                     }
 
-                    #publicidade-01-mob {
+                    #desin-01-mob {
                         display: none;
 
                         @media (max-width: 767px) {
