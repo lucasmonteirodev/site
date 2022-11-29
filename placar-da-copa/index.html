@@ -76,14 +76,14 @@
 						<div class="linha"></div>
 						
 						<div class="grupos">
-							<a href="javascript:void(0)" class="tipo-grupo grupo-a active">Grupo A</a>
-							<a href="javascript:void(0)" class="tipo-grupo grupo-b">Grupo B</a>
-							<a href="javascript:void(0)" class="tipo-grupo grupo-c">Grupo C</a>
-							<a href="javascript:void(0)" class="tipo-grupo grupo-d">Grupo D</a>
-							<a href="javascript:void(0)" class="tipo-grupo grupo-e">Grupo E</a>
-							<a href="javascript:void(0)" class="tipo-grupo grupo-f">Grupo F</a>
-							<a href="javascript:void(0)" class="tipo-grupo grupo-g">Grupo G</a>
-							<a href="javascript:void(0)" class="tipo-grupo grupo-h">Grupo H</a>
+							<a href="javascript:void(0)" data-grupo="A" class="tipo-grupo grupo-a active">Grupo A</a>
+							<a href="javascript:void(0)" data-grupo="B" class="tipo-grupo grupo-b">Grupo B</a>
+							<a href="javascript:void(0)" data-grupo="C" class="tipo-grupo grupo-c">Grupo C</a>
+							<a href="javascript:void(0)" data-grupo="D" class="tipo-grupo grupo-d">Grupo D</a>
+							<a href="javascript:void(0)" data-grupo="E" class="tipo-grupo grupo-e">Grupo E</a>
+							<a href="javascript:void(0)" data-grupo="F" class="tipo-grupo grupo-f">Grupo F</a>
+							<a href="javascript:void(0)" data-grupo="G" class="tipo-grupo grupo-g">Grupo G</a>
+							<a href="javascript:void(0)" data-grupo="H" class="tipo-grupo grupo-h">Grupo H</a>
 						</div>
 					</div>
 					<div class="box-02">
@@ -92,7 +92,7 @@
 						</div>
 	
 						<div class="box-grupos-resultado">
-							<div id="result-grupo-A">
+							<div class="resultado-div" id="result-grupo-A">
 								<p class="nome-grupo">Grupo A</p>
 		
 								<div class="div-flex">
@@ -241,7 +241,7 @@
 								</div>
 							</div>
 
-							<div id="result-grupo-B" style="display: none;">
+							<div class="resultado-div" id="result-grupo-B" style="display: none;">
 								<p class="nome-grupo">Grupo B</p>
 		
 								<div class="div-flex">
@@ -390,7 +390,7 @@
 								</div>
 							</div>
 
-							<div id="result-grupo-C" style="display: none;">
+							<div class="resultado-div" id="result-grupo-C" style="display: none;">
 								<p class="nome-grupo">Grupo C</p>
 		
 								<div class="div-flex">
@@ -539,7 +539,7 @@
 								</div>
 							</div>
 
-							<div id="result-grupo-D" style="display: none;">
+							<div class="resultado-div" id="result-grupo-D" style="display: none;">
 								<p class="nome-grupo">Grupo D</p>
 		
 								<div class="div-flex">
@@ -688,7 +688,7 @@
 								</div>
 							</div>
 
-							<div id="result-grupo-E" style="display: none;">
+							<div class="resultado-div" id="result-grupo-E" style="display: none;">
 								<p class="nome-grupo">Grupo E</p>
 		
 								<div class="div-flex">
@@ -837,7 +837,7 @@
 								</div>
 							</div>
 
-							<div id="result-grupo-F" style="display: none;">
+							<div class="resultado-div" id="result-grupo-F" style="display: none;">
 								<p class="nome-grupo">Grupo F</p>
 		
 								<div class="div-flex">
@@ -986,7 +986,7 @@
 								</div>
 							</div>
 
-							<div id="result-grupo-G" style="display: none;">
+							<div class="resultado-div" id="result-grupo-G" style="display: none;">
 								<p class="nome-grupo">Grupo G</p>
 		
 								<div class="div-flex">
@@ -1135,7 +1135,7 @@
 								</div>
 							</div>
 
-							<div id="result-grupo-H" style="display: none;">
+							<div class="resultado-div" id="result-grupo-H" style="display: none;">
 								<p class="nome-grupo">Grupo H</p>
 		
 								<div class="div-flex">
@@ -1287,9 +1287,9 @@
 					</div>
 					<div class="box-03">
 						<div class="publicidade">
-							<a href="" class="publicidade-01">
-								<img src="./img/publicidades/foto-01.png" id="publicidade-01" alt="">
-								<img src="./img/publicidades/foto-01.png" id="publicidade-01-mob" alt="">
+							<a href="https://www.desincha.com.br/kit-02-desinchas-dia.html" target="_blank" class="publicidade-01">
+								<img src="./img/publicidades/foto-01-desk.png" id="publicidade-01" alt="">
+								<img src="./img/publicidades/foto-01-mob.png" id="publicidade-01-mob" alt="">
 							</a>
 						</div>
 					</div>
@@ -1307,30 +1307,132 @@
 	
 								<img src="./img/placar.png" alt="" class="placar">
 	
-								<p class="horario">07:00</p>
+								<p class="horario">12:00</p>
 
 								<div class="div-time-placar">
 									<div class="flag-time flag-time-01">
-										<img src="./img/bandeiras/circles/brasil.svg" alt="">
+										<img src="./img/bandeiras/circles/equador.svg" alt="">
 									</div>
 
 									<p class="pontuacao">
-										<span class="ponto-time-01">2</span>
+										<span class="ponto-time-01">-</span>
 										<span class="divisoria">:</span>
-										<span class="ponto-time-02">0</span>
+										<span class="ponto-time-02">-</span>
 									</p>
 
 									<div class="flag-time flag-time-02">
-										<img src="./img/bandeiras/circles/brasil.svg" alt="">
+										<img src="./img/bandeiras/circles/senegal.svg" alt="">
 									</div>
 								</div>
 	
 								<div class="div-flex">
-									<p class="time-01">Brazil</p>
+									<p class="time-01">Equador</p>
 	
 									<p class="vs">VS</p>
 	
-									<p class="time-02">Sérvia</p>
+									<p class="time-02">Senegal</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="jogos jogo-02">
+							<div class="box-infos">
+								<p class="data">29/11/2022</p>
+	
+								<img src="./img/placar.png" alt="" class="placar">
+	
+								<p class="horario">12:00</p>
+
+								<div class="div-time-placar">
+									<div class="flag-time flag-time-01">
+										<img src="./img/bandeiras/circles/holanda.svg" alt="">
+									</div>
+
+									<p class="pontuacao">
+										<span class="ponto-time-01">-</span>
+										<span class="divisoria">:</span>
+										<span class="ponto-time-02">-</span>
+									</p>
+
+									<div class="flag-time flag-time-02">
+										<img src="./img/bandeiras/circles/catar.svg" alt="">
+									</div>
+								</div>
+	
+								<div class="div-flex">
+									<p class="time-01">Holanda</p>
+	
+									<p class="vs">VS</p>
+	
+									<p class="time-02">Catar</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="jogos jogo-03">
+							<div class="box-infos">
+								<p class="data">29/11/2022</p>
+	
+								<img src="./img/placar.png" alt="" class="placar">
+	
+								<p class="horario">16:00</p>
+
+								<div class="div-time-placar">
+									<div class="flag-time flag-time-01">
+										<img src="./img/bandeiras/circles/ira.svg" alt="">
+									</div>
+
+									<p class="pontuacao">
+										<span class="ponto-time-01">-</span>
+										<span class="divisoria">:</span>
+										<span class="ponto-time-02">-</span>
+									</p>
+
+									<div class="flag-time flag-time-02">
+										<img src="./img/bandeiras/circles/estados-unidos.svg" alt="">
+									</div>
+								</div>
+	
+								<div class="div-flex">
+									<p class="time-01">Irã</p>
+	
+									<p class="vs">VS</p>
+	
+									<p class="time-02">Estados Unidos</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="jogos jogo-04">
+							<div class="box-infos">
+								<p class="data">29/11/2022</p>
+	
+								<img src="./img/placar.png" alt="" class="placar">
+	
+								<p class="horario">16:00</p>
+
+								<div class="div-time-placar">
+									<div class="flag-time flag-time-01">
+										<img src="./img/bandeiras/circles/pais-de-gales.svg" alt="">
+									</div>
+
+									<p class="pontuacao">
+										<span class="ponto-time-01">-</span>
+										<span class="divisoria">:</span>
+										<span class="ponto-time-02">-</span>
+									</p>
+
+									<div class="flag-time flag-time-02">
+										<img src="./img/bandeiras/circles/inglaterra.svg" alt="">
+									</div>
+								</div>
+	
+								<div class="div-flex">
+									<p class="time-01">País de Gales</p>
+	
+									<p class="vs">VS</p>
+	
+									<p class="time-02">Inglaterra</p>
 								</div>
 							</div>
 						</div>
@@ -1395,25 +1497,69 @@
 										</div>
 									</div>
 									
-									<img src="./img/bandeiras/circles/brasil.svg" alt="" class="flag-time-02">
+									<img src="./img/bandeiras/circles/servia.svg" alt="" class="flag-time-02">
+								</div>
+
+								<div class="jogo jogo-02">
+									<img src="./img/bandeiras/circles/brasil.svg" alt="" class="flag-time-01">
+
+									<div class="infos">
+										<p class="data">28/11/2022</p>
+
+										<div class="placar">
+											<p class="nome-time-01-sigla">BRA</p>
+
+											<p class="placar-time-01">1</p>
+
+											<p class="divisoria">X</p>
+
+											<p class="placar-time-02">0</p>
+
+											<p class="nome-time-02-sigla">SUÍ</p>
+										</div>
+									</div>
+									
+									<img src="./img/bandeiras/circles/suica.svg" alt="" class="flag-time-02">
+								</div>
+
+								<div class="jogo jogo-03">
+									<img src="./img/bandeiras/circles/brasil.svg" alt="" class="flag-time-01">
+
+									<div class="infos">
+										<p class="data">02/12/2022</p>
+
+										<div class="placar">
+											<p class="nome-time-01-sigla">BRA</p>
+
+											<p class="placar-time-01">-</p>
+
+											<p class="divisoria">X</p>
+
+											<p class="placar-time-02">-</p>
+
+											<p class="nome-time-02-sigla">CAM</p>
+										</div>
+									</div>
+									
+									<img src="./img/bandeiras/circles/camaroes.svg" alt="" class="flag-time-02">
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="box-03">
 						<div class="publicidade">
-							<a href="" class="publicidade-02">
-								<img src="./img/publicidades/foto-01.png" id="publicidade-02" alt="">
-								<img src="./img/publicidades/foto-01.png" id="publicidade-02-mob" alt="">
+							<a href="https://www.desincha.com.br/em-dobro-desincoffee-baunilha.html" target="_blank" class="publicidade-02">
+								<img src="./img/publicidades/foto-02-desk.png" id="publicidade-02" alt="">
+								<img src="./img/publicidades/foto-02-mob.png" id="publicidade-02-mob" alt="">
 							</a>
 						</div>
 					</div>
 				</div>
 				
 				<div class="publicidade-03">
-					<a href="" class="link-publicidade-03">
-						<img src="./img/publicidades/foto-02.png" id="publicidade-03" alt="">
-						<img src="./img/publicidades/foto-02.png" id="publicidade-03-mob" alt="">
+					<a href="https://www.desincha.com.br/combo-super-moro.html" target="_blank" class="link-publicidade-03">
+						<img src="./img/publicidades/foto-03-desk.png" id="publicidade-03" alt="">
+						<img src="./img/publicidades/foto-03-mob.png" id="publicidade-03-mob" alt="">
 					</a>
 				</div>
 			</section>
@@ -1439,9 +1585,9 @@
 					</div>
 
 					<div class="publicidade-04">
-						<a href="" class="link-publicidade-04">
-							<img src="./img/publicidades/foto-02.png" id="publicidade-04" alt="">
-							<img src="./img/publicidades/foto-02.png" id="publicidade-04-mob" alt="">
+						<a href="https://www.desincha.com.br/super-combo-noite.html" target="_blank" class="link-publicidade-04">
+							<img src="./img/publicidades/foto-04-desk.png" id="publicidade-04" alt="">
+							<img src="./img/publicidades/foto-04-mob.png" id="publicidade-04-mob" alt="">
 						</a>
 					</div>
 				</div>
@@ -1516,6 +1662,19 @@
 				}
 			}]
 		});
+
+
+	$('#modulo-01 .box-01 .grupos .tipo-grupo').click(function () {
+		$('#modulo-01 .box-01 .grupos .tipo-grupo').removeClass("active");
+		$(this).addClass("active");
+
+		var dataValue = $(this).attr("data-grupo");
+
+		$('#modulo-01 .box-02 .box-grupos-resultado .resultado-div').hide();
+		$('#result-grupo-'+dataValue).show();
+
+		console.log(dataValue)
+	});
 	</script>
 	
 </body>

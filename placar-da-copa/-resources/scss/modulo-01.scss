@@ -316,6 +316,7 @@ section#modulo-01 {
             width: 156px;
             height: 100%;
             border-radius: 10px;
+            overflow: hidden;
 
             @media (max-width: 767px) {
                 width: 100%;
