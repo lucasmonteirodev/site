@@ -1,5 +1,193 @@
 section#modulo-02 {
 
+    padding: 80px 0px;
+
+    @media (max-width: 767px) {
+        padding: 40px 0px;
+        padding-bottom: 0;
+    }
+
+    .grupo {
+        .tx1 {
+            font-family: 'Qatar2022 Arabic', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 29.1107px;
+            line-height: 44px;
+            color: $preto;
+            text-align: center;
+
+            @media (max-width: 767px) {
+                color: $branco;
+            }
+        }
+
+        .slide-jogos-de-hoje {
+            margin-top: 40px;
+
+            .slick-dots li button:before {
+                font-size: 12px; 
+                color: $preto;
+                opacity: 1;
+            }
+    
+            .slick-dots {
+                position: initial;
+                margin-top: 20px;
+            }
+    
+            .slick-dots li {
+                margin: 0 2px;
+                display: inline-block;
+            }
+    
+            .slick-dots li.slick-active button:before {
+                opacity: 1;
+                color: $branco;
+            }
+
+            .jogos {
+                width: 300px;
+                height: 300px;
+                background: $dark;
+                border-radius: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .box-infos {
+                    height: 150px;
+                    width: 100%;
+                    position: relative;
+
+                    .data {
+                        position: absolute;
+                        font-family: 'Qatar2022 Arabic', sans-serif;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14.8296px;
+                        line-height: 22px;
+                        text-transform: uppercase;
+                        color: $preto;
+                        left: 0;
+                        right: 0;
+                        top: 8px;
+                        text-align: center;
+                    }
+
+                    .placar {
+                        display: block;
+                        margin: auto;
+                    }
+
+                    .horario {
+                        position: absolute;
+                        font-family: 'Qatar2022 Arabic', sans-serif;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 22px;
+                        text-transform: uppercase;
+                        color: $branco;
+                        left: 0;
+                        right: 0;
+                        top: 94px;
+                        text-align: center;
+                    }
+
+                    .div-time-placar {
+                        position: absolute;
+                        left: 2px;
+                        right: 0;
+                        top: 27.5px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .flag-time {
+
+                            img {
+                                width: 57.23px;
+                                height: 57.23px;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        .pontuacao {
+
+                            font-family: 'Qatar2022 Arabic', sans-serif;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 45.361px;
+                            line-height: 68px;
+                            text-transform: uppercase;
+                            color: $preto;
+                            margin: 0px 12px;
+                            padding-right: 1px;
+                            width: 95px;
+                            text-align: center;
+                        }
+                    }
+
+                    .div-flex {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: 30px;
+
+                        .time-01 {
+                            font-family: 'Qatar2022 Arabic', sans-serif;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 14.8296px;
+                            line-height: 22px;
+                            letter-spacing: -1px;
+                            text-transform: uppercase;
+                            color: $marrom;
+                            background: linear-gradient(180deg, #D2D3D5 26.46%, #FFFFFF 50.2%);
+                            padding: 5px;
+                            box-sizing: border-box;
+                            text-align: right;
+                            width: 100%;
+                            border-radius: 0px 5px 5px 0px;
+                            padding-right: 15px;
+                        }
+
+                        .vs {
+                            font-family: 'Qatar2022 Arabic', sans-serif;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 19.4404px;
+                            line-height: 29px;
+                            letter-spacing: -1.31092px;
+                            text-transform: uppercase;
+                            color: $branco;
+                            margin: 0px 20px;
+                        }
+
+                        .time-02 {
+                            font-family: 'Qatar2022 Arabic', sans-serif;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 14.8296px;
+                            line-height: 22px;
+                            letter-spacing: -1px;
+                            text-transform: uppercase;
+                            color: $marrom;
+                            background: linear-gradient(180deg, #D2D3D5 26.46%, #FFFFFF 50.2%);
+                            padding: 5px;
+                            box-sizing: border-box;
+                            text-align: left;
+                            width: 100%;
+                            border-radius: 5px 0px 0px 5px;
+                            padding-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     @media (max-width: 767px) {
         
     }

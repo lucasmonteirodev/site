@@ -1,7 +1,350 @@
 section#modulo-01 {
 
+    padding-top: 50px;
+
     @media (max-width: 767px) {
-        
+        padding-top: 40px;
     }
 
+    .grupo {
+        width: 1048px;
+        height: 529px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: auto;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+        }
+
+        .box-01 {
+            width: 156px;
+            height: 100%;
+            background: $cinza-escuro;
+            border-radius: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+            
+            .titulo {
+                display: flex;
+                align-items: center;
+
+                img {
+                    display: block;
+                    margin-right: 10px;
+                }
+
+                span {
+                    font-family: 'Lato', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: $branco;
+                }
+            }
+
+            .linha {
+                height: 0.5px;
+                width: 100%;
+                background: $branco;
+                opacity: 0.4;
+                margin-top: 8px;
+            }
+
+            .grupos {
+                margin-top: 8px;
+
+                @media (max-width: 767px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                .tipo-grupo {
+                    display: block;
+                    width: 100%;
+                    font-family: 'Lato', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: $branco;
+                    padding: 0px 7px;
+                    box-sizing: border-box;
+                    text-decoration: none;
+                    transition: all .2s ease-in-out;
+                    -webkit-transition: all .2s ease-in-out;
+                    -o-transition: all .2s ease-in-out;
+                    margin-bottom: 5px;
+
+                    @media (max-width: 767px) {
+                        width: 50%;
+                    }
+
+                    &.active {
+                        background: $verde;
+                        border-radius: 5px;
+                        color: $cinza-escuro;
+                    }
+
+                    &:hover {
+                        background: $verde;
+                        border-radius: 5px;
+                        color: $cinza-escuro;
+                    }
+                }
+            }
+        }
+
+        .box-02 {
+            width: 688px;
+            height: 100%;
+
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-top: 16px;
+            }
+
+            .box-qatar {
+                background: $cinza-escuro;
+                border-radius: 10px;
+                height: 122px;
+                display: flex;
+                align-items: center;
+                padding: 27px 40px;
+                box-sizing: border-box;
+
+                img {
+                    display: block;
+
+                    @media (max-width: 767px) {
+                        margin: auto;
+                    }
+                }
+            }
+
+            .box-grupos-resultado {
+                background: $cinza-escuro;
+                margin-top: 24px;
+                border-radius: 10px;
+                height: 383px;
+                box-sizing: border-box;
+                padding: 40px;
+
+                @media (max-width: 767px) {
+                    margin-top: 16px;
+                    height: auto;
+                    padding: 16px;
+                }
+
+                .nome-grupo {
+                    font-family: 'Qatar2022 Arabic', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 29.1107px;
+                    line-height: 44px;
+                    color: $verde;
+
+                    @media (max-width: 767px) {
+                        text-align: center;
+                    }
+                }
+
+                .div-flex {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    margin-top: 20px;
+
+                    @media (max-width: 767px) {
+                        display: block;
+                        margin-top: 10px;
+                    }
+
+                    .div-left {
+
+                        width: 169px;
+
+                        @media (max-width: 767px) {
+                            width: 100%;
+                        }
+
+                        .tx1 {
+                            font-family: 'Qatar2022 Arabic', sans-serif;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 19.4071px;
+                            line-height: 29px;
+                            color: $branco;
+                        }
+
+                        .box-times {
+                            
+                            margin-top: 10px;
+
+                            .time {
+                                width: 100%;
+                                border-radius: 2.14923px;
+                                background: $branco;
+                                box-sizing: border-box;
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 6px;
+                                height: 25px;
+
+                                .flag {
+                                    display: block;
+                                    margin-right: 6px;
+                                    width: 20px;
+                                }
+
+                                .nome-time {
+                                    font-family: 'Qatar2022 Arabic', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    line-height: 14px;
+                                    color: $marrom;
+                                    padding-top: 3px;
+                                }
+                            }
+                        }
+                    }
+
+                    .div-right {
+
+                        width: 396px;
+
+                        @media (max-width: 767px) {
+                            width: 100%;
+                            margin-top: 20px;
+                        }
+
+                        .tx1 {
+                            font-family: 'Qatar2022 Arabic', sans-serif;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 19.4071px;
+                            line-height: 29px;
+                            color: $branco;
+                        }
+
+                        .box-rodada {
+
+                            margin-top: 10px;
+
+                            .rodada {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+
+                                .time {
+                                    width: 100%;
+                                    border-radius: 2.14923px;
+                                    background: $branco;
+                                    box-sizing: border-box;
+                                    display: flex;
+                                    align-items: center;
+                                    padding-left: 6px;
+                                    height: 25px;
+    
+                                    .flag {
+                                        display: block;
+                                        margin-right: 6px;
+                                        width: 20px;
+                                    }
+    
+                                    .nome-time {
+                                        font-family: 'Qatar2022 Arabic', sans-serif;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 14px;
+                                        line-height: 14px;
+                                        color: $marrom;
+                                        padding-top: 3px;
+                                    }
+                                }
+
+                                .placar {
+                                    display: flex;
+                                    align-items: center;
+                                    margin: 0px 8px;
+
+                                    .placar-pontuacao {
+
+                                        width: 25px;
+                                        height: 25px;
+                                        background: $verde;
+                                        border-radius: 2.13478px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+
+                                        &:first-child {
+                                            margin-right: 8px;
+                                        }
+
+                                        p {
+                                            font-family: 'Qatar2022 Arabic', sans-serif;
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            font-size: 20px;
+                                            padding-top: 3px;
+                                            line-height: 20px;
+                                            text-align: center;
+                                            color: $cinza-escuro
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .box-03 {
+            width: 156px;
+            height: 100%;
+            border-radius: 10px;
+
+            @media (max-width: 767px) {
+                width: 100%;
+                height: auto;
+                margin-top: 16px;
+            }
+
+            .publicidade {
+                a {
+                    text-decoration: none;
+
+                    #publicidade-01 {
+                        display: block;
+
+                        @media (max-width: 767px) {
+                            display: none;
+                        }
+                    }
+
+                    #publicidade-01-mob {
+                        display: none;
+
+                        @media (max-width: 767px) {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

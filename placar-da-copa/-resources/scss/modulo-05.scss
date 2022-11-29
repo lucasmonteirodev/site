@@ -1,0 +1,67 @@
+section#modulo-05 {
+
+    padding: 80px 0px;
+
+    @media (max-width: 767px) {
+        padding: 40px 0px;
+    }
+
+    .grupo {
+        .tx1 {
+            font-family: 'Qatar2022 Arabic', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 29.1107px;
+            line-height: 44px;
+            color: $branco;
+            text-align: center;
+        }
+
+        .slide-fotos {
+            margin-top: 40px;
+            width: 100%;
+
+            img {
+                display: block;
+                margin: 0px 12px;
+            }
+        }
+
+        .publicidade-04 {
+
+            margin-top: 80px;
+
+            @media (max-width: 767px) {
+                margin-top: 40px;
+            }
+    
+            .link-publicidade-04 {
+                display: block;
+                width: 1048px;
+                margin: auto;
+                text-decoration: none;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+    
+                #publicidade-04 {
+                    display: block;
+    
+                    @media (max-width: 767px) {
+                        display: none;
+                    }
+                }
+    
+                #publicidade-04-mob {
+                    display: none;
+    
+                    @media (max-width: 767px) {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

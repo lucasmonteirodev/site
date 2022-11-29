@@ -1,0 +1,49 @@
+header#header {
+
+    background: $preto;
+    padding: 15px 0px;
+
+    @media (max-width: 767px) {
+        padding: 10px 0px;
+    }
+
+    .grupo {
+        .logo-placar-da-copa {
+            display: block;
+            width: 156px;
+            margin: auto;
+
+            @media (max-width: 767px) {
+                width: 100px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        
+    }
+
+}
+
+#hotsite {
+    background: url(../../img/grama.png);
+    background-repeat: repeat;
+    background-size: initial;
+    background-color: $preto;
+
+    #bg-fade {
+        background: url(../../img/bg-fade-01.png);
+        background-size: initial;
+        background-repeat: no-repeat;
+        background-position: top 80px center;
+
+        @media (max-width: 767px) {
+            margin: 0px 16px;
+            background: none;
+        }
+    }
+}
