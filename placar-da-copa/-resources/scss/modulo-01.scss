@@ -20,6 +20,29 @@ section#modulo-01 {
             height: auto;
         }
 
+        .box-qatar-mob {
+            display: none;
+            background: $cinza-escuro;
+            border-radius: 10px;
+            height: 122px;
+            align-items: center;
+            padding: 27px 40px;
+            box-sizing: border-box;
+            width: 100%;
+
+            @media (max-width: 767px) {
+                display: flex;
+            }
+
+            img {
+                display: block;
+
+                @media (max-width: 767px) {
+                    margin: auto;
+                }
+            }
+        }
+
         .box-01 {
             width: 156px;
             height: 100%;
@@ -30,6 +53,7 @@ section#modulo-01 {
 
             @media (max-width: 767px) {
                 width: 100%;
+                margin-top: 16px;
             }
             
             .titulo {
@@ -121,6 +145,10 @@ section#modulo-01 {
                 padding: 27px 40px;
                 box-sizing: border-box;
 
+                @media (max-width: 767px) {
+                    display: none;
+                }
+
                 img {
                     display: block;
 
@@ -139,7 +167,7 @@ section#modulo-01 {
                 padding: 40px;
 
                 @media (max-width: 767px) {
-                    margin-top: 16px;
+                    margin-top: 0px;
                     height: auto;
                     padding: 16px;
                 }

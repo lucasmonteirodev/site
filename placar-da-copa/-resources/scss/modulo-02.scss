@@ -29,6 +29,10 @@ section#modulo-02 {
                 font-size: 12px; 
                 color: $preto;
                 opacity: 1;
+
+                @media (max-width: 767px) {
+                    color: $verde;
+                }
             }
     
             .slick-dots {

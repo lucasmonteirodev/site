@@ -40,6 +40,8 @@ section#modulo-05 {
                 width: 1048px;
                 margin: auto;
                 text-decoration: none;
+                border-radius: 10px;
+                overflow: hidden;
 
                 @media (max-width: 767px) {
                     width: 100%;
