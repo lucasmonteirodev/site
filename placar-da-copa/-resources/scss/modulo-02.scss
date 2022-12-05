@@ -110,10 +110,14 @@ section#modulo-02 {
                         position: absolute;
                         left: 2px;
                         right: 0;
-                        top: 27px;
+                        top: 29px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+
+                        @media (max-width: 767px) {
+                            top: 27px;
+                        }
 
                         .flag-time {
 
