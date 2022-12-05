@@ -197,6 +197,26 @@ section#modulo-03 {
                 }
 
                 .box-jogos {
+
+                    &.tipo-oitavas {
+                        height: 100%;
+
+                        .titulo-tipo {
+                            font-family: "Qatar2022";
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 29.1107px;
+                            line-height: 44px;
+                            color: $verde;
+                            text-align: center;
+                            margin-bottom: 47px;
+
+                            @media (max-width: 767px) {
+                                margin-bottom: 25px;
+                            }
+                        }
+                    }
+
                     .jogo {
                         display: flex;
                         align-items: center;

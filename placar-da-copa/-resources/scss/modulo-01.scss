@@ -91,8 +91,8 @@ section#modulo-01 {
                     flex-wrap: wrap;
                 }
 
-                .tipo-grupo {
-                    display: block;
+                .tipo-fases {
+                    display: flex;
                     width: 100%;
                     font-family: 'Lato', sans-serif;
                     font-style: normal;
@@ -122,6 +122,23 @@ section#modulo-01 {
                         background: $verde;
                         border-radius: 5px;
                         color: $cinza-escuro;
+                    }
+
+                    svg {
+                        display: none;
+                    }
+
+                    &.blocked {
+
+                        pointer-events: none;
+                        opacity: 0.4;
+
+                        svg {
+                            display: block;
+                            margin-left: auto;
+                            width: 12px;
+                            height: auto;
+                        }
                     }
                 }
             }
@@ -158,18 +175,79 @@ section#modulo-01 {
                 }
             }
 
-            .box-grupos-resultado {
+            .carrosselGrupos {
                 background: $cinza-escuro;
                 margin-top: 24px;
                 border-radius: 10px;
                 height: 383px;
                 box-sizing: border-box;
-                padding: 40px;
+                padding: 20px 40px;
 
                 @media (max-width: 767px) {
                     margin-top: 0px;
                     height: auto;
                     padding: 16px;
+                }
+
+                .slick-dots li button:before {
+                    font-size: 12px; 
+                    color: $branco;
+                    opacity: 1;
+                }
+        
+                .slick-dots {
+                    position: initial;
+                    margin-top: 10px;
+                }
+        
+                .slick-dots li {
+                    margin: 0 2px;
+                    display: inline-block;
+                }
+        
+                .slick-dots li.slick-active button:before {
+                    opacity: 1;
+                    color: $verde;
+                }
+
+                .slick-next {
+                    right: 215px;
+                    transform: none;
+                    width: initial;
+                    height: initial;
+                    top: auto;
+                    bottom: 22px;
+
+                    @media (max-width: 767px) {
+                        right: 37px;
+                        bottom: 12px;
+                    }
+                }
+                .slick-prev {
+                    left: 215px;
+                    transform: none;
+                    width: initial;
+                    height: initial;
+                    top: auto;
+                    bottom: 22px;
+
+                    @media (max-width: 767px) {
+                        left: 37px;
+                        bottom: 12px;
+                    }
+                }
+                .slick-prev:before, .slick-next:before {
+                    opacity: 1;
+                }
+                .slick-prev.slick-arrow:before {
+                    content: url(../../img/arrow-left-white.svg);
+                }
+                .slick-next.slick-arrow:before {
+                    content: url(../../img/arrow-right-white.svg);
+                }
+
+                .resultado-div {
+                    margin: 0px 10px;
                 }
 
                 .nome-grupo {
@@ -189,7 +267,7 @@ section#modulo-01 {
                     display: flex;
                     align-items: flex-start;
                     justify-content: space-between;
-                    margin-top: 20px;
+                    margin-top: 10px;
 
                     @media (max-width: 767px) {
                         display: block;
@@ -299,6 +377,175 @@ section#modulo-01 {
                                         line-height: 14px;
                                         color: $marrom;
                                         padding-top: 3px;
+                                    }
+                                }
+
+                                .placar {
+                                    display: flex;
+                                    align-items: center;
+                                    margin: 0px 8px;
+
+                                    .placar-pontuacao {
+
+                                        width: 25px;
+                                        height: 25px;
+                                        background: $verde;
+                                        border-radius: 2.13478px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+
+                                        &:first-child {
+                                            margin-right: 8px;
+                                        }
+
+                                        p {
+                                            font-family: 'Qatar2022';
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            font-size: 20px;
+                                            padding-top: 3px;
+                                            line-height: 20px;
+                                            text-align: center;
+                                            color: $cinza-escuro
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .box-oitavasdefinal {
+                background: $cinza-escuro;
+                margin-top: 24px;
+                border-radius: 10px;
+                height: 383px;
+                box-sizing: border-box;
+                padding: 26px 40px;
+
+                @media (max-width: 767px) {
+                    margin-top: 0px;
+                    height: auto;
+                    padding: 16px;
+                }
+
+                .nome-grupo {
+                    font-family: 'Qatar2022';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 29.1107px;
+                    line-height: 44px;
+                    color: $verde;
+
+                    @media (max-width: 767px) {
+                        text-align: center;
+                    }
+                }
+
+                .div-center {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 10px;
+
+                    @media (max-width: 767px) {
+                        display: block;
+                        margin-top: 10px;
+                    }
+
+                    .div-oitavas {
+
+                        width: 100%;
+
+                        @media (max-width: 767px) {
+                            margin-top: 30px;
+                            position: relative;
+                        }
+
+                        .box-rodada {
+
+                            .rodada {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+
+                                @media (max-width: 767px) {
+                                    margin-bottom: 35px;
+                                }
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+
+                                .data-jogo {
+                                    font-family: "Qatar2022";
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    line-height: 14px;
+                                    color: $branco;
+                                    padding-top: 3px;
+                                    margin-right: 10px;
+                                    width: 80px;
+                                    text-align: left;
+
+                                    @media (max-width: 767px) {
+                                        position: absolute;
+                                        margin-top: -50px;
+                                    }
+                                }
+
+                                .hora-jogo {
+                                    font-family: "Qatar2022";
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    line-height: 14px;
+                                    color: $branco;
+                                    padding-top: 3px;
+                                    margin-left: 10px;
+                                    width: 38px;
+                                    text-align: right;
+
+                                    @media (max-width: 767px) {
+                                        position: absolute;
+                                        margin-top: -50px;
+                                        right: 0;
+                                    }
+                                }
+
+                                .time {
+                                    width: 100%;
+                                    border-radius: 2.14923px;
+                                    background: $branco;
+                                    box-sizing: border-box;
+                                    display: flex;
+                                    align-items: center;
+                                    padding-left: 6px;
+                                    height: 25px;
+                                    max-width: 190px;
+    
+                                    .flag {
+                                        display: block;
+                                        margin-right: 6px;
+                                        width: 20px;
+                                    }
+    
+                                    .nome-time {
+                                        font-family: 'Qatar2022';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 14px;
+                                        line-height: 14px;
+                                        color: $marrom;
+                                        padding-top: 3px;
+
+                                        @media (max-width: 767px) {
+                                            line-height: 12px;
+                                        }
                                     }
                                 }
 
