@@ -33,6 +33,10 @@ $('#modulo-01 .box-01 .grupos .tipo-fases').click(function () {
     $('#modulo-01 .box-02 .box-hide').hide();
     $('#fase-' + dataValue).show();
 
+});
+
+$('#modulo-01 .box-01 .grupos .type-grupos').click(function () {
+
     $('#modulo-01 .carrosselGrupos').slick({
         dots: true,
         infinite: true,
@@ -49,6 +53,7 @@ $('#modulo-01 .box-01 .grupos .tipo-fases').click(function () {
             }
         }]
     });
+    
 });
 
 $('#modulo-03 .box-01 .fases .tipo-fases').click(function () {

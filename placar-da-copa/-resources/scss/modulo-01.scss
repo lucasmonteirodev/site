@@ -417,7 +417,7 @@ section#modulo-01 {
                 }
             }
 
-            .box-oitavasdefinal {
+            .box-oitavasdefinal, .box-quartasdefinal, .box-semifinais, .box-final {
                 background: $cinza-escuro;
                 margin-top: 24px;
                 border-radius: 10px;
@@ -455,7 +455,7 @@ section#modulo-01 {
                         margin-top: 10px;
                     }
 
-                    .div-oitavas {
+                    .div-oitavas, .div-quartas, .div-semifinais, .div-final {
 
                         width: 100%;
 
