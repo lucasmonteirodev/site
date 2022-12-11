@@ -198,7 +198,7 @@ section#modulo-03 {
 
                 .box-jogos {
 
-                    &.tipo-oitavas, &.tipo-quartas {
+                    &.tipo-oitavas, &.tipo-quartas, &.tipo-semifinais, &.tipo-final {
                         height: 100%;
 
                         .titulo-tipo {
@@ -214,6 +214,32 @@ section#modulo-03 {
                             @media (max-width: 767px) {
                                 margin-bottom: 25px;
                             }
+                        }
+                    }
+
+                    &.tipo-semifinais, &.tipo-final {
+
+                        .flag-brasil {
+                            width: 70px; 
+                            border-radius: 50%;
+                            border: solid 2px $branco;
+                            display: block;
+                            margin: auto;
+                        }
+
+                        .info-desclassificado {
+                            font-family: "Qatar2022";
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 29.1107px;
+                            line-height: 44px;
+                            color: $branco;
+                            text-align: center;
+                            margin-top: 10px;
+                        }
+
+                        .jogo {
+                            display: block;
                         }
                     }
 
