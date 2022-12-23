@@ -1,0 +1,131 @@
+section#modulo5 {
+
+	margin-top: 104px;
+
+	@media (max-width: 767px) {
+        margin-top: 60px;
+    }
+
+	.grupo {
+		.titulo {
+			font-family: Rubik, sans-serif;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 64px;
+			line-height: 76px;
+			text-align: center;
+			color: #FFFFFF;
+
+			@media (max-width: 767px) {
+		        margin-top: 60px;
+		        font-size: 44px;
+    			line-height: 43px;
+		    }
+		}
+
+		.carouselComentarios {
+
+			width: 100%;
+			max-width: 1420px;
+			margin: auto;
+			margin-top: 48px;
+
+			@media (max-width: 767px) {
+		    	width: 95%;
+		    }
+
+			.slick-prev, .slick-next {
+				width: auto;
+				height: auto;
+				z-index: 9;
+
+				@media (max-width: 767px) {
+			        top: auto;
+			        bottom: -98px;
+			    }
+			}
+			.slick-prev {
+				margin-left: 100px;
+			}
+			.slick-next {
+				margin-right: 100px;
+			}
+			.slick-next:before {
+			    opacity: 1;
+			    font-size: unset;
+			}
+			.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
+			    opacity: 1;
+			}
+			.slick-prev.slick-arrow:before {
+			    content: url(../../img/arrow-left.png);
+			}
+			.slick-next.slick-arrow:before {
+			    content: url(../../img/arrow-right.png);
+			}
+
+			.box-card {
+				width: 100%;
+				margin: auto;
+				background: url(../../img/bg-modulo-on.png);
+				background-repeat: no-repeat;
+				background-size: initial;
+				background-position: center left 188px;
+				background-color: #212121;
+				border: 1px solid #000000;
+				border-radius: 30px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 488px;
+
+				@media (max-width: 767px) {
+			        display: block;
+			        padding: 30px;
+			        background: url(../../img/bg-slide-mob.png);
+					background-repeat: no-repeat;
+					background-size: initial;
+					background-position: left top;
+					height: auto;
+			    }
+
+				.avatar {
+					display: block;
+					margin-right: 153px;
+
+					@media (max-width: 767px) {
+				        margin: auto;
+				        width: 184px;
+				    }
+				}
+
+				.div-right {
+
+					@media (max-width: 767px) {
+				        margin-top: 110px;
+				    }
+
+					.comentario {
+						font-family: Roboto, sans-serif;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 16px;
+						line-height: 25px;
+						color: #FFFFFF;
+						max-width: 480px;
+					}
+
+					.autor {
+						margin-top: 33px;
+						font-family: Roboto, sans-serif;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 14px;
+						line-height: 22px;
+						color: #FFFFFF;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,277 @@
+body {
+	overflow: hidden;
+}
+
+#hotsite {
+	background: #121212;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background: #2d0311;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #E61E5C;
+	border-radius: 10px;
+}
+
+section#header {
+
+	@media (max-width: 767px) {
+        display: none;
+    }
+
+	.div-flex {
+		background: #333333;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 26px 0px;
+
+		@media (max-width: 767px) {
+	        display: none;
+	    }
+
+		p {
+			font-family: 'Lato', sans-serif;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 25px;
+			line-height: 29px;
+			color: #FFFFFF;
+			margin-right: 119px;
+		}
+
+		.click-button {
+			display: block;
+		    width: 213px;
+		    height: 48px;
+			border-radius: 4px;
+		    background: #27AE60;
+		    line-height: 48px;
+		    text-align: center;
+		    text-decoration: none;
+		    font-family: Lato, sans-serif;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 48px;
+			border: none;
+			color: #FFFFFF;
+		    cursor: pointer;
+		    transition: all .2s ease-in-out;
+		    -webkit-transition: all .2s ease-in-out;
+		    -o-transition: all .2s ease-in-out;
+
+		    &:hover {
+		    	background: #4DB97B;
+		    }
+		}
+	}
+
+	.div-flex-02 {
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.logo-fetes {
+			display: block;
+			margin-right: 425px;
+			margin-top: 42px;
+			text-decoration: none;
+		}
+
+		.menu {
+			ul {
+				li {
+					float: left;
+					padding-bottom: 10px;
+					padding-left: 12px;
+					padding-right: 12px;
+					margin: 0px 5px;
+
+					a {
+						font-family: Rubik, sans-serif;
+						font-style: normal;
+						font-weight: 300;
+						font-size: 14px;
+						line-height: 17px;
+						color: #7A7A7A;
+						text-decoration: none;
+						margin-top: 101px;
+						display: block;
+					}
+
+					&.active {
+
+						background: #E61E5C;
+						border-radius: 0px 0px 4px 4px;
+
+						a {
+							color: #FFFFFF;
+							font-weight: bold;
+						}
+					}
+
+				}
+			}
+		}
+	}
+}
+
+
+
+section#header-mobile {
+	display: none;
+
+	@media (max-width: 767px) {
+
+        display: block;
+		padding: 20px 0px;
+		border-bottom: solid 2px #E61E5C;
+
+		.div-header {
+			display: flex;
+			align-items: center;
+		}
+
+		.div-header .logo-fetes {
+			display: block;
+			text-decoration: none;
+			cursor: pointer;
+			margin-left: 33px;
+
+			img {
+				width: 150px;
+			}
+		}
+
+		.div-header #burger {
+			margin-right: 30px;
+			margin-left: auto;
+		}
+
+		.div-header .close {
+			display: none;
+			position: absolute;
+			z-index: 999;
+			right: 20px;
+			top: 20px;
+		}
+
+		.div-header .main-nav {
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    left: 0;
+		    bottom: 0;
+		    text-align: center;
+		    background-color: #E61E5C;
+		    opacity: 0;
+		    z-index: -1;
+		    visibility: hidden;
+		    transition: all .375s;
+		}
+
+		.div-header .main-nav .logo-open {
+			position: absolute;
+		    display: block;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+		    margin-top: 72px;
+		}
+
+		.div-header .main-nav.is-open {
+		    opacity: 1;
+		    z-index: 100;
+		    visibility: visible;
+		    overflow: hidden;
+		}
+
+		.div-header .main-nav::before {
+			 content: '';
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: -15px;
+		    background: #212121;
+		    transform-origin: 0 0;
+		    transform: skew(-14deg) translateX(-120%);
+		    transition: all .275s .1s;
+		}
+
+		.div-header .main-nav.is-open::before {
+		    transform: skew(-14deg) translateX(0);
+		}
+
+		.div-header .main-nav ul {
+		    display: inline-flex;
+		    flex-direction: column;
+		    height: 93%; /* Should be 100%, but we have a notice message :D */
+		    align-items: flex-end;
+		    justify-content: center;
+		    transform: translateX(-18%) skew(-16deg);
+		}
+
+		.div-header .main-nav li {
+		    display: block;
+		    margin: .5rem 0;
+		    text-align: right;
+		    transform: skew(16deg);
+		}
+
+		.div-header .main-nav a {
+		    opacity: 0;
+		    transform: translateY(-10px);
+		    font-family: Lato, sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 21px;
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+
+		.div-header .main-nav.is-open a {
+		    opacity: 1;
+		    transform: translateY(0);
+		}
+		.div-header .main-nav li:nth-child(1) a {
+			transition: all 275ms 175ms
+		}
+		.div-header .main-nav li:nth-child(2) a {
+			transition: all 275ms 225ms
+		}
+		.div-header .main-nav li:nth-child(3) a {
+			transition: all 275ms 275ms
+		}
+		.div-header .main-nav li:nth-child(4) a {
+			transition: all 275ms 325ms
+		}
+		.div-header .main-nav li:nth-child(5) a {
+			transition: all 275ms 375ms
+		}
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

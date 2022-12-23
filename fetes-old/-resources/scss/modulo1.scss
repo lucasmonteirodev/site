@@ -1,0 +1,213 @@
+section#modulo1 {
+
+	margin-top: 65px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @media (max-width: 767px) {
+        margin-top: 0;
+    }
+
+    .escama01 {
+		position: absolute;
+	    right: 0;
+	    left: 1400px;
+	    margin: auto;
+	    top: -62px;
+	    z-index: 9;
+	    @media (max-width: 767px) {
+	        display: none;
+	    }
+	}
+	.escama02 {
+		position: absolute;
+		right: 1400px;
+	    left: 0;
+	    margin: auto;
+		top: 0;
+		bottom: 0;
+		z-index: 9;
+		@media (max-width: 767px) {
+	        display: none;
+	    }
+	}
+	.escama03 {
+		position: absolute;
+	    bottom: -112px;
+	    right: 0;
+	    left: 1400px;
+	    margin: auto;
+	    z-index: 9;
+	    @media (max-width: 767px) {
+	        display: none;
+	    }
+	}
+
+	.grupo {
+
+		width: 100%;
+		max-width: 1420px;
+		margin: auto;
+
+		.box01 {
+			border-radius: 30px;
+			width: 100%;
+			max-width: 1420px;
+			height: 800px;
+			background: url(../../img/bg-banner.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			margin: auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+
+			@media (max-width: 767px) {
+		        height: 639px;
+		        background: url(../../img/bg-banner-mob.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center center;
+				max-width: 100%;
+				border-radius: initial;
+				margin: 0;
+		    }
+
+			.textos {
+
+				display: block;
+			    width: max-content;
+			    margin-left: -250px;
+
+			    @media (max-width: 767px) {
+			        margin: auto;
+			        margin-top: 61px;
+			    }
+
+				.tx1 {
+					font-family: Rubik, sans-serif;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 49.3944px;
+					line-height: 55px;
+					color: #FFFFFF;
+					max-width: 334px;
+					text-align: center;
+
+					@media (max-width: 767px) {
+				        font-size: 31.9252px;
+				    }
+
+					.span01 {
+						font-size: 49.3944px;
+						@media (max-width: 767px) {
+					        font-size: 31.9252px;
+					    }
+					}
+
+					.span02 {
+						font-size: 74.4836px;
+						@media (max-width: 767px) {
+					        font-size: 48.1411px;
+					    }
+					}
+
+					@media (max-width: 767px) {
+				        margin: auto;
+				        max-width: 213px;
+				        line-height: 38px;
+				    }
+				}
+
+				.tx2 {
+					font-family: Rubik, sans-serif;
+				    font-style: normal;
+				    font-weight: bold;
+				    font-size: 235.484px;
+				    line-height: 175px;
+				    color: #FFFFFF;
+
+				    @media (max-width: 767px) {
+				    	text-align: center;
+				    	font-size: 155.484px;
+				    	line-height: 120px;
+				    }
+				}
+
+				.descript {
+					font-family: Roboto, sans-serif;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 16px;
+					line-height: 25px;
+					color: #FFFFFF;
+					max-width: 464px;
+					margin-top: 40px;
+
+					@media (max-width: 767px) {
+				        display: none;
+				    }
+				}
+
+				.click-cta {
+					display: block;
+				    width: 370px;
+				    height: 48px;
+					border-radius: 4px;
+				    background: #27AE60;
+				    line-height: 48px;
+				    text-align: center;
+				    text-decoration: none;
+				    font-family: Lato, sans-serif;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 16px;
+					margin-top: 36px;
+					border: none;
+					color: #FFFFFF;
+				    cursor: pointer;
+				    transition: all .2s ease-in-out;
+				    -webkit-transition: all .2s ease-in-out;
+				    -o-transition: all .2s ease-in-out;
+
+				    &:hover {
+				    	background: #4DB97B;
+				    }
+
+				    @media (max-width: 767px) {
+				        max-width: 226px;
+				        margin-top: 285px;
+				    }
+				}
+			}
+		}
+
+		.box02 {
+			.banner-desktop {
+				display: block;
+				width: 100%;
+				max-width: 1420px;
+
+				@media (max-width: 767px) {
+			        display: none;
+			    }
+			}
+
+			.banner-mob {
+				display: none;
+
+				@media (max-width: 767px) {
+			        display: block;
+			        width: 100%;
+			    }
+			}
+		}
+
+	}
+
+	
+}
