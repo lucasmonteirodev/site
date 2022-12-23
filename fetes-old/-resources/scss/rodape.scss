@@ -1,76 +1,185 @@
 section#rodape {
 
-	background: #333333;
-	padding: 30px 0px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 22px;
+	background: #2C2C2C;
+	padding-top: 58px;
 
-	@media (max-width: 767px) {
-    	display: block;
-    	text-align: center;
-    }
+	.grupo {
 
-	.logo-fetes {
-		margin-right: 17px;
-	}
-
-	.tx1 {
-		font-family: Roboto, sans-serif;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 14px;
-		line-height: 16px;
-		color: #FFFFFF;
+		max-width: 1170px;
+		margin: auto;
 
 		@media (max-width: 767px) {
-	    	margin-top: 10px;
+	        max-width: 100%;
+	        margin: 0px 16px;
 	    }
-	}
 
-	.linha {
-		height: 29px;
-		width: 1px;
-		margin: 0px 45px;
-		background: #565656;
+	    @media (min-width: 768px) and (max-width: 1100px) {
+			max-width: 880px;
+		}
 
-		@media (max-width: 767px) {
-	    	margin: 30px auto;
-	    	width: 95%;
-	    	height: 1px;
-	    }
-	}
+		.div-flex {
 
-	.tx2 {
-		font-family: Roboto, sans-serif;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 14px;
-		line-height: 16px;
-		color: #FFFFFF;
-		margin-right: 10px;
-	}
+			display: flex;
+			justify-content: space-between;
 
-	.facebook {
-		text-decoration: none;
-		display: block;
-		margin-right: 8.5px;
+			@media (max-width: 767px) {
+		        display: block;
+		    }
 
-		@media (max-width: 767px) {
-	    	margin: auto;
-	    	margin-top: 15px;
-	    }
-	}
+			.destaque {
+				font-family: "Roboto", sans-serif;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 19px;
+				color: #FFFFFF;
+				margin-bottom: 5px;
+			}
 
-	.instagram {
-		text-decoration: none;
-		display: block;
+			.lista {
 
-		@media (max-width: 767px) {
-	    	margin: auto;
-	    	margin-top: 10px;
-	    }
+				margin-top: 20px;
+
+				a {
+					text-decoration: none;
+					font-family: "Roboto", sans-serif;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 24px;
+					letter-spacing: 0.03em;
+					color: #D1D1D1;
+					display: flex;
+					align-items: center;
+					transition: all .2s ease-in-out;
+				    -webkit-transition: all .2s ease-in-out;
+				    -o-transition: all .2s ease-in-out;
+
+					&:hover {
+						color: #ED145B;
+					}
+
+					img {
+						display: block;
+						margin-right: 10px;
+					}
+				}
+			}
+
+			.bloco-01 {
+				a {
+					text-decoration: none;
+					cursor: pointer;
+
+					img {
+						display: block;
+					}
+				}
+
+				.e-mec {
+					display: flex;
+					align-items: flex-start;
+					margin-top: 40px;
+
+					@media (max-width: 767px) {
+						justify-content: center;
+					}
+
+					.div-left {
+
+						margin-right: 10px;
+
+						.tx1 {
+							font-family: "Roboto", sans-serif;
+							font-style: normal;
+							font-weight: 500;
+							color: #fff;
+							font-size: 20px;
+							line-height: 24px;
+							width: 210px;
+
+							@media (max-width: 767px) {
+								font-size: 16px;
+								line-height: 20px;
+								width: 144px;
+							}
+						}
+
+						img {
+							display: block;
+							margin-top: 16px;
+						}
+					}
+
+					.div-right {
+						.click-qrcode {
+							display: block;
+							text-decoration: none;
+							background: #fff;
+							border-radius: 4px;
+							padding: 4px;
+
+							img {
+								display: block;
+								width: 126px;
+							}
+						}
+					}
+				}
+			}
+
+			.bloco-02 {
+				@media (max-width: 767px) {
+			        margin-top: 25px;
+			    }
+			}
+
+			.bloco-03 {
+				max-width: 300px;
+
+				@media (max-width: 767px) {
+			        margin-top: 40px;
+			    }
+			}
+
+			.bloco-04 {
+
+				@media (max-width: 767px) {
+			        margin-top: 40px;
+			    }
+				
+				ul {
+					.lista {
+						display: flex;
+						align-items: center;
+					}
+				}
+			}
+		}
+
+		.traco {
+			width: 100%;
+			background: #7A7A7A;
+			height: 1px;
+			margin-top: 60px;
+		}
+
+		.direitos-reservados {
+			font-family: "Roboto", sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 22px;
+			padding: 24px 0px;
+			text-align: center;
+			color: #7A7A7A;
+
+			a {
+				color: #7A7A7A;
+				text-decoration: underline;
+			}
+		}
+
 	}
 
 }
