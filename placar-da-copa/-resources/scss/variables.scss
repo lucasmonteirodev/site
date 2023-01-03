@@ -1,0 +1,39 @@
+$branco: #ffffff;
+$verde: #2DDB81;
+$cinza-escuro: #22242F;
+$cinza-claro: #E5E5E5;
+$cinza-medio: #4F4F4F;
+$preto: #000000;
+$dark: #111218;
+$amarelo: #F1D83A;
+$marrom: #710C32;
+
+@font-face {
+    font-family: 'Qatar2022';
+    src: url(../../fonts/Qatar2022Arabic-Bold.otf);
+}
+
+.cta {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #7EBC43;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: #78ad40;
+    }
+}
